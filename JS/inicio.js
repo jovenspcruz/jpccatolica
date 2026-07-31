@@ -114,69 +114,6 @@ function iniciarHeader(){
 
 
 
-// ==================================
-// MENU MOBILE
-// ==================================
-
-function iniciarMenuMobile(){
-
-
-    const btnMenu =
-    document.getElementById("btnMenu");
-
-
-    const menuMobile =
-    document.getElementById("menuMobile");
-
-
-
-    if(!btnMenu || !menuMobile)
-        return;
-
-
-
-
-    btnMenu.addEventListener("click",()=>{
-
-
-        menuMobile.classList.toggle("ativo");
-
-
-    });
-
-
-
-
-
-    document.addEventListener("click",(e)=>{
-
-
-        if(
-
-            !menuMobile.contains(e.target)
-
-            &&
-
-            !btnMenu.contains(e.target)
-
-        ){
-
-
-            menuMobile.classList.remove("ativo");
-
-
-        }
-
-
-    });
-
-
-
-}
-
-
-
-
 
 
 
