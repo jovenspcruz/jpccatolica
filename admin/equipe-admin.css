@@ -1,0 +1,802 @@
+/* ==================================
+   JPC - EQUIPE ADMIN
+================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #050505,
+
+        #0f2d5c,
+
+        #020617
+
+    );
+
+}
+
+
+
+
+
+
+
+/* TOPO */
+
+
+.topo{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+    padding:25px 6%;
+
+
+    background:rgba(0,0,0,.5);
+
+
+    border-bottom:
+
+    1px solid rgba(201,162,39,.4);
+
+
+}
+
+
+
+.logo h1{
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    font-size:38px;
+
+
+}
+
+
+
+.logo span{
+
+
+    color:#ccc;
+
+
+}
+
+
+
+.topo a{
+
+
+    text-decoration:none;
+
+
+    color:#c9a227;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+
+/* CONTAINER */
+
+
+.container{
+
+
+    padding:40px 6%;
+
+
+}
+
+
+
+
+
+
+
+/* TITULO */
+
+
+.titulo h2{
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    font-size:32px;
+
+
+}
+
+
+.titulo p{
+
+
+    color:#ccc;
+
+
+    margin-top:8px;
+
+
+}
+
+
+
+
+
+
+
+
+/* CARDS PRINCIPAIS */
+
+
+.cadastro,
+.lista{
+
+
+    margin-top:30px;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        #111827,
+
+        #050505
+
+    );
+
+
+    border:
+
+    1px solid rgba(201,162,39,.35);
+
+
+}
+
+
+
+
+
+
+
+.cadastro h3,
+.lista h3{
+
+
+    color:#c9a227;
+
+
+    font-family:'Cinzel',serif;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+
+/* INPUTS */
+
+
+input,
+select{
+
+
+    width:100%;
+
+
+    padding:14px;
+
+
+    margin-bottom:15px;
+
+
+    border-radius:15px;
+
+
+    background:#080808;
+
+
+    color:white;
+
+
+    border:
+
+    1px solid rgba(201,162,39,.35);
+
+
+    outline:none;
+
+
+}
+
+
+input:focus,
+select:focus{
+
+
+    border-color:#c9a227;
+
+
+}
+
+
+
+
+
+
+
+/* BOTÕES */
+
+
+button{
+
+
+    padding:13px 20px;
+
+
+    border:none;
+
+
+    border-radius:15px;
+
+
+    background:#c9a227;
+
+
+    color:#000;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:translateY(-2px);
+
+
+}
+
+
+
+
+
+
+
+
+/* LISTA */
+
+
+#listaMembros{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+.usuario-card{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:15px;
+
+
+    padding:20px;
+
+
+    border-radius:20px;
+
+
+    background:#080808;
+
+
+    border:
+
+    1px solid rgba(201,162,39,.3);
+
+
+}
+
+
+
+.usuario-card img{
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    border-radius:50%;
+
+
+    object-fit:cover;
+
+
+    border:2px solid #c9a227;
+
+
+}
+
+
+
+.usuario-card h3{
+
+
+    color:#c9a227;
+
+
+}
+
+
+.usuario-card p{
+
+
+    color:#bbb;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.usuario-card button{
+
+
+    margin-left:auto;
+
+
+    padding:8px 12px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   MODAL
+================================ */
+
+
+.modal{
+
+
+    display:none;
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:rgba(0,0,0,.75);
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    padding:20px;
+
+
+    z-index:999;
+
+
+    overflow:auto;
+
+
+}
+
+
+
+
+
+
+
+.modal-box{
+
+
+    width:100%;
+
+
+    max-width:380px;
+
+
+    max-height:85vh;
+
+
+    overflow-y:auto;
+
+
+    padding:25px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        #111827,
+
+        #050505
+
+    );
+
+
+    border:
+
+    1px solid rgba(201,162,39,.5);
+
+
+}
+
+
+
+
+
+
+
+
+.modal-box h2{
+
+
+    text-align:center;
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+
+
+.modal-box img{
+
+
+    display:block;
+
+
+    margin:0 auto 20px;
+
+
+    width:90px;
+
+
+    height:90px;
+
+
+    border-radius:50%;
+
+
+    object-fit:cover;
+
+
+    border:3px solid #c9a227;
+
+
+}
+
+
+
+
+
+
+
+
+.modal-box p{
+
+
+    color:#aaa;
+
+
+    margin-top:12px;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+.modal-box strong{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+/* BOTÕES DO MODAL */
+
+
+.acoes-modal{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:10px;
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+
+.acoes-modal button{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+
+/* BARRA DE ROLAGEM DO MODAL */
+
+
+.modal-box::-webkit-scrollbar{
+
+
+    width:6px;
+
+
+}
+
+
+.modal-box::-webkit-scrollbar-thumb{
+
+
+    background:#c9a227;
+
+
+    border-radius:10px;
+
+
+}
+
+
+
+
+
+
+
+
+/* CELULAR */
+
+
+@media(max-width:700px){
+
+
+.topo{
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.container{
+
+
+    padding:25px;
+
+
+}
+
+
+
+.usuario-card{
+
+
+    flex-direction:column;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.usuario-card button{
+
+
+    margin:auto;
+
+
+}
+
+
+}/* ==========================
+   TEMA CLARO GLOBAL
+========================== */
+
+
+body.tema-claro{
+
+
+background:#f2f2f2;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro .topo,
+body.tema-claro .card,
+body.tema-claro .perfil-box{
+
+
+background:white;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro p{
+
+
+color:#333;
+
+
+}
+
+
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3{
+
+
+color:#8c6d00;
+
+
+}

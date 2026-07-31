@@ -1,0 +1,2931 @@
+/* ==========================
+        VARIÁVEIS
+========================== */
+
+:root{
+
+    --preto:#050505;
+
+    --azul-escuro:#06152f;
+
+    --azul-medio:#0f2d5c;
+
+    --dourado:#d4af37;
+
+    --branco:#ffffff;
+
+}
+
+
+
+/* ==========================
+        RESET
+========================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins', Arial, sans-serif;
+
+}
+
+
+
+body{
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+    color:white;
+
+    min-height:100vh;
+
+
+}
+
+
+
+
+
+
+
+
+.logo img{
+
+    width:75px;
+
+}
+
+
+
+
+/* ==========================
+        MENU MOBILE
+========================== */
+
+
+.menu-mobile{
+
+
+    display:none;
+
+
+    font-size:30px;
+
+
+    color:var(--dourado);
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        CONTEÚDO
+========================== */
+
+
+.quemsomos{
+
+
+    padding-top:130px;
+
+
+    padding-bottom:80px;
+
+
+    width:90%;
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+}/* ==========================
+        HERO QUEM SOMOS
+========================== */
+
+
+.hero-quemsomos{
+
+
+    text-align:center;
+
+
+    padding:60px 25px;
+
+
+    margin-bottom:70px;
+
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    box-shadow:
+
+
+    0 10px 40px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-quemsomos h1{
+
+
+    color:var(--dourado);
+
+
+    font-size:45px;
+
+
+    margin-bottom:20px;
+
+
+
+    text-shadow:
+
+
+    0 0 15px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-quemsomos p{
+
+
+    color:#ddd;
+
+
+    max-width:750px;
+
+
+    margin:auto;
+
+
+    font-size:18px;
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        SEÇÕES
+========================== */
+
+
+.secao-quemsomos{
+
+
+    margin-bottom:80px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-quemsomos h2{
+
+
+    text-align:center;
+
+
+    color:var(--dourado);
+
+
+    font-size:35px;
+
+
+    margin-bottom:35px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-quemsomos h2::after{
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:90px;
+
+
+    height:3px;
+
+
+    background:var(--dourado);
+
+
+    margin:15px auto;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        HISTÓRIA
+========================== */
+
+
+.historia{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(300px,1fr));
+
+
+    gap:35px;
+
+
+    align-items:center;
+
+
+
+}
+
+
+
+
+
+
+
+.historia-texto{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f
+
+    );
+
+
+
+    padding:35px;
+
+
+
+    border-radius:25px;
+
+
+
+    border:1px solid #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.historia-texto p{
+
+
+    color:#ddd;
+
+
+    line-height:1.8;
+
+
+    font-size:17px;
+
+
+
+}
+
+
+
+
+
+
+
+.historia-imagem{
+
+
+    height:350px;
+
+
+
+    border-radius:25px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    font-size:80px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        MISSÃO VISÃO VALORES
+========================== */
+
+
+.cards-missao{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-missao{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    padding:35px;
+
+
+
+    border-radius:25px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    transition:.4s;
+
+
+
+}
+
+
+
+
+
+
+
+.card-missao:hover{
+
+
+    transform:translateY(-10px);
+
+
+
+    box-shadow:
+
+
+    0 0 30px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.card-missao .icone{
+
+
+    font-size:45px;
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-missao h3{
+
+
+    color:var(--dourado);
+
+
+    font-size:25px;
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-missao p{
+
+
+    color:#ddd;
+
+
+    line-height:1.6;
+
+
+
+}/* ==========================
+        ESPIRITUALIDADE
+========================== */
+
+
+.espiritualidade{
+
+
+    padding:45px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    margin-bottom:70px;
+
+
+
+    box-shadow:
+
+
+    0 10px 35px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.espiritualidade h2{
+
+
+    text-align:center;
+
+
+    color:var(--dourado);
+
+
+    font-size:35px;
+
+
+    margin-bottom:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.espiritualidade p{
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+
+    line-height:1.8;
+
+
+    font-size:17px;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        NOSSA MISSÃO
+========================== */
+
+
+.missao-jpc{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(280px,1fr));
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.bloco-missao{
+
+
+    background:#050505;
+
+
+
+    padding:30px;
+
+
+
+    border-radius:25px;
+
+
+
+    border-left:4px solid var(--dourado);
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.bloco-missao:hover{
+
+
+    transform:translateX(8px);
+
+
+
+    background:#06152f;
+
+
+
+}
+
+
+
+
+
+
+
+.bloco-missao h3{
+
+
+    color:var(--dourado);
+
+
+    font-size:24px;
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.bloco-missao p{
+
+
+    color:#ddd;
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        FRASE DE DESTAQUE
+========================== */
+
+
+.frase-destaque{
+
+
+    margin:80px 0;
+
+
+
+    padding:55px 30px;
+
+
+
+    text-align:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-top:2px solid var(--dourado);
+
+
+
+    border-bottom:2px solid var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+.frase-destaque h2{
+
+
+    color:var(--dourado);
+
+
+    font-size:32px;
+
+
+
+    font-style:italic;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-destaque p{
+
+
+    color:white;
+
+
+
+    margin-top:20px;
+
+
+
+    font-size:18px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        BOTÕES
+========================== */
+
+
+.btn-quemsomos{
+
+
+    display:inline-block;
+
+
+
+    margin-top:30px;
+
+
+
+    padding:14px 35px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #d4af37,
+
+        #f5d76e
+
+    );
+
+
+
+    color:#000;
+
+
+
+    text-decoration:none;
+
+
+
+    border-radius:30px;
+
+
+
+    font-weight:bold;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.btn-quemsomos:hover{
+
+
+    transform:scale(1.05);
+
+
+
+    box-shadow:
+
+
+    0 0 20px #d4af37;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        MODAL
+========================== */
+
+
+.modal{
+
+
+    display:none;
+
+
+
+    position:fixed;
+
+
+
+    top:0;
+
+
+    left:0;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    rgba(0,0,0,.85);
+
+
+
+    justify-content:center;
+
+
+
+    align-items:center;
+
+
+
+    z-index:2000;
+
+
+
+    padding:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    width:90%;
+
+
+    max-width:650px;
+
+
+
+    padding:40px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    animation:abrir .4s;
+
+
+
+    position:relative;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    color:var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo p{
+
+
+    color:white;
+
+
+
+    line-height:1.8;
+
+
+
+    text-align:center;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar{
+
+
+    position:absolute;
+
+
+
+    right:25px;
+
+
+
+    top:15px;
+
+
+
+    font-size:35px;
+
+
+
+    color:var(--dourado);
+
+
+
+    cursor:pointer;
+
+
+
+}
+
+
+
+
+
+
+
+@keyframes abrir{
+
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.7);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+
+}                 /* ==========================
+        ESPIRITUALIDADE
+========================== */
+
+
+.espiritualidade{
+
+
+    padding:45px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    margin-bottom:70px;
+
+
+
+    box-shadow:
+
+
+    0 10px 35px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.espiritualidade h2{
+
+
+    text-align:center;
+
+
+    color:var(--dourado);
+
+
+    font-size:35px;
+
+
+    margin-bottom:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.espiritualidade p{
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+
+    line-height:1.8;
+
+
+    font-size:17px;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        NOSSA MISSÃO
+========================== */
+
+
+.missao-jpc{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(280px,1fr));
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.bloco-missao{
+
+
+    background:#050505;
+
+
+
+    padding:30px;
+
+
+
+    border-radius:25px;
+
+
+
+    border-left:4px solid var(--dourado);
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.bloco-missao:hover{
+
+
+    transform:translateX(8px);
+
+
+
+    background:#06152f;
+
+
+
+}
+
+
+
+
+
+
+
+.bloco-missao h3{
+
+
+    color:var(--dourado);
+
+
+    font-size:24px;
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.bloco-missao p{
+
+
+    color:#ddd;
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        FRASE DE DESTAQUE
+========================== */
+
+
+.frase-destaque{
+
+
+    margin:80px 0;
+
+
+
+    padding:55px 30px;
+
+
+
+    text-align:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-top:2px solid var(--dourado);
+
+
+
+    border-bottom:2px solid var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+.frase-destaque h2{
+
+
+    color:var(--dourado);
+
+
+    font-size:32px;
+
+
+
+    font-style:italic;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-destaque p{
+
+
+    color:white;
+
+
+
+    margin-top:20px;
+
+
+
+    font-size:18px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        BOTÕES
+========================== */
+
+
+.btn-quemsomos{
+
+
+    display:inline-block;
+
+
+
+    margin-top:30px;
+
+
+
+    padding:14px 35px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #d4af37,
+
+        #f5d76e
+
+    );
+
+
+
+    color:#000;
+
+
+
+    text-decoration:none;
+
+
+
+    border-radius:30px;
+
+
+
+    font-weight:bold;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.btn-quemsomos:hover{
+
+
+    transform:scale(1.05);
+
+
+
+    box-shadow:
+
+
+    0 0 20px #d4af37;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        MODAL
+========================== */
+
+
+.modal{
+
+
+    display:none;
+
+
+
+    position:fixed;
+
+
+
+    top:0;
+
+
+    left:0;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    rgba(0,0,0,.85);
+
+
+
+    justify-content:center;
+
+
+
+    align-items:center;
+
+
+
+    z-index:2000;
+
+
+
+    padding:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    width:90%;
+
+
+    max-width:650px;
+
+
+
+    padding:40px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    animation:abrir .4s;
+
+
+
+    position:relative;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    color:var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo p{
+
+
+    color:white;
+
+
+
+    line-height:1.8;
+
+
+
+    text-align:center;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar{
+
+
+    position:absolute;
+
+
+
+    right:25px;
+
+
+
+    top:15px;
+
+
+
+    font-size:35px;
+
+
+
+    color:var(--dourado);
+
+
+
+    cursor:pointer;
+
+
+
+}
+
+
+
+
+
+
+
+@keyframes abrir{
+
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.7);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+
+}/* ==========================
+        ANIMAÇÕES
+========================== */
+
+
+@keyframes aparecer{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:translateY(30px);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:translateY(0);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.hero-quemsomos,
+.card-missao,
+.historia-texto,
+.espiritualidade,
+.bloco-missao{
+
+
+    animation:aparecer .8s ease;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        RESPONSIVO TABLET
+========================== */
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    padding:0 25px;
+
+
+
+}
+
+
+
+nav{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+.menu-mobile{
+
+
+    display:block;
+
+
+
+}
+
+
+
+
+
+.pesquisa{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+
+.hero-quemsomos{
+
+
+    padding:45px 20px;
+
+
+
+}
+
+
+
+
+
+.hero-quemsomos h1{
+
+
+    font-size:35px;
+
+
+
+}
+
+
+
+
+
+.hero-quemsomos p{
+
+
+    font-size:16px;
+
+
+
+}
+
+
+
+
+
+
+.secao-quemsomos h2,
+.espiritualidade h2{
+
+
+    font-size:28px;
+
+
+
+}
+
+
+
+
+
+
+.historia{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+
+.historia-imagem{
+
+
+    height:280px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-missao{
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+
+
+.espiritualidade{
+
+
+    padding:30px 20px;
+
+
+
+}
+
+
+
+
+
+
+.frase-destaque h2{
+
+
+    font-size:25px;
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+        RESPONSIVO CELULAR
+========================== */
+
+
+@media(max-width:500px){
+
+
+
+.quemsomos{
+
+
+    width:95%;
+
+
+
+}
+
+
+
+
+.hero-quemsomos{
+
+
+    border-radius:20px;
+
+
+
+}
+
+
+
+
+
+.hero-quemsomos h1{
+
+
+    font-size:30px;
+
+
+
+}
+
+
+
+
+
+
+.historia-texto{
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+
+
+
+.historia-texto p{
+
+
+    font-size:15px;
+
+
+
+}
+
+
+
+
+
+
+.historia-imagem{
+
+
+    height:220px;
+
+
+
+    font-size:60px;
+
+
+
+}
+
+
+
+
+
+
+.cards-missao{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+
+.card-missao h3{
+
+
+    font-size:22px;
+
+
+
+}
+
+
+
+
+
+.frase-destaque{
+
+
+    padding:40px 15px;
+
+
+
+}
+
+
+
+
+
+.frase-destaque h2{
+
+
+    font-size:22px;
+
+
+
+}
+
+
+
+
+
+.modal-conteudo{
+
+
+    padding:30px 20px;
+
+
+
+}
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    font-size:24px;
+
+
+
+}
+
+
+
+
+
+}/* ==================================
+   JPC - AJUSTES MOBILE GLOBAL
+   COLAR NO FINAL DOS CSS DAS PÁGINAS
+================================== */
+
+
+/* ================================
+        CELULAR
+================================ */
+
+
+@media(max-width:768px){
+
+
+    body{
+
+        overflow-x:hidden;
+
+        padding-top:75px;
+
+    }
+
+
+
+    /* HEADER */
+
+    header{
+
+        height:75px;
+
+    }
+
+
+
+    /* HERO */
+
+    .hero,
+    .hero-santos,
+    .hero-liturgia,
+    .hero-equipe,
+    .hero-contato,
+    .hero-oracoes{
+
+
+        min-height:80vh;
+
+        padding:100px 20px 40px;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+
+
+    .hero h1,
+    .hero-santos h1,
+    .hero-liturgia h1{
+
+
+        font-size:30px;
+
+        line-height:1.2;
+
+
+    }
+
+
+
+    .hero p{
+
+
+        font-size:15px;
+
+        line-height:1.6;
+
+
+    }
+
+
+
+
+
+
+
+    /* CONTAINER */
+
+
+    .container{
+
+
+        width:90%;
+
+        margin:auto;
+
+
+    }
+
+
+
+
+
+
+
+    /* CARDS */
+
+
+    .grid-santos,
+    .cards,
+    .equipe-grid,
+    .grid-equipe,
+    .conteudos-grid{
+
+
+        grid-template-columns:1fr !important;
+
+
+        gap:20px;
+
+
+    }
+
+
+
+
+
+
+    .card,
+    .santo-card,
+    .card-equipe{
+
+
+        width:100%;
+
+
+    }
+
+
+
+
+
+
+
+    img{
+
+
+        max-width:100%;
+
+
+    }
+
+
+
+
+
+
+
+    /* TITULOS */
+
+
+    h1{
+
+        font-size:30px !important;
+
+    }
+
+
+
+    h2{
+
+        font-size:24px !important;
+
+    }
+
+
+
+    h3{
+
+        font-size:20px;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* BOTÕES */
+
+
+    button,
+    .btn,
+    .botao{
+
+
+        width:100%;
+
+
+        max-width:320px;
+
+
+    }
+
+
+
+
+
+
+
+    /* MODAIS */
+
+
+    .modal-content{
+
+
+        width:90%;
+
+
+        max-height:85vh;
+
+
+        overflow-y:auto;
+
+
+        padding:20px;
+
+
+    }
+
+
+
+    .modal-content img{
+
+
+        width:150px;
+
+
+        height:150px;
+
+
+        object-fit:cover;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* FOOTER */
+
+
+    footer{
+
+
+        text-align:center;
+
+
+        padding:40px 20px;
+
+
+    }
+
+
+    footer img{
+
+
+        width:100px;
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ================================
+        CELULAR PEQUENO
+================================ */
+
+
+@media(max-width:480px){
+
+
+
+    .hero h1,
+    .hero-santos h1{
+
+
+        font-size:26px !important;
+
+
+    }
+
+
+
+    .hero p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+    .container{
+
+
+        width:92%;
+
+
+    }
+
+
+
+    section{
+
+
+        padding-left:15px;
+
+        padding-right:15px;
+
+
+    }
+
+
+
+}/* ==================================
+   JPC - FOOTER GLOBAL
+================================== */
+
+
+footer{
+
+    width:100%;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #050505,
+        #06152f
+    );
+
+    border-top:1px solid rgba(212,175,55,.5);
+
+    padding:60px 20px 25px;
+
+    color:white;
+
+    margin-top:80px;
+
+}
+
+
+
+
+.footer-container{
+
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+
+}
+
+
+
+
+.footer-container img{
+
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.footer-container h3{
+
+
+    font-family:"Cinzel",serif;
+
+    font-size:28px;
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.footer-container p{
+
+
+    max-width:700px;
+
+    margin:15px auto;
+
+    color:#ddd;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+
+}
+
+
+
+
+/* REDES */
+
+
+.redes{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin:30px 0;
+
+
+}
+
+
+
+.redes a{
+
+
+    width:45px;
+
+    height:45px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    border:1px solid #d4af37;
+
+
+    color:#d4af37;
+
+
+    font-size:22px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.redes a:hover{
+
+
+    background:#d4af37;
+
+
+    color:#050505;
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+/* COPYRIGHT */
+
+
+.copyright{
+
+
+    margin-top:30px;
+
+
+    padding-top:20px;
+
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+
+    font-size:13px !important;
+
+
+    color:#aaa !important;
+
+
+}
+
+
+
+
+
+
+
+/* ==================================
+        FOOTER MOBILE
+================================== */
+
+
+@media(max-width:768px){
+
+
+
+    footer{
+
+
+        padding:45px 15px 20px;
+
+
+    }
+
+
+
+    .footer-container img{
+
+
+        width:90px;
+
+        height:90px;
+
+
+    }
+
+
+
+    .footer-container h3{
+
+
+        font-size:23px;
+
+
+    }
+
+
+
+    .footer-container p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+    .redes{
+
+
+        gap:15px;
+
+
+    }
+
+
+
+    .redes a{
+
+
+        width:40px;
+
+        height:40px;
+
+
+        font-size:18px;
+
+
+    }
+
+
+
+}

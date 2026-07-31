@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>JPC | Configurações</title>
+
+
+<link rel="stylesheet" href="config-admin.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="pagina">
+
+
+
+<header class="topo">
+
+
+<div>
+
+<h1>
+⚙️ Configurações
+</h1>
+
+
+<p>
+Gerencie todas as áreas do Jovens Pela Cruz
+</p>
+
+
+</div>
+
+
+
+<a href="painel.html">
+
+Voltar
+
+</a>
+
+
+</header>
+
+
+
+
+
+
+
+
+<div class="layout-config">
+
+
+
+<!-- ==========================
+        MENU
+========================== -->
+
+
+<aside class="menu-config">
+
+
+
+<button onclick="abrirConfig('geral')">
+
+🏠 Geral
+
+</button>
+
+
+
+<button onclick="abrirConfig('equipe')">
+
+👥 Equipe
+
+</button>
+
+
+
+
+<button onclick="abrirConfig('santos')">
+
+🙏 Santos
+
+</button>
+
+
+
+
+<button onclick="abrirConfig('eventos')">
+
+📅 Eventos
+
+</button>
+
+
+
+
+<button onclick="abrirConfig('fotos')">
+
+📸 Fotos
+
+</button>
+
+
+
+
+<button onclick="abrirConfig('liturgia')">
+
+🕊 Liturgia
+
+</button>
+
+
+
+
+<button onclick="abrirConfig('formacao')">
+
+📖 Formação
+
+</button>
+
+
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        CONTEÚDOS
+========================== -->
+
+
+<main class="conteudos-config">
+
+
+
+
+
+
+
+<!-- ==========================
+        GERAL
+========================== -->
+
+
+<section 
+id="geral"
+class="config-area ativa">
+
+
+
+<h2>
+Identidade do Site
+</h2>
+
+
+
+
+<label>
+Nome do projeto
+</label>
+
+
+<input
+id="nomeSite"
+type="text"
+placeholder="Jovens Pela Cruz">
+
+
+
+
+
+<label>
+Descrição
+</label>
+
+
+<textarea
+id="descricaoSite"
+placeholder="Uma juventude em busca de Cristo">
+</textarea>
+
+
+
+
+
+
+
+<label>
+Logo do JPC
+</label>
+
+
+<input
+id="logoSite"
+type="file"
+accept="image/*">
+
+
+
+
+
+<label>
+Banner principal
+</label>
+
+
+<input
+id="bannerSite"
+type="file"
+accept="image/*">
+
+
+
+
+
+
+
+<h2>
+Redes Sociais
+</h2>
+
+
+
+
+<input
+id="instagram"
+type="text"
+placeholder="Instagram">
+
+
+
+
+
+
+<button onclick="salvarConfiguracoes()">
+
+Salvar Configurações
+
+</button>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        EQUIPE
+========================== -->
+
+
+<section 
+id="equipe"
+class="config-area">
+
+
+
+<h2>
+👥 Equipe Pública
+</h2>
+
+
+
+<p>
+Gerencie os membros que aparecem no site.
+</p>
+
+
+
+<button onclick="abrirModalEquipe()">
+
++ Adicionar Card
+
+</button>
+
+
+<div id="listaCardsEquipe">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        SANTOS
+========================== -->
+
+
+<section 
+id="santos"
+class="config-area">
+
+
+<h2>
+🙏 Santos
+</h2>
+
+
+<p>
+Gerencie os santos apresentados no site.
+</p>
+
+
+<button>
+
++ Adicionar Santo
+
+</button>
+
+
+<div id="listaSantos">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        EVENTOS
+========================== -->
+
+
+<section 
+id="eventos"
+class="config-area">
+
+
+<h2>
+📅 Eventos
+</h2>
+
+
+
+<p>
+Gerencie eventos da JPC.
+</p>
+
+
+
+<button>
+
++ Novo Evento
+
+</button>
+
+
+
+<div id="listaEventos">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        FOTOS
+========================== -->
+
+
+<section 
+id="fotos"
+class="config-area">
+
+
+<h2>
+📸 Fotos
+</h2>
+
+
+
+<p>
+Gerencie fotos dos eventos e momentos da JPC.
+</p>
+
+
+<button>
+
++ Adicionar Foto
+
+</button>
+
+
+<div id="listaFotos">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        LITURGIA
+========================== -->
+
+
+<section 
+id="liturgia"
+class="config-area">
+
+
+<h2>
+🕊 Liturgia
+</h2>
+
+
+<p>
+Configurações da página de liturgia.
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        FORMAÇÃO
+========================== -->
+
+
+<section 
+id="formacao"
+class="config-area">
+
+
+<h2>
+📖 Formação
+</h2>
+
+
+
+<p>
+Gerencie conteúdos de formação.
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- ==================================
+     MODAL CARD EQUIPE
+================================== -->
+
+
+<div id="modalEquipe" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<h2 id="tituloModalEquipe">
+
+Adicionar Membro
+
+</h2>
+
+
+
+
+
+<label>
+Foto
+</label>
+
+
+<input 
+id="fotoEquipe"
+type="file"
+accept="image/*">
+
+
+
+
+
+
+<label>
+Nome
+</label>
+
+
+<input
+id="nomeEquipe"
+type="text"
+placeholder="Nome do membro">
+
+
+
+
+
+
+<label>
+Cargo
+</label>
+
+
+<input
+id="cargoEquipe"
+type="text"
+placeholder="Fundador, Coordenador...">
+
+
+
+
+
+
+<label>
+Descrição curta
+</label>
+
+
+<textarea
+id="descricaoCurtaEquipe"
+placeholder="Aparece no card">
+</textarea>
+
+
+
+
+
+
+
+<label>
+Descrição completa
+</label>
+
+
+<textarea
+id="descricaoEquipe"
+placeholder="Aparece no modal">
+</textarea>
+
+
+
+
+
+
+
+<label>
+Instagram
+</label>
+
+
+<input
+id="instagramEquipe"
+type="text"
+placeholder="@usuario">
+
+
+
+
+
+
+<label>
+TikTok
+</label>
+
+
+<input
+id="tiktokEquipe"
+type="text"
+placeholder="@usuario">
+
+
+
+
+
+
+<label>
+Email
+</label>
+
+
+<input
+id="emailEquipe"
+type="email"
+placeholder="email">
+
+
+
+
+
+
+<label>
+Ordem do card
+</label>
+
+
+<input
+id="ordemEquipe"
+type="number"
+value="1">
+
+
+
+
+
+
+
+<label class="check">
+
+
+<input
+id="ativoEquipe"
+type="checkbox"
+checked>
+
+
+Card ativo
+
+
+</label>
+
+
+
+
+
+
+
+
+<div class="botoes-modal">
+
+
+<button onclick="salvarCardEquipe()">
+
+Salvar
+
+</button>
+
+
+
+
+<button onclick="fecharModalEquipe()">
+
+Cancelar
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<script src="tema.js"></script>
+
+<script type="module" src="config-admin.js"></script>
+
+</body>
+
+
+</html>

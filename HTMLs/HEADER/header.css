@@ -1,0 +1,1786 @@
+/* ==================================
+   JPC - HEADER GLOBAL CSS
+   PARTE 1/3
+================================== */
+
+
+/* ==================================
+        VARIÁVEIS
+================================== */
+
+:root{
+
+    --preto:#050505;
+    --azul:#06152f;
+    --azul2:#0f2d5c;
+
+    --dourado:#d4af37;
+    --dourado-claro:#f5d76e;
+
+    --branco:#ffffff;
+
+}
+
+
+
+/* ==================================
+        HEADER
+================================== */
+
+
+header{
+
+
+    position:fixed;
+
+
+    top:0;
+    left:0;
+
+
+    width:100%;
+
+    height:85px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:space-between;
+
+
+    padding:0 5%;
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        var(--preto),
+
+        var(--azul),
+
+        var(--azul2)
+
+    );
+
+
+
+    border-bottom:
+
+    1px solid rgba(212,175,55,.45);
+
+
+
+    backdrop-filter:blur(12px);
+
+
+
+    z-index:9999;
+
+
+
+}
+
+
+
+
+/* ==================================
+        LOGO
+================================== */
+
+
+.logo{
+
+
+    width:75px;
+
+    height:75px;
+
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+
+    overflow:hidden;
+
+
+
+}
+
+
+
+.logo img{
+
+
+    width:75px;
+
+
+    height:75px;
+
+
+
+    max-width:75px;
+
+
+    max-height:75px;
+
+
+
+    object-fit:contain;
+
+
+
+    cursor:pointer;
+
+
+
+    transition:.35s;
+
+
+
+}
+
+
+
+.logo img:hover{
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+
+/* ==================================
+        MENU DESKTOP
+================================== */
+
+
+#menu{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+
+    gap:28px;
+
+
+
+}
+
+
+
+
+#menu a{
+
+
+    color:white;
+
+
+
+    text-decoration:none;
+
+
+
+    font-size:15px;
+
+
+
+    font-weight:500;
+
+
+
+    position:relative;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+#menu a::after{
+
+
+    content:"";
+
+
+
+    position:absolute;
+
+
+
+    bottom:-8px;
+
+
+    left:0;
+
+
+
+    width:0;
+
+
+
+    height:2px;
+
+
+
+    background:var(--dourado);
+
+
+
+    transition:.35s;
+
+
+
+}
+
+
+
+
+
+#menu a:hover{
+
+
+    color:var(--dourado);
+
+
+}
+
+
+
+
+#menu a:hover::after{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+/* Página atual */
+
+
+#menu a.pagina-atual{
+
+
+    color:var(--dourado);
+
+
+}
+
+
+
+#menu a.pagina-atual::after{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+/* ==================================
+        LADO DIREITO
+================================== */
+
+
+.lado-direito{
+
+
+    display:flex;
+
+
+
+    align-items:center;
+
+
+
+    gap:15px;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        PESQUISA DESKTOP
+================================== */
+
+
+.pesquisa{
+
+
+    display:flex;
+
+
+
+    align-items:center;
+
+
+
+    overflow:hidden;
+
+
+
+    background:#050505;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    border-radius:30px;
+
+
+
+}
+
+
+
+
+
+.pesquisa input{
+
+
+    width:180px;
+
+
+
+    padding:11px 15px;
+
+
+
+    background:transparent;
+
+
+
+    border:none;
+
+
+
+    outline:none;
+
+
+
+    color:white;
+
+
+
+    font-size:14px;
+
+
+
+}
+
+
+
+
+
+.pesquisa input::placeholder{
+
+
+    color:#bdbdbd;
+
+
+
+}
+
+
+
+
+
+.pesquisa button{
+
+
+    width:46px;
+
+
+
+    height:46px;
+
+
+
+    border:none;
+
+
+
+    cursor:pointer;
+
+
+
+    background:var(--dourado);
+
+
+
+    color:#000;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+.pesquisa button:hover{
+
+
+    background:var(--dourado-claro);
+
+
+
+}
+
+
+
+
+
+/* ==================================
+        BOTÃO MENU MOBILE
+================================== */
+
+
+#btnMenu{
+
+
+    display:none;
+
+
+
+    background:none;
+
+
+
+    border:none;
+
+
+
+    color:var(--dourado);
+
+
+
+    font-size:30px;
+
+
+
+    cursor:pointer;
+
+
+
+}/* ==================================
+   JPC - HEADER GLOBAL CSS
+   PARTE 2/3
+================================== */
+
+
+
+/* ==================================
+        RESULTADO DA PESQUISA
+================================== */
+
+
+.resultado-pesquisa{
+
+
+    position:fixed;
+
+
+
+    top:95px;
+
+
+
+    left:50%;
+
+
+
+    transform:translateX(-50%);
+
+
+
+
+    width:min(92%,700px);
+
+
+
+    max-height:450px;
+
+
+
+    overflow-y:auto;
+
+
+
+    padding:20px;
+
+
+
+    display:none;
+
+
+
+    flex-direction:column;
+
+
+
+    gap:15px;
+
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #050505,
+
+        #06152f
+
+    );
+
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    border-radius:22px;
+
+
+
+    z-index:99999;
+
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(0,0,0,.45);
+
+
+
+}
+
+
+
+
+
+/* Scroll */
+
+
+.resultado-pesquisa::-webkit-scrollbar{
+
+
+    width:8px;
+
+
+}
+
+
+
+.resultado-pesquisa::-webkit-scrollbar-thumb{
+
+
+    background:var(--dourado);
+
+
+
+    border-radius:20px;
+
+
+
+}
+
+
+
+
+
+
+/* ==================================
+        RESULTADOS
+================================== */
+
+
+.resultado-item{
+
+
+    display:block;
+
+
+
+    text-decoration:none;
+
+
+
+    color:white;
+
+
+
+    padding:18px;
+
+
+
+    border-radius:18px;
+
+
+
+    background:rgba(255,255,255,.05);
+
+
+
+    border:1px solid transparent;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+.resultado-item:hover{
+
+
+    transform:translateY(-3px);
+
+
+
+    border-color:var(--dourado);
+
+
+
+    background:rgba(255,255,255,.08);
+
+
+
+}
+
+
+
+
+
+.resultado-item h3{
+
+
+    color:var(--dourado);
+
+
+
+    font-family:"Cinzel",serif;
+
+
+
+    margin-bottom:8px;
+
+
+
+}
+
+
+
+
+.resultado-item span{
+
+
+    display:block;
+
+
+
+    color:#ddd;
+
+
+
+    font-size:13px;
+
+
+
+    margin-bottom:10px;
+
+
+
+}
+
+
+
+
+.resultado-item p{
+
+
+    color:#ccc;
+
+
+
+    font-size:14px;
+
+
+
+    line-height:1.5;
+
+
+
+}
+
+
+
+
+
+.resultado-item a{
+
+
+    display:inline-block;
+
+
+
+    margin-top:15px;
+
+
+
+    padding:9px 20px;
+
+
+
+    border-radius:30px;
+
+
+
+    background:var(--dourado);
+
+
+
+    color:#000;
+
+
+
+    text-decoration:none;
+
+
+
+    font-weight:600;
+
+
+
+}
+
+
+
+
+
+
+.resultado-item a:hover{
+
+
+    background:var(--dourado-claro);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================
+        ANIMAÇÃO PESQUISA
+================================== */
+
+
+@keyframes aparecerPesquisa{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:
+
+
+        translateX(-50%)
+
+        translateY(-15px);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:
+
+
+        translateX(-50%)
+
+        translateY(0);
+
+
+
+    }
+
+
+
+}
+
+
+
+
+.resultado-pesquisa{
+
+
+    animation:
+
+    aparecerPesquisa .35s;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        TEMA CLARO
+================================== */
+
+
+body.tema-claro header{
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #ffffff,
+
+        #edf2fa
+
+    );
+
+
+
+}
+
+
+
+
+body.tema-claro #menu a{
+
+
+    color:#111;
+
+
+
+}
+
+
+
+
+
+body.tema-claro #menu a:hover{
+
+
+    color:#b8860b;
+
+
+
+}
+
+
+
+
+body.tema-claro #menuMobile{
+
+
+    background:#ffffff;
+
+
+
+}
+
+
+
+
+body.tema-claro #menuMobile a{
+
+
+    color:#111;
+
+
+
+}
+
+
+
+
+body.tema-claro .pesquisa{
+
+
+    background:white;
+
+
+
+}
+
+
+
+
+body.tema-claro .pesquisa input{
+
+
+    color:#111;
+
+
+
+}
+
+
+
+
+
+body.tema-claro .resultado-pesquisa{
+
+
+    background:white;
+
+
+
+}
+
+
+
+
+body.tema-claro .resultado-item{
+
+
+    color:#111;
+
+
+
+    background:#f5f5f5;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        TRANSIÇÕES GERAIS
+================================== */
+
+
+header,
+
+#menuMobile,
+
+.resultado-pesquisa,
+
+.pesquisa,
+
+#btnMenu,
+
+.logo img{
+
+
+    transition:.35s;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==================================
+        ACESSIBILIDADE
+================================== */
+
+
+a:focus,
+
+button:focus,
+
+input:focus{
+
+
+    outline:2px solid var(--dourado);
+
+
+
+    outline-offset:3px;
+
+
+
+}/* ==================================
+   JPC - HEADER GLOBAL CSS
+   PARTE 3/3
+================================== */
+
+
+
+/* ==================================
+        MENU MOBILE
+================================== */
+
+
+#menuMobile{
+
+
+    position:fixed;
+
+
+
+    top:85px;
+
+
+
+    right:-100%;
+
+
+
+    width:290px;
+
+
+
+    height:calc(100vh - 85px);
+
+
+
+    padding:35px 25px;
+
+
+
+    display:flex;
+
+
+
+    flex-direction:column;
+
+
+
+    gap:20px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #050505,
+
+        #06152f
+
+    );
+
+
+
+    border-left:2px solid var(--dourado);
+
+
+
+    z-index:9998;
+
+
+
+    overflow-y:auto;
+
+
+
+    transition:.35s;
+
+
+
+}
+
+
+
+
+#menuMobile.ativo{
+
+
+    right:0;
+
+
+
+}
+
+
+
+
+
+#menuMobile a{
+
+
+    color:white;
+
+
+
+    text-decoration:none;
+
+
+
+    font-size:17px;
+
+
+
+    padding:10px 0;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+#menuMobile a:hover{
+
+
+    color:var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        TABLETS
+================================== */
+
+
+@media(max-width:1000px){
+
+
+
+    /* esconder menu desktop */
+
+
+    #menu{
+
+
+        display:none;
+
+
+
+    }
+
+
+
+    /* mostrar botão */
+
+
+    #btnMenu{
+
+
+        display:block;
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================
+        MOBILE
+================================== */
+
+
+@media(max-width:768px){
+
+
+
+    header{
+
+
+        height:75px;
+
+
+
+        padding:0 20px;
+
+
+
+    }
+
+
+
+    .logo{
+
+
+        width:60px;
+
+
+
+        height:60px;
+
+
+
+    }
+
+
+
+
+    .logo img{
+
+
+        width:60px;
+
+
+
+        height:60px;
+
+
+
+    }
+
+
+
+
+
+
+    #menuMobile{
+
+
+        top:75px;
+
+
+
+        height:
+
+        calc(100vh - 75px);
+
+
+
+        width:270px;
+
+
+
+    }
+
+
+
+
+
+    #menuMobile a{
+
+
+        font-size:18px;
+
+
+
+    }
+
+
+
+
+    #btnMenu{
+
+
+        font-size:28px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================
+        CELULARES PEQUENOS
+================================== */
+
+
+@media(max-width:480px){
+
+
+
+    header{
+
+
+        padding:0 15px;
+
+
+
+    }
+
+
+
+
+    .logo{
+
+
+        width:55px;
+
+
+
+        height:55px;
+
+
+
+    }
+
+
+
+
+
+    .logo img{
+
+
+        width:55px;
+
+
+
+        height:55px;
+
+
+
+    }
+
+
+
+
+
+
+    #menuMobile{
+
+
+        width:100%;
+
+
+
+        right:-100%;
+
+
+
+        border-left:none;
+
+
+
+    }
+
+
+
+
+
+    #menuMobile a{
+
+
+        width:100%;
+
+
+
+        text-align:center;
+
+
+
+        padding:12px 0;
+
+
+
+        border-bottom:
+
+        1px solid rgba(255,255,255,.08);
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        PESQUISA MOBILE
+================================== */
+
+
+@media(max-width:1000px){
+
+
+
+    .lado-direito{
+
+
+        gap:10px;
+
+
+
+    }
+
+
+
+
+
+
+    .pesquisa{
+
+
+        display:flex !important;
+
+
+
+        position:fixed;
+
+
+
+        top:85px;
+
+
+
+        left:10px;
+
+
+
+        right:10px;
+
+
+
+        width:auto;
+
+
+
+        height:45px;
+
+
+
+        z-index:9997;
+
+
+
+        background:#050505;
+
+
+
+        border:1px solid var(--dourado);
+
+
+
+    }
+
+
+
+
+
+    .pesquisa input{
+
+
+        flex:1;
+
+
+
+        width:auto;
+
+
+
+        height:45px;
+
+
+
+        font-size:14px;
+
+
+
+    }
+
+
+
+
+
+    .pesquisa button{
+
+
+        width:45px;
+
+
+
+        height:45px;
+
+
+
+    }
+
+
+
+
+
+
+    .resultado-pesquisa{
+
+
+        position:fixed;
+
+
+
+        top:140px;
+
+
+
+        left:10px;
+
+
+
+        right:10px;
+
+
+
+        width:auto;
+
+
+
+        transform:none;
+
+
+
+        max-height:65vh;
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        AJUSTE PESQUISA CELULAR
+================================== */
+
+
+@media(max-width:480px){
+
+
+
+    .pesquisa{
+
+
+        top:75px;
+
+
+
+        left:8px;
+
+
+
+        right:8px;
+
+
+
+    }
+
+
+
+
+
+    .resultado-pesquisa{
+
+
+        top:130px;
+
+
+
+        left:8px;
+
+
+
+        right:8px;
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        EVITAR SCROLL LATERAL
+================================== */
+
+
+html,
+
+body{
+
+
+    max-width:100%;
+
+
+
+    overflow-x:hidden;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==================================
+        CORREÇÕES FINAIS
+================================== */
+
+
+button{
+
+
+    font-family:"Poppins",sans-serif;
+
+
+
+}
+
+
+
+input{
+
+
+    font-family:"Poppins",sans-serif;
+
+
+
+}
+
+
+
+
+
+
+/* ==================================
+        FIM HEADER JPC
+================================== */

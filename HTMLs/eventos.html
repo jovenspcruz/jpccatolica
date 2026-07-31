@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Eventos | Jovens Pela Cruz</title>
+
+<link rel="icon" href="../imagens/jpc.favicon.png">
+
+<link rel="stylesheet" href="../CSS/global.css">
+<link rel="stylesheet" href="../HTMLs/HEADER/header.css">
+ <link rel="stylesheet" href="../CSS/eventos.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+<!-- ==========================
+        HEADER
+========================== -->
+
+<!-- ==================================
+     JPC HEADER
+================================== -->
+
+
+<header id="header">
+
+<div class="logo">
+
+    <img 
+    id="logoJPC"
+    src="../imagens/jpc.favicon.logo.png"
+    alt="Jovens Pela Cruz">
+
+</div>
+
+
+    <nav id="menu">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+
+        <button id="btnMenu">
+
+            ☰
+
+        </button>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- MENU MOBILE -->
+
+
+    <nav id="menuMobile">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+</header>
+
+
+
+
+
+
+<!-- RESULTADO DA PESQUISA -->
+
+
+<div 
+id="resultadoPesquisa"
+class="resultado-pesquisa">
+
+
+    <div id="listaResultados">
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<main class="eventos">
+
+
+
+
+
+
+<!-- ==========================
+        HERO
+========================== -->
+
+
+<section class="hero-eventos">
+
+
+<h1>
+
+Eventos
+
+</h1>
+
+
+
+<p>
+
+Momentos de encontro, oração e comunhão
+para viver a fé em comunidade.
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+        INTRODUÇÃO
+========================== -->
+
+
+<section class="secao-eventos">
+
+
+<h2>
+
+Nossa Caminhada
+
+</h2>
+
+
+
+<div class="texto-eventos">
+
+
+<p>
+
+O Jovens Pela Cruz promove encontros,
+momentos de oração, formações e ações
+para aproximar jovens de Cristo.
+
+</p>
+
+
+
+<p>
+
+Confira os próximos eventos e participe
+dessa missão conosco.
+
+</p>
+
+
+
+</div>
+
+
+
+</section><!-- ==========================
+        PRÓXIMOS EVENTOS
+========================== -->
+
+
+<section class="eventos">
+
+    <h1>Eventos JPC</h1>
+
+
+    <div id="listaEventos">
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+        TIPOS DE EVENTOS
+========================== -->
+
+
+<section class="secao-eventos">
+
+
+<h2>
+
+Nossos Momentos
+
+</h2>
+
+
+
+
+
+<div class="tipos-eventos">
+
+
+
+
+
+
+
+<div class="tipo-evento">
+
+
+<i class="fa-solid fa-church"></i>
+
+
+<h3>
+
+Encontros
+
+</h3>
+
+
+<p>
+
+Momentos para reunir jovens
+e fortalecer a fé.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="tipo-evento">
+
+
+<i class="fa-solid fa-book-bible"></i>
+
+
+<h3>
+
+Formações
+
+</h3>
+
+
+<p>
+
+Estudos e aprendizados
+sobre a vida cristã.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="tipo-evento">
+
+
+<i class="fa-solid fa-hands-praying"></i>
+
+
+<h3>
+
+Orações
+
+</h3>
+
+
+<p>
+
+Momentos de oração,
+adoração e comunhão.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+</section><!-- ==========================
+        MODAIS DOS EVENTOS
+========================== -->
+
+
+<div id="evento1" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('evento1')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Encontro Jovem
+
+</h2>
+
+
+
+<p>
+
+Um encontro preparado para jovens viverem
+um momento de oração, amizade e aproximação
+com Cristo.
+
+</p>
+
+
+
+<h3>
+
+Informações:
+
+</h3>
+
+
+
+<p>
+
+📅 Data: 25 de Agosto
+
+<br>
+
+📍 Local: A definir
+
+<br>
+
+⏰ Horário: A definir
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="evento2" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('evento2')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Adoração Jovem
+
+</h2>
+
+
+
+<p>
+
+Um momento especial diante de Jesus,
+com oração, silêncio e entrega.
+
+</p>
+
+
+
+<h3>
+
+Informações:
+
+</h3>
+
+
+
+<p>
+
+📅 Data: 07 de Setembro
+
+<br>
+
+📍 Local: A definir
+
+<br>
+
+⏰ Horário: A definir
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="evento3" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('evento3')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Encontro de Formação
+
+</h2>
+
+
+
+<p>
+
+Uma oportunidade para aprender mais sobre
+a fé e crescer na caminhada cristã.
+
+</p>
+
+
+
+<h3>
+
+Informações:
+
+</h3>
+
+
+
+<p>
+
+📅 Data: 15 de Setembro
+
+<br>
+
+📍 Local: A definir
+
+<br>
+
+⏰ Horário: A definir
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="evento4" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('evento4')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Ação Evangelizadora
+
+</h2>
+
+
+
+<p>
+
+Uma missão para anunciar Cristo
+e levar esperança às pessoas.
+
+</p>
+
+
+
+<h3>
+
+Informações:
+
+</h3>
+
+
+
+<p>
+
+📅 Data: 01 de Outubro
+
+<br>
+
+📍 Local: A definir
+
+<br>
+
+⏰ Horário: A definir
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        FRASE FINAL
+========================== -->
+
+
+<section class="frase-eventos">
+
+
+<h2>
+
+"Ide pelo mundo inteiro e anunciai o Evangelho."
+
+</h2>
+
+
+
+<p>
+
+Marcos 16,15
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+</main>
+<footer>
+
+    <div class="footer-container">
+
+        <img
+            src="../imagens/jpc.favicon.logo.png"
+            alt="Logo JPC">
+
+        <h3>
+
+            Jovens Pela Cruz
+
+        </h3>
+
+
+        <div class="redes">
+
+            <a href="https://www.instagram.com/jovenspcruzz/" target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </a>
+
+            <a href="mailto:jovenspcruzz@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Jovens Pela Cruz.
+            Todos os direitos reservados.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+<script src="../JS/eventos.js"></script>
+
+
+<!-- AVISO EVENTOS -->
+
+<div id="avisoEventos">
+
+
+    <div class="conteudo-aviso-eventos">
+
+
+        <h2>
+            Em breve, jovem! ✝
+        </h2>
+
+
+        <p>
+            Estamos preparando esta página com muito carinho
+            para reunir encontros, momentos de oração e eventos
+            onde possamos viver juntos a alegria de Cristo.
+        </p>
+
+
+        <p>
+            Aguarde, pois grandes momentos estão por vir!
+        </p>
+
+
+        <button onclick="voltarInicioEventos()">
+    Voltar ao início
+</button>
+
+    </div>
+
+
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Perfil Admin | JPC</title>
+
+<link rel="stylesheet" href="perfil-admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header class="topo">
+
+
+<div class="logo">
+
+
+<h1>
+✝ JPC ADMIN
+</h1>
+
+
+<span>
+Perfil Administrador
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="acoes-topo">
+
+
+<button 
+class="config-btn"
+onclick="abrirConfiguracoes()">
+
+⚙️
+
+</button>
+
+
+<a href="#" onclick="voltarPainel()">
+← Voltar
+</a>
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<main class="container">
+
+
+<section class="perfil-box">
+
+
+
+
+
+
+
+<div class="foto">
+
+<img src="../imagens/behh.jpc.jpg" alt="Foto do administrador">
+
+</div>
+
+
+
+
+<h2 id="nomeAdmin">
+
+Administrador
+
+</h2>
+
+
+
+<span class="cargo">
+
+👑 Administrador JPC
+
+</span>
+
+
+
+
+
+
+
+
+
+<div class="informacoes">
+
+
+
+<div class="item">
+
+<strong>
+👤 Usuário
+</strong>
+
+<p id="usuarioAdmin">
+--
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="item">
+
+<strong>
+📧 Email
+</strong>
+
+<p id="emailAdmin">
+--
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="item">
+
+<strong>
+🔐 Permissão
+</strong>
+
+<p>
+Administrador
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="item">
+
+<strong>
+📅 Conta criada
+</strong>
+
+<p id="dataAdmin">
+--
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="editar">
+
+
+<h3>
+
+Editar conta
+
+</h3>
+
+
+
+
+<label>
+Nome
+</label>
+
+
+<input 
+id="editarNomeAdmin"
+type="text">
+
+
+
+
+
+
+
+<label>
+Nome de usuário
+</label>
+
+
+<input 
+
+id="editarUsuarioAdmin"
+
+type="text"
+
+placeholder="Digite seu usuário">
+
+
+
+
+
+
+
+<label>
+Email
+</label>
+
+
+<input 
+
+id="editarEmailAdmin"
+
+type="email">
+
+
+
+
+
+
+
+<label>
+Nova senha
+</label>
+
+
+<input 
+
+id="editarSenhaAdmin"
+
+type="password">
+
+
+
+
+<div class="publico">
+
+<h3>
+Descrição pública
+</h3>
+
+
+<textarea 
+id="descricaoPublicaAdmin"
+placeholder="Escreva como deseja aparecer no site público">
+</textarea>
+
+
+<button onclick="salvarDescricaoPublicaAdmin()">
+
+🌐 Salvar descrição pública
+
+</button>
+
+
+</div>
+
+
+<button onclick="salvarPerfilAdmin()">
+
+💾 Salvar alterações
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<button class="sair" onclick="sairAdmin()">
+
+🚪 Sair
+
+</button>
+
+
+
+
+</section>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+     MODAL CONFIGURAÇÕES
+========================== -->
+
+
+<div id="modalConfig" class="modal-config">
+
+
+<div class="config-box">
+
+
+<h2>
+⚙️ Configurações
+</h2>
+
+
+
+
+
+<h3>
+🌙 Aparência
+</h3>
+
+
+
+<div class="tema-botoes">
+
+
+<button onclick="alterarTema('escuro')">
+
+🌙 Escuro
+
+</button>
+
+
+<button onclick="alterarTema('claro')">
+
+☀️ Claro
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<h3>
+🔔 Notificações
+</h3>
+
+
+
+<label>
+
+<input 
+type="checkbox"
+id="notificacoesAdmin">
+
+Receber avisos
+
+</label>
+
+
+
+
+
+
+
+<h3>
+🔊 Sons
+</h3>
+
+
+<label>
+
+<input 
+type="checkbox"
+id="sonsAdmin">
+
+Ativar sons
+
+</label>
+
+
+
+
+
+
+
+
+
+<button 
+class="fechar-config"
+onclick="fecharConfiguracoes()">
+
+Fechar
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="perfil-admin.js"></script>
+
+
+</body>
+
+</html>

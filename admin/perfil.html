@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>JPC | Meu Perfil</title>
+
+
+<link rel="stylesheet" href="perfil.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+
+<header class="topo">
+
+
+
+<div class="logo">
+
+
+<h1>
+✝ JPC
+</h1>
+
+
+<span>
+Meu Perfil
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="acoes-topo">
+
+
+<button 
+class="config-btn"
+onclick="abrirConfiguracoes()">
+
+⚙️
+
+</button>
+
+
+
+
+
+<a href="equipe-painel.html">
+
+← Voltar
+
+</a>
+
+
+
+</div>
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<main class="container">
+
+
+
+
+
+<section class="perfil-box">
+
+
+
+
+
+
+
+<div class="foto">
+
+<img src="../imagens/jpc-avatar.png" alt="Foto do membro">
+
+</div>
+
+<h2 id="nomeUsuario">
+
+Usuário
+
+</h2>
+
+
+
+
+
+<span class="cargo" id="cargoUsuario">
+
+Cargo
+
+</span>
+
+
+
+
+
+
+
+
+
+<div class="informacoes">
+
+
+
+
+
+<div class="item">
+
+
+<strong>
+
+👤 Usuário
+
+</strong>
+
+
+<p id="usuario">
+
+--
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="item">
+
+
+<strong>
+
+📧 Email
+
+</strong>
+
+
+<p id="email">
+
+--
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="item">
+
+
+<strong>
+
+✝ Ministério
+
+</strong>
+
+
+<p id="ministerio">
+
+--
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="item">
+
+
+<strong>
+
+📅 Entrada
+
+</strong>
+
+
+<p id="dataEntradaPerfil">
+
+--
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="editar">
+
+
+
+<h3>
+
+Editar Perfil
+
+</h3>
+
+
+
+
+
+
+
+
+<label>
+
+Nome
+
+</label>
+
+
+<input
+
+id="editarNome"
+
+type="text"
+
+>
+
+
+
+
+
+
+
+<label>
+
+Usuário
+
+</label>
+
+
+<input
+
+id="editarUsuario"
+
+type="text"
+
+>
+
+
+
+
+
+
+
+
+<label>
+
+Email
+
+</label>
+
+
+<input
+
+id="editarEmail"
+
+type="email"
+
+>
+
+
+
+
+
+
+
+
+<label>
+
+Nova senha
+
+</label>
+
+
+<input
+
+id="editarSenha"
+
+type="password"
+
+placeholder="Deixe vazio para manter"
+
+>
+
+
+
+<div class="publico">
+
+<h3>
+Descrição pública
+</h3>
+
+
+<textarea 
+id="descricaoPublica"
+placeholder="Escreva como deseja aparecer no site público">
+</textarea>
+
+
+<button onclick="salvarDescricaoPublica()">
+
+🌐 Salvar descrição pública
+
+</button>
+
+
+</div>
+
+
+
+
+
+<button onclick="salvarPerfil()">
+
+💾 Salvar alterações
+
+</button>
+
+
+
+
+
+
+
+<button class="sair" onclick="sairConta()">
+
+🚪 Sair
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+     MODAL CONFIGURAÇÕES
+========================== -->
+
+
+
+<div id="modalConfig" class="modal-config">
+
+
+
+<div class="config-box">
+
+
+
+<h2>
+
+⚙️ Configurações
+
+</h2>
+
+
+
+
+
+
+<h3>
+
+🌙 Aparência
+
+</h3>
+
+
+
+
+
+
+<div class="tema-botoes">
+
+
+<button onclick="alterarTema('escuro')">
+
+🌙 Escuro
+
+</button>
+
+
+
+
+<button onclick="alterarTema('claro')">
+
+☀️ Claro
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<h3>
+
+🔔 Notificações
+
+</h3>
+
+
+
+<label>
+
+<input
+
+type="checkbox"
+
+id="notificacoes">
+
+Receber avisos
+
+</label>
+
+
+
+
+
+
+
+
+<h3>
+
+🔊 Sons
+
+</h3>
+
+
+
+<label>
+
+<input
+
+type="checkbox"
+
+id="sons">
+
+Ativar sons
+
+</label>
+
+
+
+
+
+
+
+
+<button
+
+class="fechar-config"
+
+onclick="fecharConfiguracoes()">
+
+Fechar
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="perfil.js"></script>
+
+
+</body>
+
+</html>

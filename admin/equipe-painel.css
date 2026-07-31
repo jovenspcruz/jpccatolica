@@ -1,0 +1,1450 @@
+/* ==================================
+   JPC - PAINEL DA EQUIPE CSS
+   Jovens Pela Cruz
+================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+
+
+
+
+
+
+body{
+
+
+    min-height:100vh;
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #050505,
+
+    #0b1f3a,
+
+    #020202
+
+    );
+
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   PAINEL
+=============================== */
+
+
+.painel{
+
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:25px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   TOPO
+=============================== */
+
+
+.topo{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 30px;
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+    border:
+
+    1px solid rgba(201,162,39,.3);
+
+
+    border-radius:20px;
+
+
+    backdrop-filter:blur(10px);
+
+
+}
+
+
+
+
+
+
+
+
+
+.logo h1{
+
+
+    font-family:"Cinzel",serif;
+
+
+    font-size:38px;
+
+
+    color:#c9a227;
+
+
+}
+
+
+
+.logo p{
+
+
+    color:#ddd;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   USUARIO
+=============================== */
+
+
+.usuario{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+
+}
+
+
+
+.usuario img{
+
+
+    width:65px;
+
+    height:65px;
+
+
+    border-radius:50%;
+
+
+    object-fit:cover;
+
+
+    border:
+
+    3px solid #c9a227;
+
+
+}
+
+
+
+
+
+
+.dados{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+
+}
+
+
+
+#nomeUsuario{
+
+
+    font-weight:600;
+
+    color:white;
+
+
+}
+
+
+
+#cargoUsuario{
+
+
+    font-size:13px;
+
+    color:#c9a227;
+
+
+}
+
+
+
+
+
+
+
+
+.usuario button{
+
+
+    border:none;
+
+
+    padding:10px 18px;
+
+
+    border-radius:12px;
+
+
+    background:#c9a227;
+
+
+    color:#050505;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.usuario button:hover{
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 8px 20px
+
+    rgba(201,162,39,.4);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   BOAS VINDAS
+=============================== */
+
+
+.boas-vindas{
+
+
+    margin:35px 0;
+
+
+}
+
+
+
+.boas-vindas h2{
+
+
+    font-family:"Cinzel",serif;
+
+
+    font-size:32px;
+
+
+    color:#c9a227;
+
+
+}
+
+
+
+.boas-vindas p{
+
+
+    color:#ccc;
+
+    margin-top:8px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   CARDS
+=============================== */
+
+
+.cards{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(240px,1fr));
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.card{
+
+
+    text-decoration:none;
+
+
+    color:white;
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+    border:
+
+    1px solid rgba(201,162,39,.25);
+
+
+    border-radius:22px;
+
+
+    padding:25px;
+
+
+    transition:.35s;
+
+
+    backdrop-filter:blur(10px);
+
+
+}
+
+
+
+
+
+.card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    border-color:#c9a227;
+
+
+    box-shadow:
+
+    0 15px 35px
+
+    rgba(0,0,0,.5);
+
+
+}
+
+
+
+
+
+
+
+
+
+.icone{
+
+
+    font-size:40px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.card h3{
+
+
+    color:#c9a227;
+
+
+    font-size:20px;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.card p{
+
+
+    color:#ddd;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   RESPONSIVO
+=============================== */
+
+
+@media(max-width:700px){
+
+
+
+.painel{
+
+    padding:15px;
+
+}
+
+
+
+
+
+.topo{
+
+
+    flex-direction:column;
+
+
+    gap:20px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.usuario{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+
+
+.usuario button{
+
+
+    width:150px;
+
+
+}
+
+
+
+
+
+.logo h1{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+
+.boas-vindas h2{
+
+
+    font-size:25px;
+
+
+}
+
+
+
+
+
+.cards{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+}/* ==========================
+   TEMA CLARO GLOBAL
+========================== */
+
+
+body.tema-claro{
+
+
+background:#f2f2f2;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro .topo,
+body.tema-claro .card,
+body.tema-claro .perfil-box{
+
+
+background:white;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro p{
+
+
+color:#333;
+
+
+}
+
+
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3{
+
+
+color:#8c6d00;
+
+
+}/* ==================================
+   AVISOS DA EQUIPE - NOTIFICAÇÃO
+================================== */
+
+
+/* Modal no computador */
+
+#notificacaoAviso{
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 320px;
+
+    background: #0b0b0b;
+
+    color: white;
+
+    border-left: 5px solid #c9a227;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+    z-index: 9999;
+
+    display: none;
+
+    animation: aparecerAviso .4s ease;
+
+}
+
+
+
+#notificacaoAviso h3{
+
+    margin-bottom:10px;
+
+    color:#c9a227;
+
+    font-family:'Cinzel',serif;
+
+}
+
+
+
+#notificacaoAviso p{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+
+
+#notificacaoAviso button{
+
+
+    margin-top:15px;
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#c9a227;
+
+    color:#000;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+/* Sininho no celular */
+
+
+#sininhoMobile{
+
+    display:none;
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    background:#0b0b0b;
+
+    color:white;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    z-index:9999;
+
+    border:2px solid #c9a227;
+
+}
+
+
+
+#contadorAvisos{
+
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-8px;
+
+    background:#c9a227;
+
+    color:#000;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    padding:3px 7px;
+
+    border-radius:50%;
+
+}
+
+
+
+/* Animação */
+
+@keyframes aparecerAviso{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+/* Celular */
+
+@media(max-width:600px){
+
+
+    #notificacaoAviso{
+
+        display:none!important;
+
+    }
+
+
+    #sininhoMobile{
+
+        display:flex;
+
+    }
+
+
+}
+
+#botaoAvisos{
+
+    display:none;
+
+}/* ==================================
+   AVISO MOBILE
+================================== */
+
+
+@media(max-width:600px){
+
+
+    #modalAviso{
+
+        right:15px;
+
+        left:15px;
+
+        bottom:20px;
+
+        width:auto;
+
+
+    }
+
+
+
+    .aviso-conteudo{
+
+
+        width:100%;
+
+
+        border-radius:20px;
+
+
+        padding:20px;
+
+
+        animation:
+
+        subirMobile .5s ease;
+
+
+    }
+
+
+
+
+    .aviso-topo{
+
+        font-size:15px;
+
+    }
+
+
+
+    .aviso-conteudo h3{
+
+        font-size:20px;
+
+    }
+
+
+
+    .aviso-conteudo p{
+
+        font-size:14px;
+
+        line-height:1.5;
+
+    }
+
+
+
+
+    .aviso-conteudo button{
+
+
+        width:100%;
+
+
+        margin-top:10px;
+
+
+        padding:12px;
+
+
+        font-size:15px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+@keyframes subirMobile{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateY(100px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+
+
+}/* ==================================
+   AÇÕES MOBILE
+================================== */
+
+.acoes-mobile{
+
+    display:none;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+/* ==================================
+   SINO MOBILE
+================================== */
+
+#sininhoMobile{
+
+    display:none;
+
+    position:relative;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    color:#c9a227;
+
+    transition:.3s;
+
+}
+
+#sininhoMobile:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+#contadorAvisos{
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-10px;
+
+    min-width:18px;
+
+    height:18px;
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    font-size:11px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+}
+
+
+
+/* ==================================
+   MENU MOBILE
+================================== */
+
+.menu-mobile{
+
+    display:none;
+
+    font-size:28px;
+
+    color:#c9a227;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.menu-mobile:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+#menuMobileLista{
+
+    display:none;
+
+}
+
+
+
+/* ==================================
+   MENU ABERTO
+================================== */
+
+#menuMobileLista.ativo{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+/* ==================================
+   PAINEL NOTIFICAÇÕES
+================================== */
+
+.notificacao-aviso{
+
+    display:none;
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:9999;
+
+}
+
+
+
+.aviso-conteudo{
+
+    width:330px;
+
+    background:#111;
+
+    border:1px solid #c9a227;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+    animation:subirAviso .35s ease;
+
+}
+
+
+
+.aviso-topo{
+
+    color:#c9a227;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.aviso-conteudo h3{
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.aviso-conteudo p{
+
+    color:#d7d7d7;
+
+    line-height:1.5;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.aviso-conteudo button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    margin-top:8px;
+
+}
+
+
+
+.aviso-conteudo button:first-of-type{
+
+    background:#c9a227;
+
+    color:#000;
+
+}
+
+
+
+.aviso-conteudo button:last-of-type{
+
+    background:#2d2d2d;
+
+    color:#fff;
+
+}
+
+
+
+@keyframes subirAviso{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==================================
+   RESPONSIVO
+================================== */
+
+@media (max-width:768px){
+
+
+    .usuario{
+
+        display:none;
+
+    }
+
+
+
+    .acoes-mobile{
+
+        display:flex;
+
+    }
+
+
+
+    #sininhoMobile{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+    }
+
+
+
+    .menu-mobile{
+
+        display:block;
+
+    }
+
+
+
+    #menuMobileLista{
+
+        position:absolute;
+
+        top:78px;
+
+        left:15px;
+
+        right:15px;
+
+        background:#111;
+
+        border:1px solid #c9a227;
+
+        border-radius:16px;
+
+        overflow:hidden;
+
+        z-index:9998;
+
+    }
+
+
+
+    #menuMobileLista a{
+
+        color:#fff;
+
+        text-decoration:none;
+
+        padding:14px 18px;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+        transition:.25s;
+
+    }
+
+
+
+    #menuMobileLista a:last-child{
+
+        border-bottom:none;
+
+    }
+
+
+
+    #menuMobileLista a:hover{
+
+        background:#1d1d1d;
+
+    }
+
+
+
+    .notificacao-aviso{
+
+        left:15px;
+
+        right:15px;
+
+        bottom:15px;
+
+    }
+
+
+
+    .aviso-conteudo{
+
+        width:100%;
+
+    }
+
+}.modal-aviso-completo{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:10000;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.modal-aviso-box{
+
+    width:90%;
+
+    max-width:650px;
+
+    background:#111;
+
+    border:1px solid #c9a227;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    animation:fadeAviso .3s;
+
+}
+
+.modal-topo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.modal-topo h2{
+
+    color:#c9a227;
+
+}
+
+.modal-topo button{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+.modal-info{
+
+    margin:15px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#bbb;
+
+    font-size:13px;
+
+}
+
+.texto-aviso{
+
+    color:white;
+
+    line-height:1.7;
+
+    white-space:pre-wrap;
+
+}
+
+@keyframes fadeAviso{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}

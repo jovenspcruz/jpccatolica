@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JPC | Eventos</title>
+
+<link rel="stylesheet" href="eventos-admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="pagina">
+
+
+<header class="topo">
+
+
+<div>
+
+<h1>📅 Eventos JPC</h1>
+
+<p>Gerenciar eventos do site</p>
+
+</div>
+
+
+<a href="painel.html">
+Voltar
+</a>
+
+
+</header>
+
+
+
+
+
+<section class="formulario">
+
+
+<h2>Novo Evento</h2>
+
+
+<input 
+id="nomeEvento"
+type="text"
+placeholder="Nome do evento">
+
+
+
+<input 
+id="dataEvento"
+type="date">
+
+
+
+<input 
+id="localEvento"
+type="text"
+placeholder="Local do evento">
+
+
+
+<label>Imagem do evento</label>
+
+<input 
+id="imagemEvento"
+type="file"
+accept="image/*">
+
+
+
+<textarea 
+id="descricaoEvento"
+placeholder="Descrição do evento">
+</textarea>
+
+
+
+
+<button onclick="adicionarEvento()">
+
+Adicionar Evento
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="lista">
+
+
+<h2>Eventos cadastrados</h2>
+
+
+<div id="listaEventos"></div>
+
+
+</section>
+
+
+
+
+
+</div>
+
+<script src="tema.js"></script>
+
+<script src="eventos-admin.js"></script>
+
+
+</body>
+
+</html>

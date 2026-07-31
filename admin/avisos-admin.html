@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avisos | Painel JPC</title>
+
+
+    <link rel="stylesheet" href="avisos-admin.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="pagina">
+
+
+    <!-- TOPO -->
+
+    <header class="topo">
+
+
+        <div>
+
+            <h1>📢 Avisos</h1>
+
+            <p>Gerencie os comunicados do Jovens Pela Cruz.</p>
+
+        </div>
+
+
+
+        <a href="painel.html">
+
+            ← Voltar
+
+        </a>
+
+
+    </header>
+
+
+
+
+
+    <!-- CRIAR AVISO -->
+
+
+    <section class="formulario">
+
+
+        <h2>Novo Aviso</h2>
+
+
+
+
+        <input 
+        type="text"
+        id="titulo"
+        placeholder="Título do aviso">
+
+
+
+
+
+        <textarea
+        id="mensagem"
+        placeholder="Escreva a mensagem do aviso..."></textarea>
+
+
+
+
+
+        <h3>📅 Período do aviso</h3>
+
+
+
+
+        <label>
+
+            Data de início
+
+        </label>
+
+
+        <input 
+        type="date"
+        id="inicio">
+
+
+
+
+
+        <label>
+
+            Hora de início
+
+        </label>
+
+
+        <input 
+        type="time"
+        id="horaInicio">
+
+
+
+
+
+
+        <label>
+
+            Data de término
+
+        </label>
+
+
+        <input 
+        type="date"
+        id="fim">
+
+
+
+
+
+        <label>
+
+            Hora de término
+
+        </label>
+
+
+        <input 
+        type="time"
+        id="horaFim">
+
+
+
+
+
+
+
+        <label>
+
+            Prioridade
+
+        </label>
+
+
+        <select id="prioridade">
+
+
+            <option value="Normal">
+
+                🟢 Normal
+
+            </option>
+
+
+
+            <option value="Importante">
+
+                🟡 Importante
+
+            </option>
+
+
+
+            <option value="Urgente">
+
+                🔴 Urgente
+
+            </option>
+
+
+
+            <option value="Novidade">
+
+                🔵 Novidade
+
+            </option>
+
+
+        </select>
+
+
+
+
+<select id="destino">
+
+<option value="equipe">
+Equipe
+</option>
+
+<option value="site">
+Site
+</option>
+
+<option value="ambos">
+Ambos
+</option>
+
+</select>
+
+
+
+
+
+
+        <button onclick="publicarAviso()">
+
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+            Publicar Aviso
+
+
+        </button>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- LISTA -->
+
+
+
+    <section class="lista">
+
+
+        <h2>Avisos Publicados</h2>
+
+
+
+        <div id="listaAvisos">
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+</div>
+
+
+<script type="module" src="../FIREBASE/firebase-init.js"></script>
+<script src="tema.js"></script>
+<script type="module" src="avisos-admin.js"></script>
+
+
+</body>
+
+</html>

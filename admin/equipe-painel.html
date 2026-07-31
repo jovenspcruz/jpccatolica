@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>JPC | Equipe</title>
+
+
+<link rel="stylesheet" href="equipe-painel.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="painel">
+
+
+
+
+
+<header class="topo">
+
+
+
+<div class="logo">
+
+
+<h1>
+✝ JPC
+</h1>
+
+
+<p>
+Painel da Equipe
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="acoes-mobile">
+
+
+<!-- SINO MOBILE -->
+
+<div id="sininhoMobile" onclick="abrirNotificacoes()">
+
+    🔔
+
+    <span id="contadorAvisos">
+        0
+    </span>
+
+</div>
+
+
+
+
+<!-- MENU MOBILE -->
+
+<div class="menu-mobile" id="menuMobile">
+
+    ☰
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="usuario">
+
+
+
+<img
+
+id="fotoUsuario"
+
+src="../imagens/jpc-avatar.png"
+
+alt="Foto"
+
+>
+
+
+
+
+<div class="dados">
+
+
+<strong id="nomeUsuario">
+
+Usuário
+
+</strong>
+
+
+<span id="cargoUsuario">
+
+Cargo
+
+</span>
+
+
+</div>
+
+
+
+
+
+<button onclick="sairEquipe()">
+
+Sair
+
+</button>
+
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- MENU MOBILE -->
+
+
+<nav id="menuMobileLista">
+
+
+<a href="desenvolvimento.html">
+
+📅 Eventos
+
+</a>
+
+
+<a href="perfil.html">
+
+👤 Meu Perfil
+
+</a>
+
+
+<a href="escalas.html">
+
+📅 Escalas
+
+</a>
+
+
+<a href="membros.html" class="coordenador">
+
+👥 Equipe
+
+</a>
+
+
+<a href="equipe-admin.html" class="coordenador">
+
+➕ Adicionar Membro
+
+</a>
+
+
+<a href="avisos-admin.html" class="coordenador">
+
+📢 Avisos
+
+</a>
+
+
+<a href="relatorios.html" class="coordenador">
+
+📊 Relatórios
+
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+<section class="boas-vindas">
+
+
+<h2 id="boasVindas">
+
+Salve Maria!
+
+</h2>
+
+
+<p>
+
+Bem-vindo ao painel da equipe JPC.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<main class="cards">
+
+
+
+
+
+
+
+<!-- TODOS -->
+
+
+
+<a href="eventos.html" class="card">
+
+
+<div class="icone">
+
+📅
+
+</div>
+
+
+<h3>
+
+Eventos
+
+</h3>
+
+
+<p>
+
+Organizar atividades.
+
+</p>
+
+
+</a>
+
+
+
+
+
+
+
+
+<a href="perfil.html" class="card">
+
+
+<div class="icone">
+
+👤
+
+</div>
+
+
+<h3>
+
+Meu Perfil
+
+</h3>
+
+
+<p>
+
+Atualizar meus dados.
+
+</p>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="escalas.html" class="card">
+
+
+<div class="icone">
+
+📅
+
+</div>
+
+
+<h3>
+
+Escalas
+
+</h3>
+
+
+<p>
+
+Gerenciar escalas da equipe.
+
+</p>
+
+
+</a>
+
+
+
+
+
+
+
+
+
+
+<!-- SOMENTE COORDENADOR -->
+
+
+
+<a href="membros.html" class="card coordenador">
+
+
+<div class="icone">
+
+👥
+
+</div>
+
+
+<h3>
+
+Equipe
+
+</h3>
+
+
+<p>
+
+Gerenciar membros.
+
+</p>
+
+
+</a>
+
+
+
+
+
+
+
+
+<a href="equipe-admin.html" class="card coordenador">
+
+
+<div class="icone">
+
+➕
+
+</div>
+
+
+<h3>
+
+Adicionar Membro
+
+</h3>
+
+
+<p>
+
+Cadastrar novos membros.
+
+</p>
+
+
+</a>
+
+
+
+
+
+
+
+
+<a href="avisos-admin.html" class="card coordenador">
+
+
+<div class="icone">
+
+📢
+
+</div>
+
+
+<h3>
+
+Avisos
+
+</h3>
+
+
+<p>
+
+Criar e visualizar avisos.
+
+</p>
+
+
+</a>
+
+
+
+
+
+
+
+
+
+<a href="relatorios.html" class="card coordenador">
+
+
+<div class="icone">
+
+📊
+
+</div>
+
+
+<h3>
+
+Relatórios
+
+</h3>
+
+
+<p>
+
+Acompanhar equipe.
+
+</p>
+
+
+</a>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ==================================
+     MODAL NOTIFICAÇÃO
+================================== -->
+
+
+<div id="modalAviso" class="notificacao-aviso">
+
+
+<div class="aviso-conteudo">
+
+
+<div class="aviso-topo">
+
+🔔 Novo aviso
+
+</div>
+
+
+
+<h3 id="tituloAviso"></h3>
+
+
+
+<p id="resumoAviso"></p>
+
+
+
+<button onclick="abrirAvisoCompleto()">
+
+Ver aviso
+
+</button>
+
+
+
+<button onclick="fecharAviso()">
+
+Fechar
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ==================================
+     MODAL SEM NOTIFICAÇÕES
+================================== -->
+
+
+<div id="modalSemAviso" class="notificacao-aviso">
+
+
+<div class="aviso-conteudo">
+
+
+<div class="aviso-topo">
+
+🔔 Notificações
+
+</div>
+
+
+
+<h3>
+
+Nenhuma notificação
+
+</h3>
+
+
+
+<p>
+
+Você não possui novos avisos no momento.
+
+</p>
+
+
+
+
+<button onclick="fecharSemAviso()">
+
+Fechar
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- MODAL AVISO COMPLETO -->
+
+<div id="modalAvisoCompleto" class="modal-aviso-completo">
+
+    <div class="modal-aviso-box">
+
+        <div class="modal-topo">
+
+            <h2 id="tituloCompleto"></h2>
+
+            <button onclick="fecharAvisoCompleto()">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="modal-info">
+
+            <small id="autorCompleto"></small>
+
+            <small id="dataCompleto"></small>
+
+        </div>
+
+        <div id="mensagemCompleta" class="texto-aviso">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<script src="tema.js"></script>
+
+
+<script src="equipe-painel.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Equipe | JPC Admin</title>
+
+<link rel="stylesheet" href="equipe-admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header class="topo">
+
+<div class="logo">
+
+<h1>✝ JPC</h1>
+
+<span>Gerenciar Equipe</span>
+
+</div>
+
+
+<a href="painel.html">
+
+← Voltar
+
+</a>
+
+
+</header>
+
+
+
+
+
+<main class="container">
+
+
+<section class="titulo">
+
+<h2>
+👥 Equipe JPC
+</h2>
+
+<p>
+Cadastre e gerencie membros, coordenadores e administradores.
+</p>
+
+</section>
+
+
+
+
+
+
+
+<section class="cadastro">
+
+
+<h3>
+➕ Cadastrar usuário
+</h3>
+
+
+
+<input 
+id="nome"
+placeholder="Nome completo">
+
+
+
+<input 
+id="login"
+placeholder="Usuário">
+
+
+
+<input 
+id="senha"
+type="password"
+placeholder="Senha">
+
+
+
+<input 
+id="dataEntrada"
+type="date">
+
+
+
+
+
+
+<select id="ministerio">
+
+<option value="">
+Escolha o ministério
+</option>
+
+<option>Mídia</option>
+
+<option>Música</option>
+
+<option>Oração</option>
+
+<option>Liturgia</option>
+
+<option>Eventos</option>
+
+<option>Comunicação</option>
+
+</select>
+
+
+
+
+
+
+
+<select id="cargo">
+
+
+<option value="Membro">
+Membro
+</option>
+
+
+<option value="Coordenador">
+Coordenador
+</option>
+
+
+<option value="Administrador">
+Administrador
+</option>
+
+
+</select>
+
+
+
+
+
+
+<button onclick="cadastrarMembro()">
+
+Cadastrar usuário
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="lista">
+
+
+<h3>
+👥 Usuários cadastrados
+</h3>
+
+
+
+<div id="listaMembros">
+
+</div>
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<!-- MODAL PERFIL -->
+
+
+<div id="modalPerfil" class="modal">
+
+
+<div class="modal-box">
+
+
+<h2>
+✝ Perfil do usuário
+</h2>
+
+
+
+
+<img 
+id="modalFoto"
+src="../imagens/jpc-avatar.png">
+
+
+
+
+
+
+<p>👤 Nome</p>
+
+<strong id="modalNome">
+--
+</strong>
+
+
+
+
+
+<p>✝ Ministério</p>
+
+<strong id="modalMinisterio">
+--
+</strong>
+
+
+
+
+
+<p>🏷 Cargo</p>
+
+<strong id="modalCargo">
+--
+</strong>
+
+
+
+
+
+<p>📅 Data de entrada</p>
+
+<strong id="modalData">
+--
+</strong>
+
+
+
+
+
+<p>🔐 Usuário</p>
+
+<strong id="modalLogin">
+--
+</strong>
+
+
+
+
+
+<p>🟢 Status</p>
+
+<strong id="modalStatus">
+--
+</strong>
+
+
+
+
+
+
+
+
+<div class="acoes-modal">
+
+
+<button onclick="editarMembro()">
+
+✏ Editar
+
+</button>
+
+
+
+
+
+<button 
+class="btn-excluir"
+onclick="excluirMembro()">
+
+🗑 Excluir usuário
+
+</button>
+
+
+
+
+
+<button onclick="fecharModal()">
+
+Fechar
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- MODAL EDITAR -->
+
+
+<div id="modalEditar" class="modal">
+
+
+<div class="modal-box">
+
+
+<h2>
+✏ Editar perfil
+</h2>
+
+
+
+
+
+<input
+id="editarNome"
+placeholder="Nome">
+
+
+
+
+
+
+<select id="editarMinisterio">
+
+
+<option>Mídia</option>
+
+<option>Música</option>
+
+<option>Oração</option>
+
+<option>Liturgia</option>
+
+<option>Eventos</option>
+
+<option>Comunicação</option>
+
+
+</select>
+
+
+
+
+
+
+
+<select id="editarCargo">
+
+
+<option value="Membro">
+Membro
+</option>
+
+
+<option value="Coordenador">
+Coordenador
+</option>
+
+
+<option value="Administrador">
+Administrador
+</option>
+
+
+</select>
+
+
+
+
+
+<input
+id="editarLogin"
+placeholder="Usuário">
+
+
+<input
+id="editarData"
+type="date">
+
+
+<input
+id="editarSenha"
+type="password"
+placeholder="Nova senha">
+
+
+
+
+<button onclick="salvarEdicao()">
+
+Salvar alterações
+
+</button>
+
+
+
+
+
+
+<button onclick="fecharEdicao()">
+
+Cancelar
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script src="tema.js"></script>
+
+<script type="module" src="equipe-admin.js"></script>
+
+</body>
+
+</html>

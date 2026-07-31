@@ -1,0 +1,2549 @@
+/* ==========================
+        VARIÁVEIS
+========================== */
+
+
+:root{
+
+    --preto:#050505;
+
+    --azul-escuro:#06152f;
+
+    --azul-medio:#0f2d5c;
+
+    --dourado:#d4af37;
+
+    --branco:#ffffff;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        RESET
+========================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins', Arial, sans-serif;
+
+}
+
+
+
+body{
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    color:white;
+
+
+    min-height:100vh;
+
+
+
+}
+
+
+
+
+
+
+
+.logo img{
+
+
+    width:75px;
+
+
+}
+
+
+
+
+
+
+/* ==========================
+        MENU MOBILE
+========================== */
+
+
+.menu-mobile{
+
+
+    display:none;
+
+
+    font-size:30px;
+
+
+    color:var(--dourado);
+
+
+    cursor:pointer;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        CONTEÚDO
+========================== */
+
+
+.liturgia{
+
+
+    width:90%;
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+
+    padding-top:130px;
+
+
+    padding-bottom:80px;
+
+
+
+}/* ==========================
+        HERO LITURGIA
+========================== */
+
+
+.hero-liturgia{
+
+
+    text-align:center;
+
+
+    padding:60px 25px;
+
+
+    margin-bottom:70px;
+
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    box-shadow:
+
+
+    0 10px 40px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-liturgia h1{
+
+
+    color:var(--dourado);
+
+
+    font-size:45px;
+
+
+    margin-bottom:20px;
+
+
+
+    text-shadow:
+
+
+    0 0 15px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-liturgia p{
+
+
+    color:#ddd;
+
+
+    font-size:18px;
+
+
+    max-width:750px;
+
+
+    margin:auto;
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        SEÇÕES
+========================== */
+
+
+.secao-liturgia{
+
+
+    margin-bottom:80px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-liturgia h2{
+
+
+    text-align:center;
+
+
+    color:var(--dourado);
+
+
+    font-size:35px;
+
+
+    margin-bottom:40px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-liturgia h2::after{
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:90px;
+
+
+    height:3px;
+
+
+    background:var(--dourado);
+
+
+    margin:15px auto;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        TEXTO LITURGIA
+========================== */
+
+
+.texto-liturgia{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f
+
+    );
+
+
+
+    border:1px solid #d4af3770;
+
+
+
+    border-radius:25px;
+
+
+
+    padding:35px;
+
+
+
+    line-height:1.8;
+
+
+
+    color:#ddd;
+
+
+
+    margin-bottom:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-liturgia button{
+
+
+    display:block;
+
+
+    margin:25px auto 0;
+
+
+
+    padding:14px 35px;
+
+
+
+    border:none;
+
+
+
+    border-radius:30px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #d4af37,
+
+        #f5d76e
+
+    );
+
+
+
+    color:#000;
+
+
+
+    font-weight:bold;
+
+
+
+    cursor:pointer;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-liturgia button:hover{
+
+
+    transform:scale(1.06);
+
+
+
+    box-shadow:
+
+
+    0 0 20px #d4af37;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        CARDS LITURGIA
+========================== */
+
+
+.cards-liturgia{
+
+
+    display:grid;
+
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-liturgia{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    padding:35px;
+
+
+
+    border-radius:25px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    transition:.4s;
+
+
+
+}
+
+
+
+
+
+
+
+.card-liturgia:hover{
+
+
+    transform:translateY(-10px);
+
+
+
+    box-shadow:
+
+
+    0 0 30px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.card-liturgia i{
+
+
+    font-size:45px;
+
+
+    color:var(--dourado);
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-liturgia h3{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:24px;
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-liturgia p{
+
+
+    color:#ddd;
+
+
+    line-height:1.6;
+
+
+
+}/* ==========================
+        EVANGELHO DO DIA
+========================== */
+
+
+.evangelho{
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    border-radius:30px;
+
+
+
+    padding:45px;
+
+
+
+    text-align:center;
+
+
+
+    box-shadow:
+
+
+    0 10px 35px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.icone-liturgia{
+
+
+    font-size:60px;
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.evangelho h3{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:30px;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.evangelho p{
+
+
+    color:#ddd;
+
+
+
+    max-width:700px;
+
+
+
+    margin:auto;
+
+
+
+    line-height:1.8;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        PARTES DA MISSA
+========================== */
+
+
+.lista-missa{
+
+
+    display:grid;
+
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(260px,1fr));
+
+
+
+    gap:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.item-missa{
+
+
+    background:#050505;
+
+
+
+    padding:30px;
+
+
+
+    border-radius:20px;
+
+
+
+    border-left:5px solid var(--dourado);
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.item-missa:hover{
+
+
+    transform:translateX(8px);
+
+
+
+    background:#06152f;
+
+
+
+}
+
+
+
+
+
+
+
+.item-missa h3{
+
+
+    color:var(--dourado);
+
+
+
+    margin-bottom:15px;
+
+
+
+    font-size:22px;
+
+
+
+}
+
+
+
+
+
+
+
+.item-missa p{
+
+
+    color:#ddd;
+
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        FRASE FINAL
+========================== */
+
+
+.frase-liturgia{
+
+
+    margin-top:80px;
+
+
+
+    padding:55px 30px;
+
+
+
+    text-align:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-top:2px solid var(--dourado);
+
+
+
+    border-bottom:2px solid var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+.frase-liturgia h2{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:32px;
+
+
+
+    font-style:italic;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-liturgia p{
+
+
+    color:white;
+
+
+
+    margin-top:20px;
+
+
+
+    font-size:18px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        MODAIS
+========================== */
+
+
+.modal{
+
+
+    display:none;
+
+
+
+    position:fixed;
+
+
+
+    top:0;
+
+
+
+    left:0;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    rgba(0,0,0,.85);
+
+
+
+    justify-content:center;
+
+
+
+    align-items:center;
+
+
+
+    z-index:2000;
+
+
+
+    padding:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    width:90%;
+
+
+
+    max-width:650px;
+
+
+
+    padding:40px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    position:relative;
+
+
+
+    animation:abrirModal .4s;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    color:var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    margin-bottom:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo p{
+
+
+    color:white;
+
+
+
+    text-align:center;
+
+
+
+    line-height:1.8;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar{
+
+
+    position:absolute;
+
+
+
+    top:15px;
+
+
+
+    right:25px;
+
+
+
+    font-size:35px;
+
+
+
+    color:var(--dourado);
+
+
+
+    cursor:pointer;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar:hover{
+
+
+    color:white;
+
+
+
+}
+
+
+/* ==========================
+        ANIMAÇÕES
+========================== */
+
+
+@keyframes abrirModal{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:scale(.7);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:scale(1);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@keyframes aparecer{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:translateY(30px);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:translateY(0);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.hero-liturgia,
+.card-liturgia,
+.evangelho,
+.item-missa,
+.texto-liturgia{
+
+
+    animation:aparecer .8s ease;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        RESPONSIVO TABLET
+========================== */
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    padding:0 25px;
+
+
+
+}
+
+
+
+
+nav{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+.menu-mobile{
+
+
+    display:block;
+
+
+
+}
+
+
+
+
+
+.pesquisa{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+
+.hero-liturgia{
+
+
+    padding:45px 20px;
+
+
+
+}
+
+
+
+
+
+.hero-liturgia h1{
+
+
+    font-size:35px;
+
+
+
+}
+
+
+
+
+
+.hero-liturgia p{
+
+
+    font-size:16px;
+
+
+
+}
+
+
+
+
+
+
+.secao-liturgia h2{
+
+
+    font-size:28px;
+
+
+
+}
+
+
+
+
+
+
+.card-liturgia{
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+
+
+
+.evangelho{
+
+
+    padding:30px 20px;
+
+
+
+}
+
+
+
+
+
+.lista-missa{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-liturgia h2{
+
+
+    font-size:26px;
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+        RESPONSIVO CELULAR
+========================== */
+
+
+@media(max-width:500px){
+
+
+
+.liturgia{
+
+
+    width:95%;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-liturgia{
+
+
+    border-radius:20px;
+
+
+
+}
+
+
+
+
+
+.hero-liturgia h1{
+
+
+    font-size:30px;
+
+
+
+}
+
+
+
+
+
+.cards-liturgia{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+.card-liturgia h3{
+
+
+    font-size:21px;
+
+
+
+}
+
+
+
+
+
+
+
+.texto-liturgia{
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+
+
+
+.evangelho h3{
+
+
+    font-size:24px;
+
+
+
+}
+
+
+
+
+
+
+.icone-liturgia{
+
+
+    font-size:45px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    padding:30px 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    font-size:24px;
+
+
+
+}
+
+
+
+
+
+
+}/* ==================================
+   JPC - FOOTER GLOBAL
+================================== */
+
+
+footer{
+
+    width:100%;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #050505,
+        #06152f
+    );
+
+    border-top:1px solid rgba(212,175,55,.5);
+
+    padding:60px 20px 25px;
+
+    color:white;
+
+    margin-top:80px;
+
+}
+
+
+
+
+.footer-container{
+
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+
+}
+
+
+
+
+.footer-container img{
+
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.footer-container h3{
+
+
+    font-family:"Cinzel",serif;
+
+    font-size:28px;
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.footer-container p{
+
+
+    max-width:700px;
+
+    margin:15px auto;
+
+    color:#ddd;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+
+}
+
+
+
+
+/* REDES */
+
+
+.redes{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin:30px 0;
+
+
+}
+
+
+
+.redes a{
+
+
+    width:45px;
+
+    height:45px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    border:1px solid #d4af37;
+
+
+    color:#d4af37;
+
+
+    font-size:22px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.redes a:hover{
+
+
+    background:#d4af37;
+
+
+    color:#050505;
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+/* COPYRIGHT */
+
+
+.copyright{
+
+
+    margin-top:30px;
+
+
+    padding-top:20px;
+
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+
+    font-size:13px !important;
+
+
+    color:#aaa !important;
+
+
+}
+
+
+
+
+
+
+
+/* ==================================
+        FOOTER MOBILE
+================================== */
+
+
+@media(max-width:768px){
+
+
+
+    footer{
+
+
+        padding:45px 15px 20px;
+
+
+    }
+
+
+
+    .footer-container img{
+
+
+        width:90px;
+
+        height:90px;
+
+
+    }
+
+
+
+    .footer-container h3{
+
+
+        font-size:23px;
+
+
+    }
+
+
+
+    .footer-container p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+    .redes{
+
+
+        gap:15px;
+
+
+    }
+
+
+
+    .redes a{
+
+
+        width:40px;
+
+        height:40px;
+
+
+        font-size:18px;
+
+
+    }
+
+
+
+}/* ==================================
+   JPC - MODAL LITURGIA DIÁRIA
+================================== */
+
+
+/* ==================================
+        BOTÃO REFLETIR
+================================== */
+
+
+.btn-refletir{
+
+
+    margin-top:20px;
+
+
+    padding:12px 30px;
+
+
+    border:none;
+
+
+    border-radius:30px;
+
+
+    background:#d4af37;
+
+
+    color:#000;
+
+
+    font-weight:bold;
+
+
+    font-size:15px;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn-refletir:hover{
+
+
+    background:#f5d76e;
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================
+        MODAL
+================================== */
+
+
+.modal-liturgia{
+
+
+    display:none;
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:rgba(0,0,0,.75);
+
+
+    backdrop-filter:blur(8px);
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    padding:20px;
+
+
+    z-index:99999;
+
+
+}
+
+
+
+
+
+
+.modal-liturgia.ativo{
+
+
+    display:flex;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================
+        CONTEÚDO
+================================== */
+
+
+.conteudo-liturgia{
+
+
+    position:relative;
+
+
+    width:100%;
+
+
+    max-width:650px;
+
+
+    max-height:85vh;
+
+
+    overflow-y:auto;
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f
+
+    );
+
+
+    border:1px solid #d4af37;
+
+
+    border-radius:25px;
+
+
+    padding:35px;
+
+
+    color:white;
+
+
+    box-shadow:
+
+    0 0 45px rgba(212,175,55,.35);
+
+
+    animation:
+
+    abrirLiturgia .4s;
+
+
+}
+
+
+
+
+
+
+.conteudo-liturgia::-webkit-scrollbar{
+
+
+    width:8px;
+
+
+}
+
+
+
+.conteudo-liturgia::-webkit-scrollbar-thumb{
+
+
+    background:#d4af37;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================
+        BOTÃO FECHAR
+================================== */
+
+
+.fechar-liturgia{
+
+
+    position:absolute;
+
+
+    top:15px;
+
+
+    right:20px;
+
+
+    background:none;
+
+
+    border:none;
+
+
+    color:white;
+
+
+    font-size:32px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.fechar-liturgia:hover{
+
+
+    color:#d4af37;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================
+        TÍTULOS
+================================== */
+
+
+.conteudo-liturgia h2{
+
+
+    text-align:center;
+
+
+    color:#d4af37;
+
+
+    font-family:"Cinzel",serif;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.conteudo-liturgia h3{
+
+
+    color:#d4af37;
+
+
+    margin-top:25px;
+
+
+    font-family:"Cinzel",serif;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        TEXTOS
+================================== */
+
+
+.conteudo-liturgia p{
+
+
+    color:#e5e5e5;
+
+
+    line-height:1.8;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==================================
+        CARD EVANGELHO
+================================== */
+
+
+.card-evangelho{
+
+
+    background:
+
+
+    rgba(255,255,255,.06);
+
+
+    border-radius:22px;
+
+
+    border:1px solid rgba(212,175,55,.4);
+
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.card-evangelho h2{
+
+
+    color:#d4af37;
+
+
+}
+
+
+
+
+
+
+
+/* ==================================
+        ANIMAÇÃO
+================================== */
+
+
+@keyframes abrirLiturgia{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateY(-30px)
+
+        scale(.9);
+
+
+    }
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateY(0)
+
+        scale(1);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==================================
+        MOBILE
+================================== */
+
+
+@media(max-width:768px){
+
+
+
+    .conteudo-liturgia{
+
+
+        padding:25px;
+
+
+        max-height:90vh;
+
+
+        border-radius:20px;
+
+
+    }
+
+
+
+    .conteudo-liturgia p{
+
+
+        font-size:15px;
+
+
+    }
+
+
+
+    .btn-refletir{
+
+
+        width:100%;
+
+
+    }
+
+
+
+}
+.modal-paulus {
+
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:9999;
+
+}
+
+
+.conteudo-paulus {
+
+    width:90%;
+    height:85%;
+    background:white;
+    margin:5% auto;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+
+}
+
+.modal-paulus {
+
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:9999;
+
+}
+
+
+.conteudo-paulus {
+
+    background:white;
+    width:90%;
+    max-width:500px;
+    padding:30px;
+    border-radius:20px;
+    margin:10% auto;
+    text-align:center;
+
+}
+
+
+.btn-paulus {
+
+    display:inline-block;
+    padding:15px 25px;
+    background:#c9a227;
+    color:#0b0b0b;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+.fechar-paulus {
+
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+
+}/* ==============================
+   MODAL PAULUS - JPC
+============================== */
+
+
+.modal-liturgia {
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    z-index:9999;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.modal-liturgia-content {
+
+    background:linear-gradient(
+        145deg,
+        #0b1d3a,
+        #07101f
+    );
+
+    width:90%;
+
+    max-width:500px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border:1px solid #c9a227;
+
+    box-shadow:0 0 25px rgba(201,162,39,.4);
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.modal-liturgia-content h2 {
+
+    color:#c9a227;
+
+    font-family:Cinzel,serif;
+
+}
+
+
+
+.modal-liturgia-content p {
+
+    font-family:Poppins,sans-serif;
+
+}
+
+
+
+.close-liturgia {
+
+    position:absolute;
+
+    right:25px;
+
+    top:15px;
+
+    font-size:35px;
+
+    color:#c9a227;
+
+    cursor:pointer;
+
+}
+
+
+
+.btn-liturgia-paulus {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 30px;
+
+    background:#c9a227;
+
+    color:#0b0b0b;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}

@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Liturgia | Jovens Pela Cruz</title>
+
+<link rel="icon" href="../imagens/jpc.favicon.png">
+
+<link rel="stylesheet" href="../CSS/global.css">
+<link rel="stylesheet" href="../HTMLs/HEADER/header.css">
+<link rel="stylesheet" href="../CSS/liturgia.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+<!-- ==========================
+        HEADER
+========================== -->
+
+
+<!-- ==================================
+     JPC HEADER
+================================== -->
+
+
+<header id="header">
+
+<div class="logo">
+
+    <img 
+    id="logoJPC"
+    src="../imagens/jpc.favicon.logo.png"
+    alt="Jovens Pela Cruz">
+
+</div>
+
+
+    <nav id="menu">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+
+
+    <div class="lado-direito">
+
+
+
+        <div class="pesquisa">
+
+
+            <input 
+            id="pesquisa"
+            type="text"
+            placeholder="Pesquisar">
+
+
+            <button id="btnPesquisar">
+
+                🔎
+
+            </button>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <button id="btnMenu">
+
+            ☰
+
+        </button>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- MENU MOBILE -->
+
+
+    <nav id="menuMobile">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+</header>
+
+
+
+
+
+
+<!-- RESULTADO DA PESQUISA -->
+
+
+<div 
+id="resultadoPesquisa"
+class="resultado-pesquisa">
+
+
+    <div id="listaResultados">
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<main class="liturgia">
+
+
+
+
+
+<!-- ==========================
+        HERO
+========================== -->
+
+
+<section class="hero-liturgia">
+
+
+<h1>
+
+📖 Liturgia
+
+</h1>
+
+
+
+<p>
+
+A Palavra de Deus ilumina nossos caminhos.
+Conheça e viva melhor a liturgia da Igreja.
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==========================
+        O QUE É LITURGIA
+========================== -->
+
+
+<section class="secao-liturgia">
+
+
+
+<h2>
+
+O que é a Liturgia?
+
+</h2>
+
+
+
+
+<div class="texto-liturgia">
+
+
+<p>
+
+A Liturgia é a celebração do mistério de Cristo.
+É através dela que a Igreja se reúne para celebrar
+a presença de Deus, principalmente na Santa Missa.
+
+</p>
+
+
+
+<p>
+
+Viver a liturgia é permitir que a Palavra,
+os sacramentos e a oração transformem nossa vida.
+
+</p>
+
+
+</div>
+
+
+
+<button onclick="abrirModal('liturgia')">
+
+Saiba mais
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==========================
+        ANO LITÚRGICO
+========================== -->
+
+
+<section class="secao-liturgia">
+
+
+<h2>
+
+Ano Litúrgico
+
+</h2>
+
+
+
+
+<div class="cards-liturgia">
+
+
+
+
+
+<div class="card-liturgia">
+
+
+<i class="fa-solid fa-star"></i>
+
+
+<h3>
+
+Advento
+
+</h3>
+
+
+<p>
+
+Tempo de preparação para a chegada de Jesus.
+
+</p>
+
+
+<button onclick="abrirModal('advento')">
+
+Ver mais
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="card-liturgia">
+
+
+<i class="fa-solid fa-church"></i>
+
+
+<h3>
+
+Natal
+
+</h3>
+
+
+<p>
+
+Celebramos o nascimento de Cristo.
+
+</p>
+
+
+<button onclick="abrirModal('natal')">
+
+Ver mais
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="card-liturgia">
+
+
+<i class="fa-solid fa-cross"></i>
+
+
+<h3>
+
+Quaresma
+
+</h3>
+
+
+<p>
+
+Tempo de conversão, oração e penitência.
+
+</p>
+
+
+<button onclick="abrirModal('quaresma')">
+
+Ver mais
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="card-liturgia">
+
+
+<i class="fa-solid fa-dove"></i>
+
+
+<h3>
+
+Páscoa
+
+</h3>
+
+
+<p>
+
+A vitória de Cristo sobre a morte.
+
+</p>
+
+
+<button onclick="abrirModal('pascoa')">
+
+Ver mais
+
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- ==========================
+        EVANGELHO DO DIA
+========================== -->
+
+
+<section class="secao-liturgia">
+
+
+<h2>
+
+Evangelho do Dia
+
+</h2>
+
+
+
+<div class="evangelho">
+
+
+<div class="icone-liturgia">
+
+📖
+
+</div>
+
+
+
+<h3>
+
+A Palavra de Deus para hoje
+
+</h3>
+
+
+
+<p>
+
+Todos os dias a Igreja nos convida a ouvir,
+meditar e colocar em prática o Evangelho.
+
+</p>
+
+
+<button class="btn-liturgia" onclick="abrirPaulus()">
+    Ver Liturgia Completa
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        SANTA MISSA
+========================== -->
+
+
+<section class="secao-liturgia">
+
+
+<h2>
+
+Vivendo a Santa Missa
+
+</h2>
+
+
+
+<div class="cards-liturgia">
+
+
+
+
+
+
+<div class="card-liturgia">
+
+
+<i class="fa-solid fa-person-praying"></i>
+
+
+<h3>
+
+Preparação
+
+</h3>
+
+
+<p>
+
+Prepare seu coração antes da celebração,
+chegando com fé e disposição.
+
+</p>
+
+
+<button onclick="abrirModal('preparacao')">
+
+Ver mais
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card-liturgia">
+
+
+<i class="fa-solid fa-book-bible"></i>
+
+
+<h3>
+
+Liturgia da Palavra
+
+</h3>
+
+
+<p>
+
+Momento em que Deus fala através
+das Sagradas Escrituras.
+
+</p>
+
+
+<button onclick="abrirModal('palavra')">
+
+Ver mais
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card-liturgia">
+
+
+<i class="fa-solid fa-bread-slice"></i>
+
+
+<h3>
+
+Liturgia Eucarística
+
+</h3>
+
+
+<p>
+
+Celebramos o sacrifício de Cristo
+e recebemos a Eucaristia.
+
+</p>
+
+
+<button onclick="abrirModal('eucaristia')">
+
+Ver mais
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card-liturgia">
+
+
+<i class="fa-solid fa-heart"></i>
+
+
+<h3>
+
+Depois da Missa
+
+</h3>
+
+
+<p>
+
+Levar Cristo para nossa vida diária
+através das nossas atitudes.
+
+</p>
+
+
+<button onclick="abrirModal('depois')">
+
+Ver mais
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==========================
+        PARTES DA MISSA
+========================== -->
+
+
+<section class="secao-liturgia">
+
+
+<h2>
+
+Partes da Santa Missa
+
+</h2>
+
+
+
+
+<div class="lista-missa">
+
+
+
+
+
+<div class="item-missa">
+
+
+<h3>
+
+1. Ritos Iniciais
+
+</h3>
+
+
+<p>
+
+Momento de reunir a comunidade
+e preparar o coração para celebrar.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="item-missa">
+
+
+<h3>
+
+2. Liturgia da Palavra
+
+</h3>
+
+
+<p>
+
+Escutamos as leituras bíblicas
+e a reflexão do Evangelho.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="item-missa">
+
+
+<h3>
+
+3. Liturgia Eucarística
+
+</h3>
+
+
+<p>
+
+Celebramos a entrega de Jesus
+e a presença real de Cristo.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="item-missa">
+
+
+<h3>
+
+4. Ritos Finais
+
+</h3>
+
+
+<p>
+
+Somos enviados para viver e anunciar
+o Evangelho no mundo.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</section>
+<!-- ==========================
+        MODAIS
+========================== -->
+
+
+
+<div id="liturgia" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('liturgia')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+O que é a Liturgia?
+
+</h2>
+
+
+<p>
+
+A Liturgia é a ação de Cristo e da Igreja.
+Nela celebramos a presença de Deus através
+da oração, dos sacramentos e da comunidade.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="advento" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('advento')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Advento
+
+</h2>
+
+
+<p>
+
+Tempo de espera e preparação para celebrar
+o nascimento de Jesus Cristo e renovar nossa esperança.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="natal" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('natal')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Natal
+
+</h2>
+
+
+<p>
+
+Celebramos o nascimento de Jesus,
+o Filho de Deus que veio ao encontro da humanidade.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="quaresma" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('quaresma')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Quaresma
+
+</h2>
+
+
+<p>
+
+Um tempo de conversão, oração e preparação
+para a celebração da Paixão e Ressurreição de Cristo.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="pascoa" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('pascoa')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Páscoa
+
+</h2>
+
+
+<p>
+
+Celebramos a Ressurreição de Jesus Cristo
+e a vitória da vida sobre a morte.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- ==================================
+     MODAL LITURGIA DIÁRIA
+================================== -->
+
+
+<div id="modalLiturgia" class="modal-liturgia">
+
+
+    <div class="conteudo-liturgia">
+
+
+        <button 
+        class="fechar-liturgia"
+        onclick="fecharLiturgia()">
+
+            &times;
+
+        </button>
+
+
+
+
+        <h2>
+            📖 Liturgia do Dia
+        </h2>
+
+
+
+        <h3>
+            📅 Data
+        </h3>
+
+        <p id="dataLiturgia">
+
+        </p>
+
+
+
+        <h3>
+            ✝ Santo do Dia
+        </h3>
+
+        <p id="santoLiturgia">
+            
+        </p>
+
+
+
+
+
+        <h3>
+            📜 Primeira Leitura
+        </h3>
+
+        <p id="leituraLiturgia">
+
+        </p>
+
+
+
+
+
+
+        <h3>
+            🎶 Salmo
+        </h3>
+
+        <p id="salmoLiturgia">
+
+        </p>
+
+
+
+
+
+
+
+        <h3>
+            ✝ Evangelho
+        </h3>
+
+        <p id="evangelhoLiturgia">
+
+        </p>
+
+
+
+
+
+
+
+
+        <h3>
+            💭 Reflexão JPC
+        </h3>
+
+        <p id="reflexaoLiturgia">
+
+        </p>
+
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<div id="preparacao" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('preparacao')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Preparação para a Missa
+
+</h2>
+
+
+<p>
+
+Antes da celebração, prepare seu coração
+com silêncio, oração e disposição para encontrar Cristo.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="palavra" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('palavra')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Liturgia da Palavra
+
+</h2>
+
+
+<p>
+
+Deus nos fala através da Bíblia.
+É um momento de escutar e guardar sua mensagem.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="eucaristia" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('eucaristia')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Liturgia Eucarística
+
+</h2>
+
+
+<p>
+
+Na Eucaristia celebramos o amor de Cristo
+e sua entrega por nós.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div id="modalPaulus" class="modal-liturgia">
+
+    <div class="modal-liturgia-content">
+
+        <span class="close-liturgia" onclick="fecharPaulus()">
+            &times;
+        </span>
+
+        <h2>
+            Liturgia Diária
+        </h2>
+
+        <p>
+            Acesse a liturgia completa pelo site oficial da Paulus.
+        </p>
+
+        <a 
+        href="https://www.paulus.com.br/portal/liturgia-diaria/" 
+        target="_blank"
+        class="btn-liturgia-paulus">
+
+            Abrir Paulus
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<div id="depois" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharModal('depois')">
+
+×
+
+</span>
+
+
+
+<h2>
+
+Depois da Missa
+
+</h2>
+
+
+<p>
+
+A celebração continua na nossa vida.
+Somos chamados a levar Cristo ao mundo.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ==========================
+        FRASE FINAL
+========================== -->
+
+
+<section class="frase-liturgia">
+
+
+<h2>
+
+"Fazei isto em memória de mim."
+
+</h2>
+
+
+<p>
+
+Jesus Cristo
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+<!-- ==========================
+        FOOTER
+========================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <img
+            src="../imagens/jpc.favicon.logo.png"
+            alt="Logo JPC">
+
+        <h3>
+
+            Jovens Pela Cruz
+
+        </h3>
+
+        <div class="redes">
+
+            <a href="https://www.instagram.com/jovenspcruzz/" target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </a>
+
+            <a href="mailto:jovenspcruzz@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Jovens Pela Cruz.
+            Todos os direitos reservados.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="../JS/header.js"></script>
+<script src="../JS/liturgia.js"></script>
+
+
+
+</body>
+
+
+</html>

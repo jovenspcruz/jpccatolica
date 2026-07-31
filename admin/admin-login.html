@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>JPC | Login</title>
+
+
+<link rel="stylesheet" href="admin-login.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<main class="login-container">
+
+
+<section class="login-box">
+
+
+
+<div class="logo">
+
+
+<h1>
+✝ JPC
+</h1>
+
+
+<p>
+Jovens Pela Cruz
+</p>
+
+
+</div>
+
+
+
+
+
+<h2>
+Acesso
+</h2>
+
+
+
+
+
+<form id="loginForm">
+
+
+
+<label>
+Usuário
+</label>
+
+
+<input
+
+type="text"
+
+id="usuario"
+
+placeholder="Digite seu usuário"
+
+required
+
+>
+
+
+
+
+
+
+
+<label>
+Senha
+</label>
+
+
+<div class="senha-container">
+
+
+<input
+
+type="password"
+
+id="senha"
+
+placeholder="Digite sua senha"
+
+required
+
+>
+
+
+<button
+
+type="button"
+
+id="mostrarSenha"
+
+class="olho"
+
+>
+
+👁
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<button type="submit">
+
+Entrar
+
+</button>
+
+
+
+</form>
+
+
+<a href="../HTMLs/inicio.html" class="voltar-site">
+    ← Voltar para o site
+</a>
+
+
+
+<p class="rodape">
+
+Área exclusiva JPC
+
+</p>
+
+
+
+
+</section>
+
+
+</main>
+
+
+
+<script src="tema.js"></script>
+
+<script type="module" src="admin-login.js"></script>
+
+
+
+<script>
+
+
+const senha = document.getElementById("senha");
+
+const olho = document.getElementById("mostrarSenha");
+
+
+
+olho.addEventListener("click",()=>{
+
+
+    if(senha.type === "password"){
+
+
+        senha.type="text";
+
+        olho.innerHTML="🙈";
+
+
+    }else{
+
+
+        senha.type="password";
+
+        olho.innerHTML="👁";
+
+
+    }
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1612 @@
+/* ==========================
+        VARIÁVEIS
+========================== */
+
+
+:root{
+
+    --preto:#050505;
+
+    --azul-escuro:#06152f;
+
+    --azul-medio:#0f2d5c;
+
+    --dourado:#d4af37;
+
+    --branco:#ffffff;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        RESET
+========================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',Arial,sans-serif;
+
+}
+
+
+
+
+
+
+body{
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    color:white;
+
+
+    min-height:100vh;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo img{
+
+
+    width:75px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        MENU MOBILE
+========================== */
+
+
+.menu-mobile{
+
+
+    display:none;
+
+
+    font-size:30px;
+
+
+    color:var(--dourado);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        CONTEÚDO
+========================== */
+
+
+.contato{
+
+
+    width:90%;
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+
+    padding-top:130px;
+
+
+    padding-bottom:80px;
+
+
+
+}/* ==========================
+        HERO CONTATO
+========================== */
+
+
+.hero-contato{
+
+
+    text-align:center;
+
+
+    padding:60px 25px;
+
+
+
+    margin-bottom:70px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    box-shadow:
+
+
+    0 10px 40px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-contato h1{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:45px;
+
+
+
+    margin-bottom:20px;
+
+
+
+    text-shadow:
+
+
+    0 0 15px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-contato p{
+
+
+    color:#ddd;
+
+
+
+    max-width:750px;
+
+
+
+    margin:auto;
+
+
+
+    font-size:18px;
+
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        SEÇÕES
+========================== */
+
+
+.secao-contato{
+
+
+    margin-bottom:80px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-contato h2{
+
+
+    text-align:center;
+
+
+
+    color:var(--dourado);
+
+
+
+    font-size:35px;
+
+
+
+    margin-bottom:40px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-contato h2::after{
+
+
+    content:"";
+
+
+
+    display:block;
+
+
+
+    width:90px;
+
+
+
+    height:3px;
+
+
+
+    background:var(--dourado);
+
+
+
+    margin:15px auto;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        CARDS CONTATO
+========================== */
+
+
+.cards-contato{
+
+
+    display:grid;
+
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(260px,1fr));
+
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    padding:35px;
+
+
+
+    text-align:center;
+
+
+
+    transition:.4s;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato:hover{
+
+
+    transform:translateY(-10px);
+
+
+
+    box-shadow:
+
+
+    0 0 30px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato i{
+
+
+    font-size:50px;
+
+
+
+    color:var(--dourado);
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato h3{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:25px;
+
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato p{
+
+
+    color:#ddd;
+
+
+
+    line-height:1.7;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato a{
+
+
+    display:inline-block;
+
+
+
+    padding:12px 30px;
+
+
+
+    border-radius:30px;
+
+
+
+    text-decoration:none;
+
+
+
+    color:#000;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #d4af37,
+
+        #f5d76e
+
+    );
+
+
+
+    font-weight:bold;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato a:hover{
+
+
+    transform:scale(1.05);
+
+
+
+    box-shadow:
+
+
+    0 0 20px #d4af37;
+
+
+
+}/* ==========================
+        FORMULÁRIO
+========================== */
+
+
+.form-contato{
+
+
+    max-width:800px;
+
+
+
+    margin:auto;
+
+
+
+    padding:40px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    box-shadow:
+
+
+    0 10px 35px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.campo{
+
+
+    display:flex;
+
+
+
+    flex-direction:column;
+
+
+
+    margin-bottom:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.campo label{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:17px;
+
+
+
+    margin-bottom:10px;
+
+
+
+}
+
+
+
+
+
+
+
+.campo input,
+.campo textarea{
+
+
+    width:100%;
+
+
+
+    padding:15px;
+
+
+
+    background:#050505;
+
+
+
+    border:1px solid #d4af3770;
+
+
+
+    border-radius:15px;
+
+
+
+    outline:none;
+
+
+
+    color:white;
+
+
+
+    font-size:16px;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.campo textarea{
+
+
+    resize:none;
+
+
+
+}
+
+
+
+
+
+
+
+.campo input:focus,
+.campo textarea:focus{
+
+
+    border-color:var(--dourado);
+
+
+
+    box-shadow:
+
+
+    0 0 15px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.form-contato button{
+
+
+    display:block;
+
+
+
+    margin:auto;
+
+
+
+    padding:15px 40px;
+
+
+
+    border:none;
+
+
+
+    border-radius:30px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #d4af37,
+
+        #f5d76e
+
+    );
+
+
+
+    color:#000;
+
+
+
+    font-weight:bold;
+
+
+
+    font-size:16px;
+
+
+
+    cursor:pointer;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.form-contato button:hover{
+
+
+    transform:scale(1.05);
+
+
+
+    box-shadow:
+
+
+    0 0 25px #d4af37;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        MODAL
+========================== */
+
+
+.modal{
+
+
+    display:none;
+
+
+
+    position:fixed;
+
+
+
+    top:0;
+
+
+
+    left:0;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    rgba(0,0,0,.85);
+
+
+
+    justify-content:center;
+
+
+
+    align-items:center;
+
+
+
+    padding:20px;
+
+
+
+    z-index:2000;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    width:90%;
+
+
+
+    max-width:600px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    padding:40px;
+
+
+
+    border-radius:30px;
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    position:relative;
+
+
+
+    animation:abrirModal .4s;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:30px;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo p{
+
+
+    color:white;
+
+
+
+    line-height:1.8;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar{
+
+
+    position:absolute;
+
+
+
+    right:25px;
+
+
+
+    top:15px;
+
+
+
+    font-size:35px;
+
+
+
+    color:var(--dourado);
+
+
+
+    cursor:pointer;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar:hover{
+
+
+    color:white;
+
+
+
+}/* ==========================
+        FRASE FINAL
+========================== */
+
+
+.frase-contato{
+
+
+    margin-top:80px;
+
+
+
+    padding:55px 30px;
+
+
+
+    text-align:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-top:2px solid var(--dourado);
+
+
+
+    border-bottom:2px solid var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+.frase-contato h2{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:32px;
+
+
+
+    font-style:italic;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-contato p{
+
+
+    color:white;
+
+
+
+    margin-top:20px;
+
+
+
+    font-size:18px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        ANIMAÇÕES
+========================== */
+
+
+@keyframes abrirModal{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:scale(.7);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:scale(1);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@keyframes aparecer{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:translateY(30px);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:translateY(0);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.hero-contato,
+.card-contato,
+.form-contato{
+
+
+    animation:aparecer .8s ease;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        TABLET
+========================== */
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    padding:0 25px;
+
+
+
+}
+
+
+
+
+nav{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+.menu-mobile{
+
+
+    display:block;
+
+
+
+}
+
+
+
+
+
+.pesquisa{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+
+.hero-contato{
+
+
+    padding:45px 20px;
+
+
+
+}
+
+
+
+
+
+.hero-contato h1{
+
+
+    font-size:35px;
+
+
+
+}
+
+
+
+
+
+
+.hero-contato p{
+
+
+    font-size:16px;
+
+
+
+}
+
+
+
+
+
+
+.secao-contato h2{
+
+
+    font-size:28px;
+
+
+
+}
+
+
+
+
+
+
+.form-contato{
+
+
+    padding:30px;
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        CELULAR
+========================== */
+
+
+@media(max-width:500px){
+
+
+
+.contato{
+
+
+    width:95%;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-contato{
+
+
+    border-radius:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-contato h1{
+
+
+    font-size:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.cards-contato{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato{
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-contato i{
+
+
+    font-size:40px;
+
+
+
+}
+
+
+
+
+
+
+
+.form-contato{
+
+
+    padding:25px 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.campo input,
+.campo textarea{
+
+
+    font-size:14px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    padding:30px 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    font-size:24px;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-contato{
+
+
+    padding:40px 15px;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-contato h2{
+
+
+    font-size:22px;
+
+
+
+}
+
+
+
+}

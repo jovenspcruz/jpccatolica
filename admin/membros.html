@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Membros | JPC Admin</title>
+
+<link rel="stylesheet" href="membros.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+
+<header class="topo">
+
+
+<div class="logo">
+
+<h1>✝ JPC</h1>
+
+<span>Gerenciar Membros</span>
+
+</div>
+
+
+<a href="#" onclick="voltarPainel()">
+← Voltar
+</a>
+
+
+</header>
+
+
+
+
+
+
+
+
+<main class="container">
+
+
+
+<section class="titulo">
+
+
+<h2>
+👥 Membros JPC
+</h2>
+
+
+<p>
+Gerencie os membros da equipe.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="filtros">
+
+
+<input 
+id="pesquisa"
+placeholder="🔎 Pesquisar membro">
+
+
+
+
+
+<select id="filtroMinisterio">
+
+
+<option value="Todos">
+Todos os ministérios
+</option>
+
+
+<option>
+Mídia
+</option>
+
+<option>
+Música
+</option>
+
+<option>
+Oração
+</option>
+
+<option>
+Liturgia
+</option>
+
+<option>
+Eventos
+</option>
+
+<option>
+Comunicação
+</option>
+
+
+</select>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="lista">
+
+
+<h3>
+👤 Membros cadastrados
+</h3>
+
+
+<div id="listaMembros">
+
+</div>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+MODAL PERFIL
+========================== -->
+
+
+<div id="modalPerfil" class="modal">
+
+
+<div class="modal-box">
+
+
+
+<img id="fotoPerfil" src="../imagens/jpc-avatar.png">
+
+
+
+<h2 id="nomePerfil">
+--
+</h2>
+
+
+
+
+
+<p>
+🔐 Usuário
+</p>
+
+<strong id="usuarioPerfil">
+--
+</strong>
+
+
+
+
+
+
+<p>
+✝ Ministério
+</p>
+
+<strong id="ministerioPerfil">
+--
+</strong>
+
+
+
+
+
+
+<p>
+🏷 Cargo
+</p>
+
+<strong id="cargoPerfil">
+--
+</strong>
+
+
+
+
+
+
+<p>
+🟢 Status
+</p>
+
+<strong id="statusPerfil">
+--
+</strong>
+
+
+
+
+
+
+<div class="acoes-modal">
+
+
+<button onclick="editarMembro()">
+✏ Editar
+</button>
+
+
+
+<button id="btnExcluir" onclick="excluirMembro()">
+🗑 Excluir
+</button>
+
+
+
+<button onclick="fecharModal()">
+Fechar
+</button>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+MODAL EDITAR
+========================== -->
+
+
+<div id="modalEditar" class="modal">
+
+
+<div class="modal-box">
+
+
+
+<h2>
+✏ Editar membro
+</h2>
+
+
+
+
+
+
+
+<input 
+id="editarNome"
+placeholder="Nome">
+
+
+
+
+
+
+
+<select id="editarMinisterio">
+
+
+<option>
+Mídia
+</option>
+
+
+<option>
+Música
+</option>
+
+
+<option>
+Oração
+</option>
+
+
+<option>
+Liturgia
+</option>
+
+
+<option>
+Eventos
+</option>
+
+
+<option>
+Comunicação
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+
+<input
+id="editarUsuario"
+placeholder="Usuário">
+
+
+
+
+
+
+
+
+<select id="editarStatus">
+
+
+<option value="Ativo">
+🟢 Ativo
+</option>
+
+
+<option value="Disponível">
+🔵 Disponível
+</option>
+
+
+<option value="Ausente">
+🟡 Ausente
+</option>
+
+
+<option value="Inativo">
+🔴 Inativo
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+
+<button onclick="salvarEdicao()">
+
+Salvar alterações
+
+</button>
+
+
+
+
+
+
+
+<button onclick="fecharEdicao()">
+
+Cancelar
+
+</button>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="tema.js"></script>
+
+<script src="membros.js"></script>
+
+
+</body>
+
+</html>

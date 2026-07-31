@@ -1,0 +1,534 @@
+/* ==================================
+   JPC ADMIN - EVENTOS CSS
+   Jovens Pela Cruz
+================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #050505,
+        #0f2d5c,
+        #1f5aa6
+    );
+
+
+    font-family:'Poppins',sans-serif;
+
+
+    color:white;
+
+}
+
+
+
+
+
+/* CONTAINER */
+
+.pagina{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:30px 20px;
+
+}
+
+
+
+
+
+/* TOPO */
+
+
+.topo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.topo h1{
+
+    font-family:'Cinzel',serif;
+
+    color:#c9a227;
+
+    font-size:35px;
+
+}
+
+
+
+.topo p{
+
+    font-size:14px;
+
+}
+
+
+
+.topo a{
+
+
+    text-decoration:none;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #c9a227,
+        #e6c65c
+    );
+
+
+    color:#0b0b0b;
+
+
+    padding:12px 25px;
+
+
+    border-radius:12px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+/* FORMULÁRIO */
+
+
+.formulario{
+
+
+    background:
+
+    rgba(0,0,0,.45);
+
+
+    border:
+
+    1px solid rgba(201,162,39,.5);
+
+
+    border-radius:20px;
+
+
+    padding:30px;
+
+
+    margin-bottom:35px;
+
+}
+
+
+
+.formulario h2,
+
+.lista h2{
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+input,
+
+textarea{
+
+
+    width:100%;
+
+
+    padding:14px;
+
+
+    margin-bottom:15px;
+
+
+    border-radius:12px;
+
+
+    border:
+
+    1px solid rgba(201,162,39,.5);
+
+
+    background:#050505;
+
+
+    color:white;
+
+
+    outline:none;
+
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+
+
+
+
+input:focus,
+
+textarea:focus{
+
+
+    border-color:#c9a227;
+
+
+}
+
+
+
+
+
+button{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border:none;
+
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #c9a227,
+        #e6c65c
+    );
+
+
+    color:#0b0b0b;
+
+
+    font-weight:700;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+/* LISTA */
+
+.lista{
+
+
+    background:
+
+    rgba(0,0,0,.35);
+
+
+    border-radius:20px;
+
+
+    border:
+
+    1px solid rgba(201,162,39,.4);
+
+
+    padding:30px;
+
+
+}
+
+
+
+
+
+#listaEventos{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(280px,1fr));
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+/* CARD EVENTO */
+
+
+.evento{
+
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        #0b0b0b,
+
+        #0f2d5c
+
+    );
+
+
+    border:
+
+    1px solid rgba(201,162,39,.5);
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.evento:hover{
+
+
+    transform:translateY(-8px);
+
+
+    border-color:#c9a227;
+
+
+}
+
+
+
+
+
+.evento img{
+
+
+    width:100%;
+
+
+    height:170px;
+
+
+    object-fit:cover;
+
+
+}
+
+
+
+
+
+.evento-conteudo{
+
+
+    padding:20px;
+
+}
+
+
+
+
+
+.evento h3{
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+.evento p{
+
+
+    font-size:14px;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+
+.evento button{
+
+
+    margin-top:15px;
+
+
+    background:#8b0000;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+/* CELULAR */
+
+
+@media(max-width:600px){
+
+
+    .topo{
+
+
+        flex-direction:column;
+
+
+        gap:20px;
+
+
+        text-align:center;
+
+
+    }
+
+
+}/* ==========================
+   TEMA CLARO GLOBAL
+========================== */
+
+
+body.tema-claro{
+
+
+background:#f2f2f2;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro .topo,
+body.tema-claro .card,
+body.tema-claro .perfil-box{
+
+
+background:white;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro p{
+
+
+color:#333;
+
+
+}
+
+
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3{
+
+
+color:#8c6d00;
+
+
+}

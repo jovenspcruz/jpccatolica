@@ -1,0 +1,2239 @@
+/* ==========================
+        VARIÁVEIS
+========================== */
+
+
+:root{
+
+    --preto:#050505;
+
+    --azul-escuro:#06152f;
+
+    --azul-medio:#0f2d5c;
+
+    --dourado:#d4af37;
+
+    --branco:#ffffff;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        RESET
+========================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',Arial,sans-serif;
+
+}
+
+
+
+
+
+
+body{
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    color:white;
+
+
+    min-height:100vh;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo img{
+
+
+    width:75px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        MENU MOBILE
+========================== */
+
+
+.menu-mobile{
+
+
+    display:none;
+
+
+    font-size:30px;
+
+
+    color:var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        CONTEÚDO
+========================== */
+
+
+.eventos{
+
+
+    width:90%;
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+
+    padding-top:130px;
+
+
+    padding-bottom:80px;
+
+
+
+}/* ==========================
+        HERO EVENTOS
+========================== */
+
+
+.hero-eventos{
+
+
+    text-align:center;
+
+
+
+    padding:60px 25px;
+
+
+
+    margin-bottom:70px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    box-shadow:
+
+
+    0 10px 40px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-eventos h1{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:45px;
+
+
+
+    margin-bottom:20px;
+
+
+
+    text-shadow:
+
+
+    0 0 15px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-eventos p{
+
+
+    color:#ddd;
+
+
+
+    max-width:750px;
+
+
+
+    margin:auto;
+
+
+
+    font-size:18px;
+
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        SEÇÕES
+========================== */
+
+
+.secao-eventos{
+
+
+    margin-bottom:80px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-eventos h2{
+
+
+    text-align:center;
+
+
+
+    color:var(--dourado);
+
+
+
+    font-size:35px;
+
+
+
+    margin-bottom:40px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-eventos h2::after{
+
+
+    content:"";
+
+
+
+    display:block;
+
+
+
+    width:90px;
+
+
+
+    height:3px;
+
+
+
+    background:var(--dourado);
+
+
+
+    margin:15px auto;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        TEXTO EVENTOS
+========================== */
+
+
+.texto-eventos{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f
+
+    );
+
+
+
+    border:1px solid #d4af3770;
+
+
+
+    padding:35px;
+
+
+
+    border-radius:25px;
+
+
+
+    color:#ddd;
+
+
+
+    line-height:1.8;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        CARDS EVENTOS
+========================== */
+
+
+.cards-eventos{
+
+
+    display:grid;
+
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(260px,1fr));
+
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-evento{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    padding:35px;
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    transition:.4s;
+
+
+
+}
+
+
+
+
+
+
+
+.card-evento:hover{
+
+
+    transform:translateY(-10px);
+
+
+
+    box-shadow:
+
+
+    0 0 30px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.data-evento{
+
+
+    width:80px;
+
+
+
+    height:80px;
+
+
+
+    margin:0 auto 20px;
+
+
+
+    border-radius:20px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #d4af37,
+
+        #f5d76e
+
+    );
+
+
+
+    color:#000;
+
+
+
+    display:flex;
+
+
+
+    flex-direction:column;
+
+
+
+    align-items:center;
+
+
+
+    justify-content:center;
+
+
+
+}
+
+
+
+
+
+
+
+.data-evento span{
+
+
+    font-size:32px;
+
+
+
+    font-weight:bold;
+
+
+
+    line-height:1;
+
+
+
+}
+
+
+
+
+
+
+
+.data-evento p{
+
+
+    font-size:16px;
+
+
+
+    font-weight:bold;
+
+
+
+}
+
+
+
+
+
+
+
+.card-evento i{
+
+
+    font-size:45px;
+
+
+
+    color:var(--dourado);
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-evento h3{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:25px;
+
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-evento p{
+
+
+    color:#ddd;
+
+
+
+    line-height:1.7;
+
+
+
+    margin-bottom:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-evento button{
+
+
+    padding:13px 30px;
+
+
+
+    border:none;
+
+
+
+    border-radius:30px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #d4af37,
+
+        #f5d76e
+
+    );
+
+
+
+    color:#000;
+
+
+
+    font-weight:bold;
+
+
+
+    cursor:pointer;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.card-evento button:hover{
+
+
+    transform:scale(1.05);
+
+
+
+    box-shadow:
+
+
+    0 0 20px #d4af37;
+
+
+
+}/* ==========================
+        TIPOS DE EVENTOS
+========================== */
+
+
+.tipos-eventos{
+
+
+    display:grid;
+
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.tipo-evento{
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    border-radius:25px;
+
+
+
+    padding:35px;
+
+
+
+    text-align:center;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.tipo-evento:hover{
+
+
+    transform:translateY(-8px);
+
+
+
+    box-shadow:
+
+
+    0 0 25px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.tipo-evento i{
+
+
+    font-size:45px;
+
+
+
+    color:var(--dourado);
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.tipo-evento h3{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:24px;
+
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.tipo-evento p{
+
+
+    color:#ddd;
+
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        MODAIS
+========================== */
+
+
+.modal{
+
+
+    display:none;
+
+
+
+    position:fixed;
+
+
+
+    top:0;
+
+
+
+    left:0;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    rgba(0,0,0,.85);
+
+
+
+    justify-content:center;
+
+
+
+    align-items:center;
+
+
+
+    padding:20px;
+
+
+
+    z-index:2000;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    width:90%;
+
+
+
+    max-width:650px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    padding:40px;
+
+
+
+    border-radius:30px;
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    position:relative;
+
+
+
+    animation:abrirModal .4s;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:30px;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h3{
+
+
+    color:var(--dourado);
+
+
+
+    margin-top:25px;
+
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo p{
+
+
+    color:white;
+
+
+
+    line-height:1.8;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar{
+
+
+    position:absolute;
+
+
+
+    top:15px;
+
+
+
+    right:25px;
+
+
+
+    font-size:35px;
+
+
+
+    color:var(--dourado);
+
+
+
+    cursor:pointer;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar:hover{
+
+
+    color:white;
+
+
+
+    transform:scale(1.1);
+
+
+
+}/* ==========================
+        FRASE FINAL
+========================== */
+
+
+.frase-eventos{
+
+
+    margin-top:80px;
+
+
+
+    padding:55px 30px;
+
+
+
+    text-align:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-top:2px solid var(--dourado);
+
+
+
+    border-bottom:2px solid var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+.frase-eventos h2{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:32px;
+
+
+
+    font-style:italic;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-eventos p{
+
+
+    color:white;
+
+
+
+    margin-top:20px;
+
+
+
+    font-size:18px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        ANIMAÇÕES
+========================== */
+
+
+@keyframes abrirModal{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:scale(.7);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:scale(1);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@keyframes aparecer{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:translateY(30px);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:translateY(0);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.hero-eventos,
+.card-evento,
+.tipo-evento,
+.texto-eventos{
+
+
+    animation:aparecer .8s ease;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        TABLET
+========================== */
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    padding:0 25px;
+
+
+
+}
+
+
+
+
+
+nav{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+.menu-mobile{
+
+
+    display:block;
+
+
+
+}
+
+
+
+
+
+.pesquisa{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+
+.hero-eventos{
+
+
+    padding:45px 20px;
+
+
+
+}
+
+
+
+
+
+.hero-eventos h1{
+
+
+    font-size:35px;
+
+
+
+}
+
+
+
+
+
+
+.hero-eventos p{
+
+
+    font-size:16px;
+
+
+
+}
+
+
+
+
+
+
+.secao-eventos h2{
+
+
+    font-size:28px;
+
+
+
+}
+
+
+
+
+
+
+.card-evento{
+
+
+    padding:30px;
+
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        CELULAR
+========================== */
+
+
+@media(max-width:500px){
+
+
+
+.eventos{
+
+
+    width:95%;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-eventos{
+
+
+    border-radius:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-eventos h1{
+
+
+    font-size:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.cards-eventos{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+
+
+.tipos-eventos{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+
+
+.card-evento{
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.data-evento{
+
+
+    width:70px;
+
+
+
+    height:70px;
+
+
+
+}
+
+
+
+
+
+
+
+.data-evento span{
+
+
+    font-size:27px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    padding:30px 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    font-size:24px;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-eventos{
+
+
+    padding:40px 15px;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-eventos h2{
+
+
+    font-size:22px;
+
+
+
+}
+
+
+
+}#listaEventos{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.card-evento{
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #0b0b0b,
+        #0f2d5c
+    );
+
+
+    border:1px solid #c9a227;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.card-evento img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+
+
+.conteudo-evento{
+
+    padding:20px;
+
+}
+
+
+
+.conteudo-evento h3{
+
+    color:#c9a227;
+
+    font-family:'Cinzel',serif;
+
+}
+/* ==================================
+   AVISO EVENTOS
+================================== */
+
+
+#avisoEventos{
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:rgba(0,0,0,.75);
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    z-index:9999;
+
+
+}
+
+
+
+
+
+.conteudo-aviso-eventos{
+
+
+    width:420px;
+
+
+    max-width:90%;
+
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f
+
+    );
+
+
+    border:1px solid #d4af37;
+
+
+    border-radius:25px;
+
+
+    padding:35px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.conteudo-aviso-eventos h2{
+
+
+    color:#d4af37;
+
+
+    font-family:'Cinzel',serif;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.conteudo-aviso-eventos p{
+
+
+    color:white;
+
+
+    line-height:1.6;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.conteudo-aviso-eventos button{
+
+
+    margin-top:15px;
+
+
+    padding:12px 35px;
+
+
+    border:none;
+
+
+    border-radius:30px;
+
+
+    background:#d4af37;
+
+
+    color:#050505;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+}/* ==================================
+   JPC - AJUSTES MOBILE GLOBAL
+   COLAR NO FINAL DOS CSS DAS PÁGINAS
+================================== */
+
+
+/* ================================
+        CELULAR
+================================ */
+
+
+@media(max-width:768px){
+
+
+    body{
+
+        overflow-x:hidden;
+
+        padding-top:75px;
+
+    }
+
+
+
+    /* HEADER */
+
+    header{
+
+        height:75px;
+
+    }
+
+
+
+    /* HERO */
+
+    .hero,
+    .hero-santos,
+    .hero-liturgia,
+    .hero-equipe,
+    .hero-contato,
+    .hero-oracoes{
+
+
+        min-height:80vh;
+
+        padding:100px 20px 40px;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+
+
+    .hero h1,
+    .hero-santos h1,
+    .hero-liturgia h1{
+
+
+        font-size:30px;
+
+        line-height:1.2;
+
+
+    }
+
+
+
+    .hero p{
+
+
+        font-size:15px;
+
+        line-height:1.6;
+
+
+    }
+
+
+
+
+
+
+
+    /* CONTAINER */
+
+
+    .container{
+
+
+        width:90%;
+
+        margin:auto;
+
+
+    }
+
+
+
+
+
+
+
+    /* CARDS */
+
+
+    .grid-santos,
+    .cards,
+    .equipe-grid,
+    .grid-equipe,
+    .conteudos-grid{
+
+
+        grid-template-columns:1fr !important;
+
+
+        gap:20px;
+
+
+    }
+
+
+
+
+
+
+    .card,
+    .santo-card,
+    .card-equipe{
+
+
+        width:100%;
+
+
+    }
+
+
+
+
+
+
+
+    img{
+
+
+        max-width:100%;
+
+
+    }
+
+
+
+
+
+
+
+    /* TITULOS */
+
+
+    h1{
+
+        font-size:30px !important;
+
+    }
+
+
+
+    h2{
+
+        font-size:24px !important;
+
+    }
+
+
+
+    h3{
+
+        font-size:20px;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* BOTÕES */
+
+
+    button,
+    .btn,
+    .botao{
+
+
+        width:100%;
+
+
+        max-width:320px;
+
+
+    }
+
+
+
+
+
+
+
+    /* MODAIS */
+
+
+    .modal-content{
+
+
+        width:90%;
+
+
+        max-height:85vh;
+
+
+        overflow-y:auto;
+
+
+        padding:20px;
+
+
+    }
+
+
+
+    .modal-content img{
+
+
+        width:150px;
+
+
+        height:150px;
+
+
+        object-fit:cover;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* FOOTER */
+
+
+    footer{
+
+
+        text-align:center;
+
+
+        padding:40px 20px;
+
+
+    }
+
+
+    footer img{
+
+
+        width:100px;
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ================================
+        CELULAR PEQUENO
+================================ */
+
+
+@media(max-width:480px){
+
+
+
+    .hero h1,
+    .hero-santos h1{
+
+
+        font-size:26px !important;
+
+
+    }
+
+
+
+    .hero p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+    .container{
+
+
+        width:92%;
+
+
+    }
+
+
+
+    section{
+
+
+        padding-left:15px;
+
+        padding-right:15px;
+
+
+    }
+
+
+
+}

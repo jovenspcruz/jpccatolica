@@ -1,0 +1,563 @@
+/* ==================================
+   JPC ADMIN - AVISOS CSS
+   Jovens Pela Cruz
+================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #050505,
+        #0f2d5c,
+        #1f5aa6
+    );
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+}
+
+
+
+
+/* CONTAINER */
+
+
+.pagina{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:30px;
+
+}
+
+
+
+
+/* TOPO */
+
+
+.topo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.topo h1{
+
+    font-family:'Cinzel',serif;
+
+    color:#c9a227;
+
+    font-size:36px;
+
+}
+
+
+
+.topo p{
+
+    color:#ddd;
+
+    margin-top:8px;
+
+}
+
+
+
+.topo a{
+
+    text-decoration:none;
+
+    background:linear-gradient(
+        90deg,
+        #c9a227,
+        #e6c65c
+    );
+
+    color:#050505;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+
+.topo a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* FORMULARIO */
+
+
+.formulario{
+
+    background:rgba(0,0,0,.45);
+
+    border:1px solid rgba(201,162,39,.45);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.formulario h2{
+
+    font-family:'Cinzel',serif;
+
+    color:#c9a227;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.formulario h3{
+
+    color:#c9a227;
+
+    font-family:'Cinzel',serif;
+
+    margin:25px 0 15px;
+
+}
+
+
+
+
+
+/* CAMPOS */
+
+
+input,
+textarea,
+select{
+
+
+    width:100%;
+
+    padding:14px 16px;
+
+    margin-bottom:15px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(201,162,39,.5);
+
+    background:#050505;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus{
+
+
+    border-color:#c9a227;
+
+    box-shadow:0 0 12px rgba(201,162,39,.35);
+
+
+}
+
+
+
+textarea{
+
+
+    height:140px;
+
+    resize:none;
+
+
+}
+
+
+
+select{
+
+    cursor:pointer;
+
+}
+
+
+
+select option{
+
+    background:#050505;
+
+    color:white;
+
+}
+
+
+
+
+label{
+
+
+    display:block;
+
+    color:#c9a227;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+
+/* DATAS E HORAS */
+
+
+input[type="date"],
+input[type="time"]{
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+/* BOTÃO */
+
+
+button{
+
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+
+    background:linear-gradient(
+        90deg,
+        #c9a227,
+        #e6c65c
+    );
+
+
+    color:#050505;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+
+}
+
+
+
+
+
+/* LISTA */
+
+
+.lista{
+
+
+    background:rgba(0,0,0,.35);
+
+    border:1px solid rgba(201,162,39,.4);
+
+    border-radius:22px;
+
+    padding:30px;
+
+
+}
+
+
+
+.lista h2{
+
+
+    color:#c9a227;
+
+    font-family:'Cinzel',serif;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+/* CARDS DOS AVISOS */
+
+
+#listaAvisos{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:20px;
+
+
+}
+
+
+
+.aviso{
+
+
+    background:linear-gradient(
+        145deg,
+        #0b0b0b,
+        #0f2d5c
+    );
+
+
+    border:1px solid rgba(201,162,39,.4);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    transition:.3s;
+
+
+}
+
+
+
+.aviso:hover{
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+.aviso h3{
+
+
+    color:#c9a227;
+
+    font-family:'Cinzel',serif;
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+.aviso p{
+
+
+    line-height:1.6;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.aviso small{
+
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#ddd;
+
+
+}
+
+
+
+.prioridade{
+
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    background:#c9a227;
+
+    color:#050505;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* RESPONSIVO */
+
+
+@media(max-width:700px){
+
+
+    .pagina{
+
+        padding:20px;
+
+    }
+
+
+    .topo{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+}/* ==========================
+   TEMA CLARO GLOBAL
+========================== */
+
+
+body.tema-claro{
+
+
+background:#f2f2f2;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro .topo,
+body.tema-claro .card,
+body.tema-claro .perfil-box{
+
+
+background:white;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro p{
+
+
+color:#333;
+
+
+}
+
+
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3{
+
+
+color:#8c6d00;
+
+
+}

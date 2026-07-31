@@ -1,0 +1,702 @@
+/* ==================================
+   JPC - MEMBROS CSS
+================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #050505,
+        #0f2d5c,
+        #020617
+    );
+
+}
+
+
+
+
+
+
+/* TOPO */
+
+
+.topo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 6%;
+
+    background:rgba(0,0,0,.55);
+
+    border-bottom:1px solid rgba(201,162,39,.4);
+
+}
+
+
+
+.logo h1{
+
+    font-family:'Cinzel',serif;
+
+    color:#c9a227;
+
+    font-size:38px;
+
+}
+
+
+
+.logo span{
+
+    color:#ccc;
+
+}
+
+
+
+.topo a{
+
+    color:#c9a227;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+/* CONTAINER */
+
+
+.container{
+
+    padding:40px 6%;
+
+}
+
+
+
+
+
+
+.titulo h2{
+
+    font-family:'Cinzel',serif;
+
+    color:#c9a227;
+
+    font-size:32px;
+
+}
+
+
+
+.titulo p{
+
+    color:#ccc;
+
+    margin-top:8px;
+
+}
+
+
+
+
+
+
+
+
+/* PESQUISA */
+
+
+.filtros{
+
+    margin-top:30px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.filtros input,
+.filtros select{
+
+
+    flex:1;
+
+    padding:14px;
+
+    border-radius:15px;
+
+    background:#080808;
+
+    color:white;
+
+    border:1px solid rgba(201,162,39,.4);
+
+    outline:none;
+
+}
+
+
+
+
+
+
+
+/* LISTA */
+
+
+.lista{
+
+
+    margin-top:35px;
+
+    padding:30px;
+
+    border-radius:25px;
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #111827,
+        #050505
+    );
+
+
+    border:1px solid rgba(201,162,39,.35);
+
+
+}
+
+
+
+.lista h3{
+
+    color:#c9a227;
+
+    font-family:'Cinzel',serif;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+#listaMembros{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* CARD */
+
+
+.membro-card{
+
+
+    background:#080808;
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    border:1px solid rgba(201,162,39,.3);
+
+
+    text-align:center;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.membro-card:hover{
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+.membro-card img{
+
+
+    width:90px;
+
+
+    height:90px;
+
+
+    border-radius:50%;
+
+
+    object-fit:cover;
+
+
+    border:3px solid #c9a227;
+
+
+}
+
+
+
+.membro-card h3{
+
+
+    color:#c9a227;
+
+
+    margin-top:15px;
+
+
+}
+
+
+
+.membro-card p{
+
+
+    color:#bbb;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* BOTÕES */
+
+
+button{
+
+
+    margin-top:15px;
+
+
+    padding:12px 20px;
+
+
+    border:none;
+
+
+    border-radius:15px;
+
+
+    background:#c9a227;
+
+
+    color:#000;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+button:hover{
+
+
+    opacity:.85;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* MODAL */
+
+
+.modal{
+
+
+    display:none;
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:rgba(0,0,0,.75);
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    padding:20px;
+
+
+    z-index:999;
+
+
+}
+
+
+
+
+
+
+
+.modal-box{
+
+
+    width:100%;
+
+
+    max-width:380px;
+
+
+    max-height:85vh;
+
+
+    overflow:auto;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #111827,
+        #050505
+    );
+
+
+    border:1px solid rgba(201,162,39,.5);
+
+
+}
+
+
+
+.modal-box img{
+
+
+    width:100px;
+
+
+    height:100px;
+
+
+    display:block;
+
+
+    margin:auto;
+
+
+    border-radius:50%;
+
+
+    object-fit:cover;
+
+
+    border:3px solid #c9a227;
+
+
+}
+
+
+
+.modal-box h2{
+
+
+    text-align:center;
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    margin:20px 0;
+
+
+}
+
+
+
+.modal-box p{
+
+
+    color:#aaa;
+
+
+    margin-top:12px;
+
+
+}
+
+
+
+.modal-box strong{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+
+/* BOTÕES MODAL */
+
+
+.acoes-modal{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:10px;
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+.acoes-modal button{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+
+/* EDITAR */
+
+
+.modal-box input,
+.modal-box select{
+
+
+    width:100%;
+
+
+    padding:14px;
+
+
+    margin-top:15px;
+
+
+    border-radius:15px;
+
+
+    background:#080808;
+
+
+    color:white;
+
+
+    border:1px solid rgba(201,162,39,.4);
+
+
+}
+
+
+
+
+
+
+
+
+/* CELULAR */
+
+
+@media(max-width:700px){
+
+
+    .topo{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+
+
+    .container{
+
+        padding:25px;
+
+    }
+
+
+
+    .filtros{
+
+        flex-direction:column;
+
+    }
+
+
+
+    #listaMembros{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}/* ==========================
+   TEMA CLARO GLOBAL
+========================== */
+
+
+body.tema-claro{
+
+
+background:#f2f2f2;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro .topo,
+body.tema-claro .card,
+body.tema-claro .perfil-box{
+
+
+background:white;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro p{
+
+
+color:#333;
+
+
+}
+
+
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3{
+
+
+color:#8c6d00;
+
+
+}

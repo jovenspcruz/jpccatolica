@@ -1,0 +1,142 @@
+/* ==========================
+   GLOBAL MOBILE JPC
+========================== */
+
+
+@media (max-width: 768px){
+
+
+body{
+    overflow-x:hidden;
+}
+
+
+/* textos gerais */
+
+h1{
+    font-size:32px;
+}
+
+h2{
+    font-size:26px;
+}
+
+
+/* containers */
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+
+/* imagens */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+
+
+/* botões */
+
+.btn,
+button{
+    padding:12px 22px;
+    font-size:14px;
+}
+
+
+
+/* cards */
+
+.cards,
+.cards-santos,
+.cards-eventos,
+.cards-oracoes,
+.cards-liturgia,
+.ministerios{
+    grid-template-columns:1fr;
+}
+
+
+
+/* modais */
+
+.modal-conteudo,
+.modal-content{
+    width:90%;
+    max-height:80vh;
+    overflow:auto;
+}
+
+
+
+/* footer */
+
+footer{
+    text-align:center;
+}
+
+
+
+}/* ==================================
+   CORREÇÃO GLOBAL MOBILE
+================================== */
+
+
+html,
+body{
+
+    width:100%;
+
+    max-width:100%;
+
+    overflow-x:hidden;
+
+}
+
+
+
+
+
+/* evita menu aparecendo sozinho */
+
+#menuMobile{
+
+    display:none;
+
+}
+
+
+
+
+
+#menuMobile.ativo{
+
+    display:flex;
+
+}
+
+
+
+
+
+img{
+
+    max-width:100%;
+
+}
+
+
+
+
+
+section,
+header,
+footer{
+
+    max-width:100%;
+
+}

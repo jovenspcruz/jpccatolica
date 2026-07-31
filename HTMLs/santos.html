@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Santos | Jovens Pela Cruz</title>
+
+    <meta name="description"
+        content="Conheça santos, beatos e jovens que testemunharam Cristo e inspiram nossa caminhada de fé.">
+
+    <link rel="icon" href="../imagens/jpc.favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../HTMLs/HEADER/header.css">
+    <link rel="stylesheet" href="../CSS/santos.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+            HEADER
+========================== -->
+<!-- ==================================
+     JPC HEADER
+================================== -->
+
+
+<header id="header">
+
+<div class="logo">
+
+    <img 
+    id="logoJPC"
+    src="../imagens/jpc.favicon.logo.png"
+    alt="Jovens Pela Cruz">
+
+</div>
+
+
+    <nav id="menu">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+
+
+    <div class="lado-direito">
+
+
+
+        <div class="pesquisa">
+
+
+            <input 
+            id="pesquisa"
+            type="text"
+            placeholder="Pesquisar">
+
+
+            <button id="btnPesquisar">
+
+                🔎
+
+            </button>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <button id="btnMenu">
+
+            ☰
+
+        </button>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- MENU MOBILE -->
+
+
+    <nav id="menuMobile">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+</header>
+
+
+
+
+
+
+<!-- RESULTADO DA PESQUISA -->
+
+
+<div 
+id="resultadoPesquisa"
+class="resultado-pesquisa">
+
+
+    <div id="listaResultados">
+
+    </div>
+
+
+</div>
+<!-- ==========================
+            HERO
+========================== -->
+
+<section class="hero-santos">
+
+    <div class="overlay"></div>
+
+    <div class="hero-conteudo">
+
+        <img
+            src="../imagens/jpc.favicon.logo.png"
+            class="hero-logo"
+            alt="Logo JPC">
+
+        <span class="subtitulo">
+
+            Testemunhas da Fé
+
+        </span>
+
+        <h1>
+
+            Santos que inspiram nossa caminhada
+
+        </h1>
+
+        <p>
+
+            Conheça homens e mulheres que entregaram
+            suas vidas a Cristo e mostram que a santidade
+            continua possível nos dias de hoje.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+        CATEGORIAS
+========================== -->
+
+<section class="categorias">
+
+    <div class="container">
+
+        <h2>
+
+            Encontre por categoria
+
+        </h2>
+
+        <div class="categorias-grid">
+
+            <button class="ativo" data-filtro="todos">
+                Todos
+            </button>
+
+            <button data-filtro="jovens">
+                Jovens
+            </button>
+
+            <button data-filtro="martires">
+                Mártires
+            </button>
+
+            <button data-filtro="beatos">
+                Beatos
+            </button>
+
+             <button data-filtro="santos">
+                Santos
+            </button>
+
+
+            <button data-filtro="virgens">
+                Virgens
+            </button>
+
+            <button data-filtro="missionarios">
+                Missionários
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+        SANTOS
+========================== -->
+
+<section class="lista-santos">
+
+<div class="container">
+
+<div class="grid-santos">
+<!-- ==========================
+        CARDS DOS SANTOS
+========================== -->
+
+<!-- CARLO ACUTIS -->
+
+<div class="santo-card" data-categoria="jovens santos">
+
+    <img src="../imagens/carlito.jpc.jpg"
+        alt="Carlo Acutis">
+
+    <div class="santo-info">
+
+        <span class="categoria">
+
+            Jovem • Santo
+
+        </span>
+
+        <h3>
+
+            Carlo Acutis
+
+        </h3>
+
+        <p>
+
+            Apaixonado pela Eucaristia e pela evangelização através da tecnologia.
+
+        </p>
+
+        <button onclick="abrirModal('carlo')">
+
+            Conhecer História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- CHIARA LUCE -->
+
+<div class="santo-card" data-categoria="jovens beatos">
+
+    <img src="../imagens/badano.jpc.png"
+        alt="Chiara Luce Badano">
+
+    <div class="santo-info">
+
+        <span class="categoria">
+
+            Jovem • Beata
+
+        </span>
+
+        <h3>
+
+            Chiara Luce Badano
+
+        </h3>
+
+        <p>
+
+            Viveu a doença oferecendo sua vida a Cristo com alegria.
+
+        </p>
+
+        <button onclick="abrirModal('chiara')">
+
+            Conhecer História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- DOMINGOS SÁVIO -->
+
+<div class="santo-card" data-categoria="jovens santos">
+
+    <img src="../imagens/domingos.s.jpc.png"
+        alt="Domingos Sávio">
+
+    <div class="santo-info">
+
+        <span class="categoria">
+
+            Jovem
+
+        </span>
+
+        <h3>
+
+            São Domingos Sávio
+
+        </h3>
+
+        <p>
+
+            Discípulo de Dom Bosco e exemplo de pureza e santidade.
+
+        </p>
+
+        <button onclick="abrirModal('domingos')">
+
+            Conhecer História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- PIER GIORGIO -->
+
+<div class="santo-card" data-categoria="jovens santos">
+
+    <img src="../imagens/pier.jpc.png" class="pier-img" alt="Pier Giorgio Frassati">
+
+    <div class="santo-info">
+
+        <span class="categoria">
+
+            Jovem • Santo
+        </span>
+
+        <h3>
+
+            Pier Giorgio Frassati
+
+        </h3>
+
+        <p>
+
+            Jovem universitário apaixonado pelos pobres e pela Eucaristia.
+
+        </p>
+
+        <button onclick="abrirModal('pier')">
+
+            Conhecer História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- JOSÉ SÁNCHEZ -->
+
+<div class="santo-card" data-categoria="jovens martires">
+
+    <img src="../imagens/jose.luis.jpc.png"
+        alt="José Sánchez del Río">
+
+    <div class="santo-info">
+
+        <span class="categoria">
+
+            Jovem • Mártir
+
+        </span>
+
+        <h3>
+
+            São José Sánchez del Río
+
+        </h3>
+
+        <p>
+
+            Entregou sua vida defendendo Cristo durante a Guerra Cristera.
+
+        </p>
+
+        <button onclick="abrirModal('jose')">
+
+            Conhecer História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="santo-card" data-categoria="virgens martires">
+
+    <img src="../imagens/imelda.jpc.png"
+        alt="Imelda Lambertini">
+
+    <div class="santo-info">
+
+        <span class="categoria">
+
+            Virgem • Mártir
+
+        </span>
+
+        <h3>
+
+           Beata Imelda Lambertini
+
+        </h3>
+
+        <p>
+
+           Exemplo de amor puro à Eucaristia, devoção precoce e anseio intenso por receber a comunhão..
+
+        </p>
+
+        <button onclick="abrirModal('imelda')">
+
+            Conhecer História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- TARCÍSIO -->
+
+<div class="santo-card" data-categoria="martires">
+
+    <img src="../imagens/s.tarci.jpc.png"
+        alt="São Tarcísio">
+
+    <div class="santo-info">
+
+        <span class="categoria">
+
+            Mártir
+
+        </span>
+
+        <h3>
+
+            São Tarcísio
+
+        </h3>
+
+        <p>
+
+            Morreu defendendo a Santíssima Eucaristia.
+
+        </p>
+
+        <button onclick="abrirModal('tarcisio')">
+
+            Conhecer História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- SANTA TERESINHA -->
+
+<div class="santo-card" data-categoria="virgens missionarios">
+
+    <img src="../imagens/sant.tere.jpc.png"
+        alt="Santa Teresinha">
+
+    <div class="santo-info">
+
+        <span class="categoria">
+
+            Virgem • Missionária
+
+        </span>
+
+        <h3>
+
+            Santa Teresinha do Menino Jesus
+
+        </h3>
+
+        <p>
+
+            Doutora da Igreja e padroeira universal das missões.
+
+        </p>
+
+        <button onclick="abrirModal('teresinha')">
+
+            Conhecer História
+
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- ==========================
+        MODAIS DOS SANTOS
+========================== -->
+
+<!-- CARLO ACUTIS -->
+
+<div id="carlo" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal('carlo')">&times;</span>
+
+        <img src="../imagens/carlito.jpc.jpg" alt="Carlo Acutis">
+
+        <h2>São Carlo Acutis</h2>
+
+        <p>
+
+            Carlo Acutis nasceu em Londres, em 1991, e cresceu na Itália.
+            Desde muito jovem cultivou um profundo amor pela Santíssima
+            Eucaristia, chamando-a de "minha estrada para o Céu".
+
+        </p>
+
+        <p>
+
+            Utilizou seus conhecimentos de informática para evangelizar,
+            criando um site sobre os milagres eucarísticos reconhecidos
+            pela Igreja.
+
+        </p>
+
+        <button class="btn-video">
+
+            Assistir História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- CHIARA LUCE -->
+
+<div id="chiara" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal('chiara')">&times;</span>
+
+        <img src="../imagens/badano.jpc.png" alt="Chiara Luce">
+
+        <h2>Beata Chiara Luce Badano</h2>
+
+        <p>
+
+            Jovem italiana do Movimento dos Focolares,
+            viveu a doença com alegria e confiança em Deus.
+
+        </p>
+
+        <p>
+
+            Sua vida tornou-se testemunho de esperança,
+            amor e entrega total a Cristo.
+
+        </p>
+
+        <button class="btn-video">
+
+            Assistir História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- DOMINGOS SÁVIO -->
+
+<div id="domingos" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal('domingos')">&times;</span>
+
+        <img src="../imagens/domingos.s.jpc.png" alt="Domingos Sávio">
+
+        <h2>São Domingos Sávio</h2>
+
+        <p>
+
+            Discípulo de Dom Bosco,
+            tornou-se exemplo de santidade ainda na juventude.
+
+        </p>
+
+        <p>
+
+            Seu lema era:
+            "Antes morrer do que pecar."
+
+        </p>
+
+        <button class="btn-video">
+
+            Assistir História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- PIER GIORGIO -->
+
+<div id="pier" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal('pier')">&times;</span>
+
+      <img src="../imagens/pier.jpc.png" class="pier-img" alt="Pier Giorgio Frassati">
+
+        <h2>São Pier Giorgio Frassati</h2>
+
+        <p>
+
+            Jovem universitário italiano,
+            dedicou sua vida aos pobres e à Eucaristia.
+
+        </p>
+
+        <p>
+
+            É considerado um dos grandes exemplos
+            de santidade para a juventude.
+
+        </p>
+
+        <button class="btn-video">
+
+            Assistir História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- JOSÉ SÁNCHEZ -->
+
+<div id="jose" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal('jose')">&times;</span>
+
+        <img src="../imagens/jose.luis.jpc.png" alt="José Sánchez">
+
+        <h2>São José Sánchez del Río</h2>
+
+        <p>
+
+            Jovem mártir mexicano que entregou sua vida
+            durante a Guerra Cristera.
+
+        </p>
+
+        <p>
+
+            Suas últimas palavras foram:
+
+            "Viva Cristo Rei!"
+
+        </p>
+
+        <button class="btn-video">
+
+            Assistir História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!--  -->
+
+<div id="imelda" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal('imelda')">&times;</span>
+
+        <img src="../imagens/imelda.jpc.png" alt="Imelda Lambertini">
+
+        <h2>Beata Imelda Lambertini</h2>
+
+        <p>
+    Jovem italiana, teve um grande amor
+    por Jesus na Eucaristia desde a infância.
+</p>
+
+<p>
+    É considerada um exemplo de fé e santidade
+    para as crianças e jovens.
+</p>
+
+        <button class="btn-video">
+
+            Assistir História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- TARCÍSIO -->
+
+<div id="tarcisio" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal('tarcisio')">&times;</span>
+
+        <img src="../imagens/s.tarci.jpc.png" alt="São Tarcísio">
+
+        <h2>São Tarcísio</h2>
+
+        <p>
+
+            Jovem romano que morreu
+            protegendo a Santíssima Eucaristia.
+
+        </p>
+
+        <button class="btn-video">
+
+            Assistir História
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- TERESINHA -->
+
+<div id="teresinha" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal('teresinha')">&times;</span>
+
+        <img src="../imagens/sant.tere.jpc.png" alt="Santa Teresinha">
+
+        <h2>Santa Teresinha do Menino Jesus</h2>
+
+        <p>
+
+            Carmelita francesa,
+            Doutora da Igreja e Padroeira das Missões.
+
+        </p>
+
+        <p>
+
+            Ensinou ao mundo a viver
+            o "Pequeno Caminho" de amor e confiança em Deus.
+
+        </p>
+
+        <button class="btn-video">
+
+            Assistir História
+
+        </button>
+
+    </div>
+
+</div><!-- ==========================
+        PESQUISA
+========================== -->
+
+<div class="resultado-pesquisa" id="resultadoPesquisa">
+
+    <div class="pesquisa-box">
+
+        <h3>
+
+            Resultados encontrados
+
+        </h3>
+
+        <div id="listaResultados"></div>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+        FOOTER
+========================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <img
+            src="../imagens/jpc.favicon.logo.png"
+            alt="Logo JPC">
+
+        <h3>
+
+            Jovens Pela Cruz
+
+        </h3>
+
+        <p>
+
+            Que o testemunho dos santos inspire
+            nossa caminhada rumo à santidade,
+            vivendo diariamente o Evangelho de Cristo.
+
+        </p>
+
+        <div class="redes">
+
+            <a href="https://www.instagram.com/jovenspcruzz/" target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </a>
+
+            <a href="mailto:jovenspcruzz@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Jovens Pela Cruz.
+            Todos os direitos reservados.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ==========================
+        BOTÃO VOLTAR AO TOPO
+========================== -->
+
+<button id="voltarTopo">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+<div id="avisoVideo" class="aviso-video">
+
+    <button class="fechar-aviso" id="fecharAviso">
+        &times;
+    </button>
+
+    <strong>🎬 Vídeos em breve!</strong>
+
+    <p>
+        Estamos preparando as histórias dos santos.
+    </p>
+
+</div>
+<!-- ==========================
+        JAVASCRIPT
+========================== -->
+<script src="../JS/header.js"></script>
+
+
+<script src="../JS/santos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,2141 @@
+/* ===================================================
+            VARIÁVEIS
+=================================================== */
+
+:root{
+
+    --preto:#050505;
+    --azul-escuro:#06152f;
+    --azul-medio:#0f2d5c;
+    --dourado:#d4af37;
+    --dourado-claro:#f5d76e;
+    --branco:#ffffff;
+    --cinza:#d8d8d8;
+
+}
+
+/* ===================================================
+                RESET
+=================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:
+    linear-gradient(
+        180deg,
+        #050505,
+        #06152f,
+        #0f2d5c
+    );
+
+    color:var(--branco);
+
+    overflow-x:hidden;
+
+}
+
+
+.logo img{
+
+    width:75px;
+    transition:.4s;
+
+}
+
+.logo img:hover{
+
+    transform:rotate(-8deg) scale(1.05);
+
+}
+
+/* ===================================================
+                MENU
+=================================================== */
+
+nav{
+
+    display:flex;
+    gap:28px;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+nav a:hover,
+nav a.ativo{
+
+    color:var(--dourado);
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+    height:2px;
+
+    background:var(--dourado);
+
+    transition:.3s;
+
+}
+
+nav a:hover::after,
+nav a.ativo::after{
+
+    width:100%;
+
+}
+
+/* ===================================================
+            PESQUISA
+=================================================== */
+
+.lado-direito{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.pesquisa{
+
+    display:flex;
+    align-items:center;
+
+    border:1px solid var(--dourado);
+
+    border-radius:40px;
+
+    overflow:hidden;
+
+    background:#06152f;
+
+}
+
+.pesquisa input{
+
+    width:170px;
+
+    padding:11px 15px;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    color:white;
+
+}
+
+.pesquisa input::placeholder{
+
+    color:#cfcfcf;
+
+}
+
+.pesquisa button{
+
+    width:48px;
+    height:45px;
+
+    border:none;
+
+    background:var(--dourado);
+
+    color:black;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pesquisa button:hover{
+
+    background:var(--dourado-claro);
+
+}
+
+/* ===================================================
+            MENU MOBILE
+=================================================== */
+
+.menu-mobile{
+
+    display:none;
+
+    color:var(--dourado);
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+/* ===================================================
+                HERO
+=================================================== */
+
+.hero-santos{
+
+    margin-top:85px;
+
+    position:relative;
+
+    height:90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+        rgba(5,5,5,.75),
+        rgba(6,21,47,.82)
+    ),
+
+    url("../imagens/fundo-santos.jpg") center/cover;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle,
+    transparent 20%,
+    rgba(0,0,0,.55));
+
+}
+
+.hero-conteudo{
+
+    position:relative;
+
+    max-width:900px;
+
+    padding:20px;
+
+    z-index:2;
+
+}
+
+.hero-logo{
+
+    width:130px;
+
+    margin-bottom:25px;
+
+    animation:flutuar 4s infinite ease-in-out;
+
+}
+
+.subtitulo{
+
+    display:inline-block;
+
+    color:var(--dourado);
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+.hero-conteudo h1{
+
+    font-family:"Cinzel",serif;
+
+    font-size:60px;
+
+    color:white;
+
+    margin-bottom:20px;
+
+    text-shadow:0 0 20px rgba(0,0,0,.5);
+
+}
+
+.hero-conteudo p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#e2e2e2;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+/* ===================================================
+            CATEGORIAS
+=================================================== */
+
+.categorias{
+
+    padding:90px 8% 40px;
+
+}
+
+.categorias h2{
+
+    text-align:center;
+
+    font-family:"Cinzel",serif;
+
+    color:var(--dourado);
+
+    font-size:40px;
+
+    margin-bottom:45px;
+
+}
+
+.categorias-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.categorias-grid button{
+
+    padding:14px 30px;
+
+    border-radius:35px;
+
+    border:2px solid var(--dourado);
+
+    background:transparent;
+
+    color:white;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.categorias-grid button:hover{
+
+    background:var(--dourado);
+
+    color:black;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 18px rgba(212,175,55,.45);
+
+}
+
+.categorias-grid button.ativo{
+
+    background:var(--dourado);
+
+    color:black;
+
+    font-weight:600;
+
+}
+
+/* ===================================================
+            ANIMAÇÃO
+=================================================== */
+
+@keyframes flutuar{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}/* ===================================================
+            LISTA DOS SANTOS
+=================================================== */
+
+.lista-santos{
+
+    padding:40px 8% 100px;
+
+}
+
+.container{
+
+    width:100%;
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.grid-santos{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+/* ===================================================
+                CARD
+=================================================== */
+
+.santo-card{
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #050505,
+        #06152f,
+        #0f2d5c
+    );
+
+    border:1px solid rgba(212,175,55,.35);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.45);
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.santo-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--dourado);
+
+    box-shadow:
+
+    0 18px 45px rgba(212,175,55,.28);
+
+}
+
+/* ===================================================
+                IMAGEM
+=================================================== */
+
+.santo-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.santo-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===================================================
+                INFORMAÇÕES
+=================================================== */
+
+.santo-info{
+
+    padding:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.categoria{
+
+    display:inline-block;
+
+    width:max-content;
+
+    padding:6px 15px;
+
+    border-radius:25px;
+
+    background:
+
+    rgba(212,175,55,.12);
+
+    color:var(--dourado);
+
+    border:1px solid rgba(212,175,55,.35);
+
+    font-size:13px;
+
+    margin-bottom:18px;
+
+}
+
+.santo-info h3{
+
+    font-family:"Cinzel",serif;
+
+    color:white;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.santo-info p{
+
+    color:#d9d9d9;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+    flex:1;
+
+    margin-bottom:28px;
+
+}
+
+/* ===================================================
+                BOTÃO
+=================================================== */
+
+.santo-info button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:35px;
+
+    cursor:pointer;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #d4af37,
+        #f5d76e
+    );
+
+    color:#000;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.santo-info button:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:
+
+    0 0 22px rgba(212,175,55,.5);
+
+}
+
+/* ===================================================
+                EFEITO
+=================================================== */
+
+.santo-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    transition:.5s;
+
+    pointer-events:none;
+
+    background:
+
+    linear-gradient(
+
+        130deg,
+
+        transparent,
+
+        rgba(255,255,255,.08),
+
+        transparent
+
+    );
+
+}
+
+.santo-card{
+
+    position:relative;
+
+}
+
+.santo-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ===================================================
+            ANIMAÇÃO
+=================================================== */
+
+.santo-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:cardEntrada .8s forwards;
+
+}
+
+.santo-card:nth-child(2){
+
+    animation-delay:.1s;
+
+}
+
+.santo-card:nth-child(3){
+
+    animation-delay:.2s;
+
+}
+
+.santo-card:nth-child(4){
+
+    animation-delay:.3s;
+
+}
+
+.santo-card:nth-child(5){
+
+    animation-delay:.4s;
+
+}
+
+.santo-card:nth-child(6){
+
+    animation-delay:.5s;
+
+}
+
+.santo-card:nth-child(7){
+
+    animation-delay:.6s;
+
+}
+
+.santo-card:nth-child(8){
+
+    animation-delay:.7s;
+
+}
+
+@keyframes cardEntrada{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}/* ===================================================
+                MODAIS
+=================================================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    rgba(0,0,0,.85);
+
+    backdrop-filter:blur(8px);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:3000;
+
+    padding:20px;
+
+}
+
+
+.modal-content{
+
+    width:90%;
+
+    max-width:650px;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    padding:40px;
+
+    position:relative;
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #050505,
+        #06152f,
+        #0f2d5c
+    );
+
+
+    border:2px solid var(--dourado);
+
+    border-radius:30px;
+
+
+    box-shadow:
+
+    0 0 50px rgba(212,175,55,.35);
+
+
+    animation:
+
+    abrirModal .4s ease;
+
+
+}
+
+
+.modal-content img{
+
+    width:150px;
+
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    display:block;
+
+    margin:0 auto 25px;
+
+    border:3px solid var(--dourado);
+
+}
+
+
+
+.modal-content h2{
+
+    text-align:center;
+
+    color:var(--dourado);
+
+    font-family:"Cinzel",serif;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.modal-content p{
+
+    color:#ddd;
+
+    line-height:1.9;
+
+    text-align:center;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.fechar{
+
+    position:absolute;
+
+    right:25px;
+
+    top:15px;
+
+    font-size:35px;
+
+    color:var(--dourado);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.fechar:hover{
+
+    transform:rotate(90deg);
+
+    color:white;
+
+}
+
+
+
+/* ===================================================
+            BOTÃO HISTÓRIA
+=================================================== */
+
+
+.btn-video{
+
+    display:block;
+
+    margin:30px auto 0;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #d4af37,
+        #f5d76e
+    );
+
+
+    color:#000;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.btn-video:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+
+    0 0 20px rgba(212,175,55,.6);
+
+}
+
+
+
+@keyframes abrirModal{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.7);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/* ===================================================
+            RESULTADO PESQUISA
+=================================================== */
+
+
+.resultado-pesquisa{
+
+    display:none;
+
+    position:fixed;
+
+    top:90px;
+
+    right:30px;
+
+    width:350px;
+
+    z-index:2500;
+
+
+}
+
+
+
+.pesquisa-box{
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #050505,
+        #06152f
+    );
+
+
+    border:1px solid var(--dourado);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+
+    0 10px 35px rgba(0,0,0,.6);
+
+}
+
+
+
+.pesquisa-box h3{
+
+    color:var(--dourado);
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+
+
+#listaResultados div{
+
+    padding:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+    color:white;
+
+}
+
+
+
+/* ===================================================
+                FOOTER
+=================================================== */
+
+
+footer{
+
+    margin-top:80px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #050505,
+        #06152f,
+        #0f2d5c
+    );
+
+
+    border-top:2px solid var(--dourado);
+
+}
+
+
+
+.footer-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.footer-container img{
+
+    width:100px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer-container h3{
+
+    font-family:"Cinzel",serif;
+
+    color:var(--dourado);
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.footer-container p{
+
+    color:#ddd;
+
+    line-height:1.7;
+
+}
+
+
+
+.redes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin:30px 0;
+
+}
+
+
+
+.redes a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    background:#050505;
+
+
+    color:var(--dourado);
+
+
+    border:1px solid var(--dourado);
+
+
+    font-size:20px;
+
+
+    transition:.3s;
+
+}
+
+
+
+.redes a:hover{
+
+    background:var(--dourado);
+
+    color:#000;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.copyright{
+
+    font-size:14px;
+
+    opacity:.8;
+
+}
+
+
+
+/* ===================================================
+            VOLTAR AO TOPO
+=================================================== */
+
+
+#voltarTopo{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+
+    width:50px;
+
+    height:50px;
+
+
+    border-radius:50%;
+
+
+    border:none;
+
+
+    background:var(--dourado);
+
+
+    color:#000;
+
+
+    font-size:20px;
+
+
+    cursor:pointer;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    opacity:0;
+
+
+    pointer-events:none;
+
+
+    transition:.4s;
+
+
+    z-index:2000;
+
+}
+
+
+
+#voltarTopo.ativo{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+
+
+#voltarTopo:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 0 20px rgba(212,175,55,.5);
+
+}/* ===================================================
+            RESPONSIVIDADE TABLET
+=================================================== */
+
+
+@media(max-width:1100px){
+
+
+header{
+
+    padding:0 30px;
+
+}
+
+
+nav{
+
+    gap:18px;
+
+}
+
+
+nav a{
+
+    font-size:14px;
+
+}
+
+
+
+.hero-conteudo h1{
+
+
+    font-size:48px;
+
+
+}
+
+
+
+.grid-santos{
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(280px,1fr));
+
+
+}
+
+
+
+.santo-card img{
+
+
+    height:330px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+/* ===================================================
+            RESPONSIVIDADE TABLET/MOBILE
+=================================================== */
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    height:80px;
+
+
+    padding:0 25px;
+
+
+}
+
+
+
+.logo img{
+
+
+    width:65px;
+
+
+}
+
+
+
+nav{
+
+
+    display:none;
+
+
+}
+
+
+
+.menu-mobile{
+
+
+    display:block;
+
+
+}
+
+
+
+.pesquisa{
+
+
+    display:none;
+
+
+}
+
+
+
+
+.hero-santos{
+
+
+    margin-top:80px;
+
+
+    height:auto;
+
+
+    min-height:80vh;
+
+
+    padding:80px 20px;
+
+
+}
+
+
+
+
+.hero-logo{
+
+
+    width:100px;
+
+
+}
+
+
+
+.subtitulo{
+
+
+    font-size:13px;
+
+
+}
+
+
+
+.hero-conteudo h1{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+.hero-conteudo p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+.categorias{
+
+
+    padding:70px 5% 30px;
+
+
+}
+
+
+
+.categorias h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.categorias-grid{
+
+
+    gap:12px;
+
+
+}
+
+
+
+.categorias-grid button{
+
+
+    padding:12px 22px;
+
+
+}
+
+
+
+
+.lista-santos{
+
+
+    padding:40px 5% 80px;
+
+
+}
+
+
+
+
+
+.grid-santos{
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+.santo-card img{
+
+
+    height:300px;
+
+
+}
+
+
+
+.santo-info{
+
+
+    padding:22px;
+
+
+}
+
+
+
+.santo-info h3{
+
+
+    font-size:24px;
+
+
+}
+
+
+
+.modal-content{
+
+
+    padding:30px 20px;
+
+
+}
+
+
+
+.footer-container{
+
+
+    padding:50px 20px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* ===================================================
+            CELULAR
+=================================================== */
+
+
+@media(max-width:600px){
+
+
+
+body{
+
+
+    overflow-x:hidden;
+
+
+}
+
+
+
+
+
+header{
+
+
+    height:75px;
+
+
+}
+
+
+
+.logo img{
+
+
+    width:58px;
+
+
+}
+
+
+
+.menu-mobile{
+
+
+    font-size:27px;
+
+
+}
+
+
+
+
+
+.hero-santos{
+
+
+    min-height:700px;
+
+
+    padding:60px 15px;
+
+
+}
+
+
+
+
+.hero-logo{
+
+
+    width:90px;
+
+
+}
+
+
+
+.hero-conteudo h1{
+
+
+    font-size:30px;
+
+
+    line-height:1.3;
+
+
+}
+
+
+
+.hero-conteudo p{
+
+
+    font-size:15px;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+.categorias{
+
+
+    padding:55px 15px 20px;
+
+
+}
+
+
+
+.categorias h2{
+
+
+    font-size:27px;
+
+
+}
+
+
+
+.categorias-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+}
+
+
+
+.categorias-grid button{
+
+
+    width:100%;
+
+
+    padding:12px 8px;
+
+
+    font-size:13px;
+
+
+}
+
+
+
+
+
+.lista-santos{
+
+
+    padding:30px 15px 60px;
+
+
+}
+
+
+
+
+.grid-santos{
+
+
+    grid-template-columns:1fr;
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.santo-card{
+
+
+    border-radius:22px;
+
+
+}
+
+
+
+
+
+.santo-card img{
+
+
+    height:350px;
+
+
+}
+
+
+
+.santo-info h3{
+
+
+    font-size:23px;
+
+
+}
+
+
+
+.santo-info p{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.santo-info button{
+
+
+    padding:13px;
+
+
+}
+
+
+
+
+.modal{
+
+
+    padding:15px;
+
+
+}
+
+
+
+.modal-content{
+
+
+    width:100%;
+
+
+    padding:25px 18px;
+
+
+    border-radius:22px;
+
+
+}
+
+
+
+.modal-content img{
+
+
+    width:120px;
+
+
+    height:120px;
+
+
+}
+
+
+
+.modal-content h2{
+
+
+    font-size:24px;
+
+
+}
+
+
+
+.modal-content p{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+.resultado-pesquisa{
+
+
+    width:90%;
+
+
+    right:5%;
+
+
+}
+
+
+
+.footer-container h3{
+
+
+    font-size:25px;
+
+
+}
+
+
+
+.redes{
+
+
+    gap:12px;
+
+
+}
+
+
+
+#voltarTopo{
+
+
+    width:45px;
+
+
+    height:45px;
+
+
+    bottom:20px;
+
+
+    right:20px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ===================================================
+            ANIMAÇÕES GERAIS
+=================================================== */
+
+
+@keyframes surgir{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(35px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+.hero-conteudo,
+.categorias,
+.lista-santos,
+footer{
+
+
+    animation:surgir .8s ease;
+
+
+}
+
+
+
+
+
+
+/* ===================================================
+            BARRA DE ROLAGEM
+=================================================== */
+
+
+::-webkit-scrollbar{
+
+
+    width:10px;
+
+
+}
+
+
+
+::-webkit-scrollbar-track{
+
+
+    background:#050505;
+
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+
+    background:var(--dourado);
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover{
+
+
+    background:#f5d76e;
+
+
+}
+
+/* ==========================
+   AVISO VÍDEO EM BREVE
+========================== */
+
+.aviso-video{
+
+    position: fixed;
+
+    top: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-30px);
+
+    background: linear-gradient(
+        135deg,
+        #0b0b0b,
+        #111b3a
+    );
+
+    color: white;
+
+    padding: 22px 35px;
+
+    border-radius: 18px;
+
+    border: 1px solid #c9a227;
+
+    text-align: center;
+
+    font-family: Poppins, sans-serif;
+
+    z-index: 9999;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: .5s ease;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,.5);
+
+}
+
+
+
+.aviso-video.ativo{
+
+    opacity: 1;
+
+    transform: translateX(-50%) translateY(0);
+
+    pointer-events: auto;
+
+}
+
+
+
+.aviso-video strong{
+
+    color:#c9a227;
+
+    font-size:18px;
+
+}
+
+
+
+.aviso-video p{
+
+    margin:8px 0 0;
+
+}
+
+
+
+.fechar-aviso{
+
+    position:absolute;
+
+    top:8px;
+
+    right:12px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+}
+
+
+.fechar-aviso:hover{
+
+    color:#c9a227;
+
+}
+
+.pier-img{
+    object-position: top;
+}

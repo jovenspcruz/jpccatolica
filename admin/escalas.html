@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escalas | Jovens Pela Cruz</title>
+
+    <link rel="stylesheet" href="escalas.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <h1>✝ JPC</h1>
+
+        <span>Escalas da Equipe</span>
+
+    </div>
+
+    <button onclick="voltarPainel()">
+
+        ← Voltar
+
+    </button>
+
+</header>
+
+
+
+
+
+<main>
+
+
+
+
+
+<section class="topo-pagina">
+
+<h2>
+
+📅 Escalas
+
+</h2>
+
+<p>
+
+Organize todas as escalas da equipe.
+
+</p>
+
+</section>
+
+
+
+
+
+
+<section id="areaAdmin" class="cadastro">
+
+<h3>
+
+➕ Nova Escala
+
+</h3>
+
+<div class="grid">
+
+<div>
+
+<label>Dia da Semana</label>
+
+<select id="dia">
+
+<option>Domingo</option>
+
+<option>Segunda-feira</option>
+
+<option>Terça-feira</option>
+
+<option>Quarta-feira</option>
+
+<option>Quinta-feira</option>
+
+<option>Sexta-feira</option>
+
+<option>Sábado</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label>Data</label>
+
+<input type="date" id="data">
+
+</div>
+
+<div>
+
+<label>Horário</label>
+
+<input type="time" id="horario">
+
+</div>
+
+<div>
+
+<label>Local</label>
+
+<input type="text" id="lugar">
+
+</div>
+
+</div>
+
+
+
+
+
+<h4>
+
+👥 Membros
+
+</h4>
+
+<button onclick="abrirModalMembros()">
+
+Selecionar membros
+
+</button>
+
+<div id="membrosSelecionados" class="selecionados"></div>
+
+
+
+
+
+
+<h4>
+
+🎯 Funções
+
+</h4>
+
+<button onclick="abrirModalFuncoes()">
+
+Selecionar funções
+
+</button>
+
+<div id="funcoesSelecionadas" class="selecionados"></div>
+
+
+
+
+
+
+<div class="grid">
+
+<div>
+
+<label>Responsável</label>
+
+<input type="text" id="responsavel">
+
+</div>
+
+</div>
+
+
+
+
+
+<label>Observações</label>
+
+<textarea id="observacoes"></textarea>
+
+
+
+
+
+
+<button class="salvar" onclick="salvarEscala()">
+
+💾 Salvar Escala
+
+</button>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="meses">
+
+<h3>
+
+📂 Escalas por mês
+
+</h3>
+
+<div id="listaMeses" class="cardsMeses">
+
+</div>
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<!-- MODAL MEMBROS -->
+
+<div class="modal" id="modalMembros">
+
+<div class="modal-content">
+
+<h2>
+
+Selecionar membros
+
+</h2>
+
+<div id="listaEscolhaMembros"></div>
+
+<div class="acoes">
+
+<button onclick="confirmarMembros()">
+
+Confirmar
+
+</button>
+
+<button onclick="fecharModal('modalMembros')">
+
+Cancelar
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- MODAL FUNÇÕES -->
+
+<div class="modal" id="modalFuncoes">
+
+<div class="modal-content">
+
+<h2>
+
+Selecionar funções
+
+</h2>
+
+<div id="listaEscolhaFuncoes">
+
+<label><input type="checkbox" value="Leitor"> Leitor</label>
+
+<label><input type="checkbox" value="Comentarista"> Comentarista</label>
+
+<label><input type="checkbox" value="Salmista"> Salmista</label>
+
+<label><input type="checkbox" value="Ministro"> Ministro</label>
+
+<label><input type="checkbox" value="Acolhida"> Acolhida</label>
+
+<label><input type="checkbox" value="Mídia"> Mídia</label>
+
+<label><input type="checkbox" value="Liturgia"> Liturgia</label>
+
+<label><input type="checkbox" value="Música"> Música</label>
+
+<label><input type="checkbox" value="Cerimoniário"> Cerimoniário</label>
+
+<label><input type="checkbox" value="Coroinha"> Coroinha</label>
+
+</div>
+
+<div class="acoes">
+
+<button onclick="confirmarFuncoes()">
+
+Confirmar
+
+</button>
+
+<button onclick="fecharModal('modalFuncoes')">
+
+Cancelar
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- MODAL ESCALAS -->
+
+<div class="modal" id="modalMes">
+
+<div class="modal-content grande">
+
+<div class="modal-topo">
+
+<h2 id="tituloMes">
+
+Escalas
+
+</h2>
+
+<button class="fechar" onclick="fecharModalMes()">
+
+✕
+
+</button>
+
+</div>
+
+<div id="listaEscalasMes">
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<script src="tema.js"></script>
+
+<script src="escalas.js"></script>
+
+</body>
+
+</html>

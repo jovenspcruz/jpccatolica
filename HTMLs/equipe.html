@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Equipe | Jovens Pela Cruz</title>
+
+<link rel="icon" href="../imagens/jpc.favicon.png">
+
+<link rel="stylesheet" href="../CSS/global.css">
+<link rel="stylesheet" href="../HTMLs/HEADER/header.css">
+<link rel="stylesheet" href="../CSS/equipe.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+<!-- ==========================
+        HEADER
+========================== -->
+
+<!-- ==================================
+     JPC HEADER
+================================== -->
+
+
+<header id="header">
+
+<div class="logo">
+
+    <img 
+    id="logoJPC"
+    src="../imagens/jpc.favicon.logo.png"
+    alt="Jovens Pela Cruz">
+
+</div>
+
+
+    <nav id="menu">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+      <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+
+
+    <div class="lado-direito">
+
+
+
+        <div class="pesquisa">
+
+
+            <input 
+            id="pesquisa"
+            type="text"
+            placeholder="Pesquisar">
+
+
+            <button id="btnPesquisar">
+
+                🔎
+
+            </button>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <button id="btnMenu">
+
+            ☰
+
+        </button>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- MENU MOBILE -->
+
+
+    <nav id="menuMobile">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+</header>
+
+
+
+
+
+
+<!-- RESULTADO DA PESQUISA -->
+
+
+<div 
+id="resultadoPesquisa"
+class="resultado-pesquisa">
+
+
+    <div id="listaResultados">
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<main class="equipe">
+
+
+
+
+
+
+<!-- ==========================
+        HERO
+========================== -->
+
+
+<section class="hero-equipe">
+
+
+<h1>
+
+Nossa Equipe
+
+</h1>
+
+
+<p>
+
+Conheça aqueles que dedicam seu tempo e seus dons
+para levar Cristo aos jovens.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ==========================
+        SOBRE A EQUIPE
+========================== -->
+
+
+<section class="secao-equipe">
+
+
+<h2>
+
+Quem somos
+
+</h2>
+
+
+
+<div class="texto-equipe">
+
+
+<p>
+
+O Jovens Pela Cruz é formado por jovens que,
+unidos pela fé, trabalham para evangelizar,
+criar conteúdos e fortalecer a caminhada cristã.
+
+</p>
+
+
+
+<p>
+
+Cada pessoa da equipe possui uma missão,
+colocando seus talentos a serviço de Deus.
+
+</p>
+
+
+
+</div>
+
+
+</section> 
+<!-- ==========================
+        MEMBROS DA EQUIPE
+========================== -->
+
+
+<!-- ==========================
+        MEMBROS DA EQUIPE
+========================== -->
+
+<section class="secao-equipe">
+
+    <h2>
+        Nossa Equipe
+    </h2>
+
+
+    <div id="listaEquipe" class="cards-equipe">
+
+        <!--
+            Os cards serão criados
+            automaticamente pelo Firebase
+        -->
+
+    </div>
+
+
+</section>
+
+           <!-- ==========================
+        MODAL PERFIL EQUIPE
+========================== -->
+
+
+<div class="modal" id="modalPerfilEquipe">
+
+
+    <div class="modal-conteudo">
+
+
+        <img 
+        id="perfilFoto"
+        src="../imagens/jpc-avatar.png"
+        alt="Foto do membro">
+
+
+        <h2 id="perfilNome">
+            
+        </h2>
+
+
+        <h3 id="perfilCargo">
+
+        </h3>
+
+
+        <p id="perfilDescricao">
+
+        </p>
+
+
+
+        <div class="redes-perfil">
+
+
+            <a 
+            id="perfilInstagram"
+            target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+
+            <a 
+            id="perfilTikTok"
+            target="_blank">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+            </a>
+
+
+
+            <a 
+            id="perfilEmail">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+
+        </div>
+
+
+
+        <button onclick="fecharModal('modalPerfilEquipe')">
+
+            Fechar
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<!-- ==========================
+        ÁREAS DE SERVIÇO
+========================== -->
+
+
+<section class="secao-equipe">
+
+
+<h2>
+
+Nossos Ministérios
+
+</h2>
+
+
+
+
+<div class="ministerios">
+
+
+
+
+
+
+<div class="ministerio">
+
+
+<i class="fa-solid fa-camera"></i>
+
+
+<h3>
+
+Comunicação
+
+</h3>
+
+
+<p>
+
+Criação de conteúdos,
+design e redes sociais.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="ministerio">
+
+
+<i class="fa-solid fa-cross"></i>
+
+
+<h3>
+
+Espiritualidade
+
+</h3>
+
+
+<p>
+
+Oração, formação e vida cristã.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="ministerio">
+
+
+<i class="fa-solid fa-people-group"></i>
+
+
+<h3>
+
+Eventos
+
+</h3>
+
+
+<p>
+
+Organização de encontros
+e atividades.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section><div class="modal" id="modalPerfilEquipe">
+
+<div class="modal-conteudo">
+
+
+<img id="perfilFoto">
+
+
+<h2 id="perfilNome"></h2>
+
+
+<h3 id="perfilCargo"></h3>
+
+
+<p id="perfilDescricao"></p>
+
+
+
+<button onclick="fecharModal('modalPerfilEquipe')">
+
+Fechar
+
+</button>
+
+
+</div>
+
+</div>
+
+
+<!-- ==========================
+        FRASE FINAL
+========================== -->
+
+
+<section class="frase-equipe">
+
+
+<h2>
+
+"Cada um coloque a serviço dos outros
+o dom que recebeu."
+
+</h2>
+
+
+
+<p>
+
+1 Pedro 4,10
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+<footer>
+
+    <div class="footer-container">
+
+        <img
+            src="../imagens/jpc.favicon.logo.png"
+            alt="Logo JPC">
+
+        <h3>
+
+            Jovens Pela Cruz
+
+        </h3>
+
+
+        <div class="redes">
+
+            <a href="https://www.instagram.com/jovenspcruzz/" target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </a>
+
+            <a href="mailto:jovenspcruzz@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Jovens Pela Cruz.
+            Todos os direitos reservados.
+
+        </p>
+
+    </div>
+
+</footer>
+<!-- AVISO EQUIPE -->
+
+<div id="avisoEquipe">
+
+    Nossa equipe ainda está crescendo.
+    Em breve teremos novos jovens conosco.
+
+</div>
+
+
+<script src="../JS/header.js"></script>
+
+<script type="module" src="../JS/equipe.js"></script>
+
+
+</body>
+
+
+</html>

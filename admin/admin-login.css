@@ -1,0 +1,607 @@
+/* ==================================
+   JPC - ADMIN LOGIN
+   Jovens Pela Cruz
+================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:'Poppins', sans-serif;
+
+    color:white;
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #050505,
+
+        #0f2d5c,
+
+        #020617
+
+    );
+
+}
+
+
+
+
+
+
+
+/* CONTAINER */
+
+.login-container{
+
+    width:100%;
+
+    padding:20px;
+
+}
+
+
+
+
+
+
+
+/* CARD LOGIN */
+
+.login-box{
+
+
+    max-width:430px;
+
+
+    width:100%;
+
+
+    margin:auto;
+
+
+    padding:45px 35px;
+
+
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        #111827,
+
+        #050505
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:
+
+    1px solid rgba(201,162,39,.5);
+
+
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.7);
+
+
+
+    animation:
+
+    aparecer .6s ease;
+
+
+}
+
+
+
+
+
+
+
+/* LOGO */
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.logo h1{
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    font-size:55px;
+
+
+}
+
+
+
+.logo p{
+
+
+    color:#ddd;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+h2{
+
+
+    text-align:center;
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    font-size:30px;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+
+
+/* FORM */
+
+label{
+
+
+    display:block;
+
+
+    color:#ddd;
+
+
+    margin-bottom:8px;
+
+
+    margin-top:18px;
+
+
+    font-weight:500;
+
+
+}
+
+
+
+
+
+
+input{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border-radius:15px;
+
+
+    background:#080808;
+
+
+    color:white;
+
+
+    border:
+
+    1px solid rgba(201,162,39,.4);
+
+
+
+    outline:none;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+input:focus{
+
+
+    border-color:#c9a227;
+
+
+    box-shadow:
+
+    0 0 12px rgba(201,162,39,.4);
+
+
+}
+
+
+
+
+
+
+
+/* SENHA */
+
+.senha-container{
+
+
+    position:relative;
+
+
+}
+
+
+
+.senha-container input{
+
+
+    padding-right:55px;
+
+
+}
+
+
+
+
+
+.olho{
+
+
+    position:absolute;
+
+
+    right:12px;
+
+
+    top:50%;
+
+
+    transform:translateY(-50%);
+
+
+
+    background:none;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+
+
+/* BOTÃO */
+
+form button[type="submit"]{
+
+
+    width:100%;
+
+
+    margin-top:30px;
+
+
+    padding:15px;
+
+
+
+    border:none;
+
+
+
+    border-radius:15px;
+
+
+
+    background:#c9a227;
+
+
+
+    color:#000;
+
+
+
+    font-size:16px;
+
+
+
+    font-weight:700;
+
+
+
+    cursor:pointer;
+
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+form button[type="submit"]:hover{
+
+
+    transform:translateY(-3px);
+
+
+
+    box-shadow:
+
+    0 10px 30px rgba(201,162,39,.5);
+
+
+}
+
+
+
+
+
+
+
+/* RODAPÉ */
+
+.rodape{
+
+
+    text-align:center;
+
+
+    color:#999;
+
+
+    font-size:13px;
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+
+
+
+/* ANIMAÇÃO */
+
+@keyframes aparecer{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* CELULAR */
+
+@media(max-width:500px){
+
+
+.login-box{
+
+
+    padding:35px 25px;
+
+
+}
+
+
+
+.logo h1{
+
+
+    font-size:42px;
+
+
+}
+
+
+
+h2{
+
+
+    font-size:25px;
+
+
+}
+
+
+}/* ==========================
+   TEMA CLARO GLOBAL
+========================== */
+
+
+body.tema-claro{
+
+
+background:#f2f2f2;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro .topo,
+body.tema-claro .card,
+body.tema-claro .perfil-box{
+
+
+background:white;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro p{
+
+
+color:#333;
+
+
+}
+
+
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3{
+
+
+color:#8c6d00;
+
+
+}/* ==================================
+   BOTÃO VOLTAR SITE
+================================== */
+
+
+.voltar-site{
+
+
+    display:inline-block;
+
+
+    margin-top:20px;
+
+
+    padding:10px 25px;
+
+
+    border-radius:30px;
+
+
+    border:1px solid #d4af37;
+
+
+    color:#d4af37;
+
+
+    text-decoration:none;
+
+
+    font-family:'Poppins',sans-serif;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.voltar-site:hover{
+
+
+    background:#d4af37;
+
+
+    color:#050505;
+
+
+    transform:scale(1.05);
+
+
+}

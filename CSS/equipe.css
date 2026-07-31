@@ -1,0 +1,2157 @@
+/* ==========================
+        VARIÁVEIS
+========================== */
+
+
+:root{
+
+    --preto:#050505;
+
+    --azul-escuro:#06152f;
+
+    --azul-medio:#0f2d5c;
+
+    --dourado:#d4af37;
+
+    --branco:#ffffff;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        RESET
+========================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',Arial,sans-serif;
+
+}
+
+
+
+
+
+body{
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    color:white;
+
+
+    min-height:100vh;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo img{
+
+
+    width:75px;
+
+
+}
+
+
+
+
+/* ==========================
+        MENU MOBILE
+========================== */
+
+
+.menu-mobile{
+
+
+    display:none;
+
+
+    font-size:30px;
+
+
+    color:var(--dourado);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        CONTEÚDO
+========================== */
+
+
+.equipe{
+
+
+    width:90%;
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+
+    padding-top:130px;
+
+
+    padding-bottom:80px;
+
+
+
+}/* ==========================
+        HERO EQUIPE
+========================== */
+
+
+.hero-equipe{
+
+
+    text-align:center;
+
+
+
+    padding:60px 25px;
+
+
+
+    margin-bottom:70px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    box-shadow:
+
+
+    0 10px 40px #00000080;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-equipe h1{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:45px;
+
+
+
+    margin-bottom:20px;
+
+
+
+    text-shadow:
+
+
+    0 0 15px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-equipe p{
+
+
+    color:#ddd;
+
+
+
+    max-width:750px;
+
+
+
+    margin:auto;
+
+
+
+    font-size:18px;
+
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        SEÇÕES
+========================== */
+
+
+.secao-equipe{
+
+
+    margin-bottom:80px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-equipe h2{
+
+
+    text-align:center;
+
+
+
+    color:var(--dourado);
+
+
+
+    font-size:35px;
+
+
+
+    margin-bottom:40px;
+
+
+
+}
+
+
+
+
+
+
+
+.secao-equipe h2::after{
+
+
+    content:"";
+
+
+
+    display:block;
+
+
+
+    width:90px;
+
+
+
+    height:3px;
+
+
+
+    background:var(--dourado);
+
+
+
+    margin:15px auto;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        TEXTO EQUIPE
+========================== */
+
+
+.texto-equipe{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f
+
+    );
+
+
+
+    padding:35px;
+
+
+
+    border-radius:25px;
+
+
+
+    border:1px solid #d4af3770;
+
+
+
+    line-height:1.8;
+
+
+
+    color:#ddd;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        CARDS EQUIPE
+========================== */
+
+
+.cards-equipe{
+
+
+    display:grid;
+
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(260px,1fr));
+
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-equipe{
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-radius:30px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    padding:30px;
+
+
+
+    text-align:center;
+
+
+
+    transition:.4s;
+
+
+
+}
+
+
+
+
+
+
+
+.card-equipe:hover{
+
+
+    transform:translateY(-10px);
+
+
+
+    box-shadow:
+
+
+    0 0 30px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.foto-equipe{
+
+
+    width:150px;
+
+
+
+    height:150px;
+
+
+
+    margin:0 auto 20px;
+
+
+
+    border-radius:50%;
+
+
+
+    overflow:hidden;
+
+
+
+    border:3px solid var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+.foto-equipe img{
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    object-fit:contain;
+
+
+
+}
+
+
+
+
+
+
+
+.card-equipe h3{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:25px;
+
+
+
+    margin-bottom:10px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-equipe span{
+
+
+    color:#f5d76e;
+
+
+
+    font-size:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.card-equipe p{
+
+
+    color:#ddd;
+
+
+
+    margin:20px 0;
+
+
+
+    line-height:1.6;
+
+
+
+}
+
+
+
+
+
+
+
+.card-equipe button{
+
+
+    padding:12px 30px;
+
+
+
+    border:none;
+
+
+
+    border-radius:30px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #d4af37,
+
+        #f5d76e
+
+    );
+
+
+
+    cursor:pointer;
+
+
+
+    font-weight:bold;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.card-equipe button:hover{
+
+
+    transform:scale(1.05);
+
+
+
+    box-shadow:
+
+
+    0 0 20px #d4af37;
+
+
+
+}/* ==========================
+        MINISTÉRIOS
+========================== */
+
+
+.ministerios{
+
+
+    display:grid;
+
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+
+    gap:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.ministerio{
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    padding:35px;
+
+
+
+    border-radius:25px;
+
+
+
+    border:1px solid var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.ministerio:hover{
+
+
+    transform:translateY(-8px);
+
+
+
+    box-shadow:
+
+
+    0 0 25px #d4af3770;
+
+
+
+}
+
+
+
+
+
+
+
+.ministerio i{
+
+
+    font-size:45px;
+
+
+
+    color:var(--dourado);
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.ministerio h3{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:25px;
+
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+
+
+
+
+.ministerio p{
+
+
+    color:#ddd;
+
+
+
+    line-height:1.7;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        MODAIS
+========================== */
+
+
+.modal{
+
+
+    display:none;
+
+
+
+    position:fixed;
+
+
+
+    top:0;
+
+
+
+    left:0;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    rgba(0,0,0,.85);
+
+
+
+    justify-content:center;
+
+
+
+    align-items:center;
+
+
+
+    padding:20px;
+
+
+
+    z-index:2000;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    width:90%;
+
+
+
+    max-width:650px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        145deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    padding:40px;
+
+
+
+    border-radius:30px;
+
+
+
+    border:2px solid var(--dourado);
+
+
+
+    position:relative;
+
+
+
+    animation:abrirModal .4s;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    color:var(--dourado);
+
+
+
+    text-align:center;
+
+
+
+    margin-bottom:25px;
+
+
+
+    font-size:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo p{
+
+
+    color:white;
+
+
+
+    text-align:center;
+
+
+
+    line-height:1.8;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar{
+
+
+    position:absolute;
+
+
+
+    top:15px;
+
+
+
+    right:25px;
+
+
+
+    font-size:35px;
+
+
+
+    color:var(--dourado);
+
+
+
+    cursor:pointer;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+.fechar:hover{
+
+
+    color:white;
+
+
+
+    transform:scale(1.1);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        FRASE FINAL
+========================== */
+
+
+.frase-equipe{
+
+
+    margin-top:80px;
+
+
+
+    padding:55px 30px;
+
+
+
+    text-align:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        90deg,
+
+        #050505,
+
+        #06152f,
+
+        #0f2d5c
+
+    );
+
+
+
+    border-top:2px solid var(--dourado);
+
+
+
+    border-bottom:2px solid var(--dourado);
+
+
+
+}
+
+
+
+
+
+
+
+.frase-equipe h2{
+
+
+    color:var(--dourado);
+
+
+
+    font-size:32px;
+
+
+
+    font-style:italic;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-equipe p{
+
+
+    margin-top:20px;
+
+
+
+    font-size:18px;
+
+
+
+    color:white;
+
+
+
+}/* ==========================
+        ANIMAÇÕES
+========================== */
+
+
+@keyframes abrirModal{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:scale(.7);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:scale(1);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@keyframes aparecer{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:translateY(30px);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:translateY(0);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.hero-equipe,
+.card-equipe,
+.ministerio,
+.texto-equipe{
+
+
+    animation:aparecer .8s ease;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        TABLET
+========================== */
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    padding:0 25px;
+
+
+
+}
+
+
+
+
+nav{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+.menu-mobile{
+
+
+    display:block;
+
+
+
+}
+
+
+
+
+
+
+.pesquisa{
+
+
+    display:none;
+
+
+
+}
+
+
+
+
+
+
+.hero-equipe{
+
+
+    padding:45px 20px;
+
+
+
+}
+
+
+
+
+
+
+.hero-equipe h1{
+
+
+    font-size:35px;
+
+
+
+}
+
+
+
+
+
+.hero-equipe p{
+
+
+    font-size:16px;
+
+
+
+}
+
+
+
+
+
+
+.secao-equipe h2{
+
+
+    font-size:28px;
+
+
+
+}
+
+
+
+
+
+
+.cards-equipe{
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+
+}
+
+
+
+
+
+
+.frase-equipe h2{
+
+
+    font-size:26px;
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+        CELULAR
+========================== */
+
+
+@media(max-width:500px){
+
+
+
+.equipe{
+
+
+    width:95%;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-equipe{
+
+
+    border-radius:20px;
+
+
+
+}
+
+
+
+
+
+
+
+.hero-equipe h1{
+
+
+    font-size:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.cards-equipe{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+
+
+.card-equipe{
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.foto-equipe{
+
+
+    width:130px;
+
+
+
+    height:130px;
+
+
+
+}
+
+
+
+
+
+
+
+.ministerios{
+
+
+    grid-template-columns:1fr;
+
+
+
+}
+
+
+
+
+
+
+
+.texto-equipe{
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo{
+
+
+    padding:30px 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.modal-conteudo h2{
+
+
+    font-size:24px;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-equipe{
+
+
+    padding:40px 15px;
+
+
+
+}
+
+
+
+
+
+
+
+.frase-equipe h2{
+
+
+    font-size:22px;
+
+
+
+}
+
+
+
+}
+/* ==========================
+   CARDS DA EQUIPE
+========================== */
+
+
+#listaEquipe{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+.card-equipe{
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #0b0b0b,
+        #0f2d5c
+    );
+
+
+    border:
+
+    1px solid rgba(201,162,39,0.5);
+
+
+    border-radius:20px;
+
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.card-equipe:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#c9a227;
+
+}
+
+
+
+
+.card-equipe img{
+
+
+    width:120px;
+
+    height:120px;
+
+
+    object-fit:cover;
+
+
+    border-radius:50%;
+
+
+    border:3px solid #c9a227;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.card-equipe h3{
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#c9a227;
+
+
+    font-size:22px;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+.card-equipe h4{
+
+
+    color:white;
+
+
+    font-size:15px;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+.card-equipe p{
+
+
+    font-size:14px;
+
+
+    line-height:1.5;
+
+
+    opacity:.9;
+
+
+}/* ==================================
+   MODAL PERFIL EQUIPE
+================================== */
+
+
+.modal-conteudo{
+
+    width:90%;
+
+    max-width:420px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+
+
+#perfilFoto{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin:0 auto 20px;
+
+    display:block;
+
+    border:3px solid #c9a227;
+
+}/* ==================================
+   CARDS EQUIPE PÚBLICA
+================================== */
+
+
+#listaEquipe{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+
+
+
+
+.card-equipe{
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #050505,
+        #06152f,
+        #0f2d5c
+    );
+
+
+    border:1px solid #c9a227;
+
+
+    border-radius:30px;
+
+
+    padding:30px;
+
+
+    text-align:center;
+
+
+    transition:.3s;
+
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+.card-equipe:hover{
+
+    transform:translateY(-10px);
+
+
+    box-shadow:
+
+    0 0 30px #c9a22780;
+
+}
+
+
+
+
+
+.card-equipe img{
+
+
+    width:140px;
+
+
+    height:140px;
+
+
+    object-fit:cover;
+
+
+    border-radius:50%;
+
+
+    border:3px solid #c9a227;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.card-equipe h3{
+
+
+    font-family:'Cinzel',serif;
+
+
+    color:#d4af37;
+
+
+    font-size:25px;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+
+.card-equipe h4{
+
+
+    color:#f5d76e;
+
+
+    font-size:16px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.card-equipe p{
+
+
+    color:#ddd;
+
+
+    line-height:1.6;
+
+
+    min-height:50px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.card-equipe button{
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #d4af37,
+        #f5d76e
+    );
+
+
+    color:#050505;
+
+
+    border:none;
+
+
+    padding:12px 30px;
+
+
+    border-radius:30px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.card-equipe button:hover{
+
+
+    transform:scale(1.05);
+
+
+    box-shadow:
+
+    0 0 20px #d4af37;
+
+
+}
+
+
+
+
+
+/* ==================================
+   REDES DO MODAL
+================================== */
+
+
+.redes-perfil{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:25px;
+
+
+    margin:25px 0;
+
+
+}
+
+
+
+
+
+.redes-perfil a{
+
+
+    color:#d4af37;
+
+
+    font-size:28px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.redes-perfil a:hover{
+
+
+    color:white;
+
+
+    transform:scale(1.15);
+
+
+}/* ==================================
+   AVISO TOPO EQUIPE
+================================== */
+
+
+#avisoEquipe{
+
+
+    position:fixed;
+
+
+    top:20px;
+
+
+    left:50%;
+
+
+    transform:translateX(-50%) translateY(-100px);
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #06152f,
+
+        #050505
+
+    );
+
+
+    color:white;
+
+
+    border:1px solid #d4af37;
+
+
+    padding:15px 30px;
+
+
+    border-radius:30px;
+
+
+    font-family:'Poppins',sans-serif;
+
+
+    font-size:15px;
+
+
+    text-align:center;
+
+
+    z-index:9999;
+
+
+    opacity:0;
+
+
+    transition:.5s;
+
+
+    box-shadow:
+
+    0 0 20px rgba(212,175,55,.35);
+
+
+}
+
+
+
+
+
+#avisoEquipe.mostrar{
+
+
+    transform:
+
+    translateX(-50%)
+
+    translateY(0);
+
+
+    opacity:1;
+
+
+}

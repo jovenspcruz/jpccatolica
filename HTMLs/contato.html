@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Contato | Jovens Pela Cruz</title>
+
+<link rel="icon" href="../imagens/jpc.favicon.png">
+
+<link rel="stylesheet" href="../CSS/global.css">
+<link rel="stylesheet" href="../HTMLs/HEADER/header.css">
+<link rel="stylesheet" href="../CSS/contato.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+<!-- ==========================
+        HEADER
+========================== -->
+
+
+<!-- ==================================
+     JPC HEADER
+================================== -->
+
+
+<header id="header">
+
+<div class="logo">
+
+    <img 
+    id="logoJPC"
+    src="../imagens/jpc.favicon.logo.png"
+    alt="Jovens Pela Cruz">
+
+</div>
+
+
+    <nav id="menu">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+
+
+    <div class="lado-direito">
+
+
+
+        <div class="pesquisa">
+
+
+            <input 
+            id="pesquisa"
+            type="text"
+            placeholder="Pesquisar">
+
+
+            <button id="btnPesquisar">
+
+                🔎
+
+            </button>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <button id="btnMenu">
+
+            ☰
+
+        </button>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- MENU MOBILE -->
+
+
+    <nav id="menuMobile">
+
+
+        <a href="inicio.html">
+            Início
+        </a>
+
+
+        <a href="quem-somos.html">
+            Quem Somos
+        </a>
+
+
+        <a href="santos.html">
+            Santos
+        </a>
+
+
+        <a href="liturgia.html">
+            Liturgia
+        </a>
+
+
+       <a href="eventos.html">
+            Eventos
+        </a>
+
+
+
+        <a href="equipe.html">
+            Equipe
+        </a>
+
+
+        <a href="oracoes.html">
+            Orações
+        </a>
+
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+
+    </nav>
+
+
+
+
+
+</header>
+
+
+
+
+
+
+<!-- RESULTADO DA PESQUISA -->
+
+
+<div 
+id="resultadoPesquisa"
+class="resultado-pesquisa">
+
+
+    <div id="listaResultados">
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<main class="contato">
+
+
+
+
+
+
+<!-- ==========================
+        HERO
+========================== -->
+
+
+<section class="hero-contato">
+
+
+<h1>
+
+Entre em Contato
+
+</h1>
+
+
+
+<p>
+
+Estamos aqui para ouvir você,
+receber sugestões e caminhar juntos na fé.
+
+</p>
+
+
+
+</section><!-- ==========================
+        CARDS DE CONTATO
+========================== -->
+
+
+<section class="secao-contato">
+
+
+<h2>
+
+Fale Conosco
+
+</h2>
+
+
+
+
+
+<div class="cards-contato">
+
+
+
+
+
+
+<div class="card-contato">
+
+
+<i class="fa-brands fa-instagram"></i>
+
+
+
+<h3>
+
+Instagram
+
+</h3>
+
+
+
+<p>
+
+Acompanhe nossas novidades,
+conteúdos e momentos de fé.
+
+</p>
+
+
+
+<a href="https://www.instagram.com/jovenspcruzz/" target="_blank">
+
+Acessar
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="card-contato">
+
+
+<i class="fa-solid fa-envelope"></i>
+
+
+
+<h3>
+
+Email
+
+</h3>
+
+
+
+<p>
+
+Envie uma mensagem para nossa equipe.
+
+</p>
+
+
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=jovenspcruzz@gmail.com" target="_blank">
+    Enviar e-mail
+</a>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        FORMULÁRIO
+========================== -->
+
+
+<section class="secao-contato">
+
+
+<h2>
+
+Envie uma Mensagem
+
+</h2>
+
+
+
+
+<form
+id="formContato"
+class="form-contato"
+action="https://formsubmit.co/jovenspcruzz@gmail.com"
+method="POST">
+
+
+
+
+
+
+<div class="campo">
+
+
+<label>
+
+Nome
+
+</label>
+
+
+
+<input
+type="text"
+id="nome"
+name="nome"
+placeholder="Digite seu nome"
+required>
+
+</div>
+
+
+
+
+
+
+
+<div class="campo">
+
+
+<label>
+
+Email
+
+</label>
+
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Digite seu email"
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="campo">
+
+
+<label>
+
+Mensagem
+
+</label>
+
+
+
+<textarea
+id="mensagem"
+name="mensagem"
+placeholder="Escreva sua mensagem"
+rows="6"
+required></textarea>
+
+
+</div>
+
+
+
+
+
+
+
+<button type="submit">
+
+Enviar Mensagem
+
+</button>
+
+
+<input
+type="hidden"
+name="_captcha"
+value="false">
+
+<input
+type="hidden"
+name="_subject"
+value="Nova mensagem enviada pelo site JPC">
+
+<input
+type="hidden"
+name="_template"
+value="table">
+
+<input
+type="hidden"
+name="_next"
+value="https://SEUUSUARIO.github.io/NOME-DO-REPOSITORIO/HTMLs/obrigado.html">
+
+
+</form>
+
+
+
+
+</section><!-- ==========================
+        MODAL
+========================== -->
+
+
+<div id="modalContato" class="modal">
+
+
+
+<div class="modal-conteudo">
+
+
+
+<span 
+class="fechar"
+onclick="fecharModal()">
+
+×
+
+</span>
+
+
+
+
+
+<h2>
+
+Mensagem enviada!
+
+</h2>
+
+
+
+
+<p>
+
+Obrigado por entrar em contato com o
+Jovens Pela Cruz.
+
+Que Deus abençoe sua caminhada de fé.
+
+</p>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+        FRASE FINAL
+========================== -->
+
+
+<section class="frase-contato">
+
+
+
+<h2>
+
+"Permanecei em mim, e eu permanecerei em vós."
+
+</h2>
+
+
+
+
+<p>
+
+João 15,4
+
+</p>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+<script src="../JS/header.js"></script>
+
+<script src="../JS/contato.js"></script>
+
+
+
+</body>
+
+
+</html>

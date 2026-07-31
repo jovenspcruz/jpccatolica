@@ -1,0 +1,736 @@
+/* ==================================
+   JPC - ESCALAS CSS
+================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+
+    --azul:#0f2d5c;
+    --azul2:#1f5aa6;
+    --preto:#050505;
+    --cinza:#141414;
+    --dourado:#c9a227;
+    --branco:#ffffff;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(135deg,#050505,#0b1d38,#050505);
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+/* HEADER */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 6%;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(201,162,39,.35);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo h1{
+
+    font-family:'Cinzel',serif;
+
+    color:var(--dourado);
+
+    font-size:34px;
+
+}
+
+.logo span{
+
+    color:#d7d7d7;
+
+    font-size:14px;
+
+}
+
+header button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--dourado);
+
+    color:#000;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+header button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* MAIN */
+
+main{
+
+    width:min(1400px,94%);
+
+    margin:auto;
+
+    padding:40px 0 70px;
+
+}
+
+/* TITULO */
+
+.topo-pagina{
+
+    margin-bottom:30px;
+
+}
+
+.topo-pagina h2{
+
+    font-family:'Cinzel',serif;
+
+    font-size:38px;
+
+    color:var(--dourado);
+
+}
+
+.topo-pagina p{
+
+    color:#d2d2d2;
+
+    margin-top:8px;
+
+}
+
+/* CARD */
+
+.cadastro,
+.meses{
+
+    background:#101010;
+
+    border:1px solid rgba(201,162,39,.25);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    margin-bottom:30px;
+
+}
+
+.cadastro h3,
+.meses h3{
+
+    color:var(--dourado);
+
+    font-family:'Cinzel',serif;
+
+    margin-bottom:25px;
+
+}
+
+/* GRID */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    color:#dadada;
+
+    font-size:14px;
+
+}
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #2b2b2b;
+
+    background:#1a1a1a;
+
+    color:white;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:var(--dourado);
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+    margin-bottom:20px;
+
+}
+
+/* BOTÕES */
+
+button{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.salvar{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:var(--dourado);
+
+    color:#000;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+.salvar:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.cadastro button:not(.salvar){
+
+    margin-top:12px;
+
+    margin-bottom:18px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--azul2);
+
+    color:white;
+
+}
+
+/* TAGS */
+
+.selecionados{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.tag{
+
+    background:rgba(201,162,39,.15);
+
+    border:1px solid rgba(201,162,39,.45);
+
+    color:var(--dourado);
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
+/* CARDS DOS MESES */
+
+.cardsMeses{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:20px;
+
+}
+
+.card-mes{
+
+    background:#181818;
+
+    border:1px solid rgba(201,162,39,.25);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.card-mes:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--dourado);
+
+}
+
+.card-mes h3{
+
+    color:var(--dourado);
+
+    margin-bottom:10px;
+
+    font-family:'Cinzel',serif;
+
+}
+
+.card-mes p{
+
+    color:#d5d5d5;
+
+}
+
+/* MODAIS */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.7);
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    z-index:9999;
+
+}
+
+.modal-content{
+
+    width:min(650px,100%);
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    background:#111;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid rgba(201,162,39,.35);
+
+}
+
+.modal-content.grande{
+
+    width:min(950px,100%);
+
+}
+
+.modal h2{
+
+    color:var(--dourado);
+
+    margin-bottom:20px;
+
+    font-family:'Cinzel',serif;
+
+}
+
+/* CHECKBOX */
+
+#listaEscolhaMembros,
+#listaEscolhaFuncoes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+#listaEscolhaMembros label,
+#listaEscolhaFuncoes label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#181818;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+}
+
+input[type="checkbox"]{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+/* BOTÕES MODAL */
+
+.acoes{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.acoes button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--dourado);
+
+    color:#000;
+
+    font-weight:600;
+
+}
+
+/* TOPO MODAL */
+
+.modal-topo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.fechar{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#272727;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+/* ESCALAS */
+
+.escala-item{
+
+    background:#181818;
+
+    border:1px solid rgba(201,162,39,.25);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+}
+
+.escala-item h3{
+
+    color:var(--dourado);
+
+    margin-bottom:12px;
+
+    font-family:'Cinzel',serif;
+
+}
+
+.escala-item p{
+
+    margin-bottom:8px;
+
+    color:#dadada;
+
+}
+
+.escala-acoes{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:18px;
+
+}
+
+.editar{
+
+    background:#1f5aa6;
+
+    color:white;
+
+}
+
+.excluir{
+
+    background:#b22222;
+
+    color:white;
+
+}
+
+.editar,
+.excluir{
+
+    border:none;
+
+    padding:11px 18px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    text-align:center;
+
+}
+
+.topo-pagina h2{
+
+    font-size:30px;
+
+}
+
+.cadastro,
+.meses{
+
+    padding:20px;
+
+}
+
+.grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.cardsMeses{
+
+    grid-template-columns:1fr;
+
+}
+
+.modal-content{
+
+    padding:20px;
+
+}
+
+#listaEscolhaMembros,
+#listaEscolhaFuncoes{
+
+    grid-template-columns:1fr;
+
+}
+
+.acoes{
+
+    flex-direction:column;
+
+}
+
+.acoes button{
+
+    width:100%;
+
+}
+
+.escala-acoes{
+
+    flex-direction:column;
+
+}
+
+.editar,
+.excluir{
+
+    width:100%;
+
+}
+
+}/* ==========================
+   TEMA CLARO GLOBAL
+========================== */
+
+
+body.tema-claro{
+
+
+background:#f2f2f2;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro .topo,
+body.tema-claro .card,
+body.tema-claro .perfil-box{
+
+
+background:white;
+
+color:#111;
+
+
+}
+
+
+
+body.tema-claro p{
+
+
+color:#333;
+
+
+}
+
+
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3{
+
+
+color:#8c6d00;
+
+
+}
