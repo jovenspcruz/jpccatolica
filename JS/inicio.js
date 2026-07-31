@@ -1133,9 +1133,6 @@ document.addEventListener(
             iniciarHeader();
 
 
-            iniciarMenuMobile();
-
-
             iniciarMenu();
 
 
